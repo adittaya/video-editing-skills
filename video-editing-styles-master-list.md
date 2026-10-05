@@ -15,6 +15,8 @@ estate × 9:16 Reels.
 > **No mandatory style.** The look is chosen per job in the **Style Pass**
 > (`MOTION-UI-STYLE-LIBRARY.md`); Apple Standard is the house default, not a rule.
 >
+> **Every kind of edit -> its fast path: `EDIT-MAP.md`.**
+>
 > **Start here: `AGENT-PROMPT.md`** (the copy-paste brief) and the
 > **`creative-director`** skill (intake -> options -> recommendation -> handoff).
 >
@@ -281,6 +283,7 @@ router: find the vertical, open that skill.
 | Documentary — bodycam / evidence-led | `bodycam-evidence-doc` |
 | **QA — validate any finished edit (audit / re-think / revalidate)** | `edit-qa-validator` |
 | **START — intake, options, recommendation (any video)** | `creative-director` |
+| **PREP — a person speaks: matte/key the background FIRST** | `a-roll-matting` |
 | **Captured style — realtor word-caption talking-head reel** | `presets/preset-002-realtor-word-caption` |
 | **Captured style — SaaSWave tactile-purple product reel** | `presets/preset-003-saaswave-tactile-purple` |
 | **Captured style — Cloudy eSport neon montage** | `presets/preset-004-cloudy-esport-neon` |

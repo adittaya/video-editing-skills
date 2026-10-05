@@ -570,3 +570,27 @@ reasoning, and **no style is deprecated**. Each skill still names the style
 natural to its vertical as a reference; the agent may recommend another when it
 fits the brief better. The remedy (`AGENT-PROMPT.md`) and every skill's look
 notice carry this framing.
+
+
+## Part 20 — The A-roll prep law, the Edit Map and the preset index
+
+**A-ROLL PREP LAW (mandatory).** Any piece with a person speaking — talking-head,
+voiceover, avatar, podcast — has the SAME first job: the background. Decide
+**keep / matte / key**, and by default matte the character off it (or onto
+green) BEFORE the concept. It unlocks text-behind-subject, screen replacement,
+graphic backgrounds, floating UI and lower-thirds. New skill
+`skills/a-roll-matting` + runnable `tools/matte.py` (rembg + ffmpeg). Verified
+locally: u2netp ~3.9 s/frame, u2net ~4.3 s/frame at 55-60% scale (u2net OOMs at
+full 720x1280 in a small container; downscale + cap threads). Quality is
+honest: per-frame AI matting is a fast first pass, not a finished key —
+shoot-on-green or a temporal video matting model (RVM/MODNet/backgroundremover)
+is production-grade; roto the hard frames.
+
+**`EDIT-MAP.md`** routes every kind of edit to its fast path (the first job, the
+skill, the fast features, the trap) across 10 families: talking-person, product
+& UI, motion-graphics, documentary, social/short-form, event & lifestyle, sports
+& gaming, brand & corporate, music, experimental.
+
+**`presets/INDEX.md`** lists the five captured styles (Blue Glass, Realtor
+Word-Caption, SaaSWave Tactile Purple, Cloudy eSport Neon, Higgsfield Dark-UI)
+with "ask for this when…".

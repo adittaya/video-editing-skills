@@ -40,6 +40,15 @@ pre-filled with the beat map, the two-column (said | shown), the visual plan, th
 style pass, the sentence table and the feature map (all 11 groups) — the
 only-a-script path, ready to complete. Standard library only.
 
+## matte.py — A-roll matting (get the character off the background)
+```bash
+python tools/matte.py VIDEO [--out DIR] [--model u2netp|u2net|isnet-general-use] [--scale 0.6]
+```
+Mates a video frame-by-frame with rembg and writes `alpha.webm` (VP9 alpha),
+`green.mp4`, plus `alpha/`, `green/`, `matte/` and `stills/`. Downscales the
+matte input and caps threads for low-memory boxes. **The first job on any
+talking-head / voiceover / podcast.**
+
 ## cutlist.py — apply a cut list
 Applies a ripple/slip/slide/speed cut list to a source (see the pack's FFmpeg
 cookbook). 

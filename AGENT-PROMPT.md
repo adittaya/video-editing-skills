@@ -20,11 +20,14 @@ https://raw.githubusercontent.com/adittaya/video-editing-skills/main/):
   ADVANCED-FEATURE-USE-CASES.md   (the full 11-group catalogue)
   CAPTION-STYLES.md               (5 named caption styles)
   ASSET-REQUEST-GUIDE.md
+  EDIT-MAP.md                           (every kind of edit -> its fast path)
   video-editing-styles-master-list.md   (vertical -> skill router)
   DOCUMENTARY-STYLE-GUIDE.md            (documentary router)
   presets/README.md
 Then load the ONE build skill that fits my task from skills/<name>/SKILL.md, plus
-skills/creative-director/SKILL.md and skills/edit-qa-validator/SKILL.md.
+skills/creative-director/SKILL.md, skills/edit-qa-validator/SKILL.md and (if a
+person speaks) skills/a-roll-matting/SKILL.md. presets/INDEX.md lists captured
+styles a client can ask for by name.
 
 WORK IN FIVE PHASES. Do not skip a phase.
 
@@ -65,6 +68,11 @@ PHASE 5 — BUILD & GATES.
   - Render/deliver only after both gates pass.
 
 HARD RULES
+- A-ROLL PREP FIRST. If the piece has a person speaking to camera (talking-head,
+  voiceover, avatar, podcast), the FIRST job is the background: decide keep /
+  matte / key and by default matte the character off it (skills/a-roll-matting,
+  tools/matte.py) BEFORE the concept. It unlocks text-behind-subject, screen
+  replacement and graphic backgrounds.
 - THE LOOK IS CHOSEN, NOT MANDATED. Pick it in the Style Pass (a motion style + a
   UI style from MOTION-UI-STYLE-LIBRARY.md, and a caption style from
   CAPTION-STYLES.md). Apple Standard is the house default and a strong starting
