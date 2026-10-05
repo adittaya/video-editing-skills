@@ -33,7 +33,7 @@ https://raw.githubusercontent.com/adittaya/video-editing-skills/main/):
 
 1. README.md
 2. ASSET-REQUEST-GUIDE.md
-3. ADVANCED-FEATURE-USE-CASES.md
+3. ADVANCED-FEATURE-USE-CASES.md          (the FULL catalogue — 11 groups)
 4. CAPTION-STYLES.md                       (the 5 named caption styles)
 5. modern-editing-features-reference.md
 6. video-editing-styles-master-list.md     (the router: vertical -> skill)
@@ -45,26 +45,32 @@ https://raw.githubusercontent.com/adittaya/video-editing-skills/main/):
 
 Everything is connected — work strictly in this order:
 
-- STEP 0 — SOURCE. Ask me for the source first. Analyse it -> SOURCE-ANALYSIS.json.
-- STEP 1 — CONCEPT. Write CONCEPT.md (sentence table, camera-track plan,
-  contact-sheet plan, caption style from CAPTION-STYLES.md, sync map, manifest).
+- STEP 0 — SOURCE. Ask me for the source first. Analyse -> SOURCE-ANALYSIS.json.
+- STEP 1 — CONCEPT. Write CONCEPT.md: premise, segment plan, SENTENCE TABLE,
+  CAMERA-TRACK PLAN, **FEATURE MAP (the Feature Pass — mandatory)**, contact-sheet
+  plan, caption style, sync map, asset manifest.
+  THE FEATURE PASS: walk ALL 11 groups of ADVANCED-FEATURE-USE-CASES.md (camera &
+  framing, motion, speed & time, transitions, text, colour, compositing/VFX,
+  audio, AI, stills, workflow) and record for EVERY feature: applies? -> where
+  (scene/timecode/sentence) -> how (implementation) -> why. No group skipped;
+  every applicable advanced feature gets a row — including the fundamentals:
+  zoom in/out, character/face zoom, focus pulls, keyframing, motion tracking,
+  chroma key, grade, captions.
 - STEP 2 — ASSETS-PROMPT. Write it from the manifest; return ONE master zip
   containing MULTIPLE zips (incl. transparent caption PNGs/alpha clips and the
   advanced-feature code kits).
-- RENDER GATE. Build contact-sheet VARIANTS with tools/contact_sheet.py (V1
-  Classic Grid, V2 Storyboard Filmstrip, V3 Pro QC Sheet), present them and ASK
-  ME: "Did you like any of these, or shall I generate more variants so you can
-  choose?" The variant I pick is written BACK INTO CONCEPT.md.
-- QA GATE. Run tools/qa_check.py (and skills/edit-qa-validator): AUDIT the edit
-  against every mandatory list, AI RE-THINK each missing feature (what to add,
-  where, how, why it improves the video, the expected gain), REVALIDATE and
-  write EDIT-QA.md. Render/deliver only when the QA gate passes.
+- RENDER GATE. Build contact-sheet VARIANTS with tools/contact_sheet.py (V1/V2/V3),
+  present them and ASK ME: "Did you like any of these, or shall I generate more
+  variants so you can choose?" The variant I pick is written BACK INTO CONCEPT.md.
+- QA GATE. Run tools/qa_check.py (and skills/edit-qa-validator): AUDIT against
+  every mandatory list (incl. the camera fundamentals), AI RE-THINK each missing
+  feature, REVALIDATE, write EDIT-QA.md. Render/deliver only when QA passes.
 
 Hard rules:
 - Captions: declare ONE style from CAPTION-STYLES.md and hold it; use styled,
   transparent-background (alpha) and chroma-key captions as needed. Chroma key:
   flat green #00B140/blue, despill, 1-2px choke, light wrap, garbage matte.
-- The ADVANCED FEATURE USE-CASES are mandatory where the concept needs them.
+- The ADVANCED FEATURE CATALOGUE is mandatory where the concept needs it.
 - Obey the CAMERA LAW and the SENTENCE LAW.
 - If the task is a documentary, pick the style from DOCUMENTARY-STYLE-GUIDE.md.
 - The look is APPLE STANDARD unless a preset or named documentary style is asked.
@@ -221,7 +227,8 @@ Also included: `tools/cutlist.py` (ripple/slip/slide cut-list renderer) and `too
 - **Caption & text system** — styled text captions · transparent-background (alpha) captions · chroma-key text & subject, with the style sheet, word-level timing, alpha/despill/choke/light-wrap specs, and a text-motion surprise pack (kinetic typography, word-pop, text-behind-subject).
 - **Pipeline connectivity law** — everything is connected: SOURCE → CONCEPT (sentence table + camera track + contact-sheet plan) → ASSETS-PROMPT → BUILD → RENDER GATE → SIGN-OFF → RENDER; the chosen contact-sheet variant is written back into CONCEPT.md, and a new contact sheet means a new CONCEPT revision.
 - **Contact-sheet variants (render gate)** — before the full render the agent offers **V1 Classic Grid · V2 Storyboard Filmstrip · V3 Pro QC Sheet**, presents them, and asks "did you like any of these, or shall I generate more variants?" Render only after sign-off.
-- **Advanced feature use-cases** — the full professional toolset is mandatory in every skill (multi-track timeline, multicam, proxy editing, keyframing, motion tracking, masking/rotoscoping, speed ramping, stabilisation, optical flow, colour correction + grading + scopes + HDR, chroma key, compositing/VFX, 3D camera tracking, advanced transitions, noise reduction/EQ/sync/mixing, auto subtitles, AI background removal, auto reframing, scene detection, AI colour, plus the stills/design craft) — with the **Camera Law** and the **Sentence Law**. Full guide: `ADVANCED-FEATURE-USE-CASES.md`.
+- **Feature Pass (mandatory in CONCEPT.md)** — before building, the agent walks the FULL catalogue in `ADVANCED-FEATURE-USE-CASES.md` (11 groups: camera & framing, motion, speed & time, transitions, text, colour, compositing/VFX, audio, AI, stills, workflow) and writes a FEATURE MAP: feature → applies? → where → how → why. Every group visited; every applicable feature gets a row.
+- **Advanced feature catalogue** — the full professional toolset is mandatory in every skill (multi-track timeline, multicam, proxy editing, keyframing, motion tracking, masking/rotoscoping, speed ramping, stabilisation, optical flow, colour correction + grading + scopes + HDR, chroma key, compositing/VFX, 3D camera tracking, advanced transitions, noise reduction/EQ/sync/mixing, auto subtitles, AI background removal, auto reframing, scene detection, AI colour, plus the stills/design craft) — with the **Camera Law** and the **Sentence Law**. Full guide: `ADVANCED-FEATURE-USE-CASES.md`.
 - **Documentary family** — 14 documentary-style skills (Vox explainer, map-led geo, streaming docuseries, true crime, investigative, immersive field, archival essay, Ken Burns, animated, essay film, nature, docudrama, Op-Docs short, bodycam) plus `DOCUMENTARY-STYLE-GUIDE.md`, the router.
 - **Mandatory feature use-cases** — every skill carries the modern-standard set
   (anchor zoom in/out, motion tracing, keyframing, bezier easing, word-pop,

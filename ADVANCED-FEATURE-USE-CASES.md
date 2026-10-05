@@ -1,78 +1,126 @@
-# Advanced Feature Use-Cases — the mandatory professional toolset
+# Advanced Feature Catalogue — the complete professional toolset
 
-This is the checklist every build reads. **"Mandatory" means: if the concept
-needs it, you use it.** These are the features that separate a professional edit
-from an amateur one. Use each where it earns its place; each skill carries a
-per-skill emphasis line naming the ones that are non-negotiable for that
-vertical.
+**This is the full catalogue.** Every build runs a **Feature Pass** (see the end)
+over it: walk every group, decide which features apply, and record how each one
+will be implemented *before* the build. "Mandatory" means: if the concept needs
+it, you use it. Reading the catalogue is meant to make the agent *reach for the
+feature* — and using the feature is what lifts the video to an industry standard.
 
-Reading this file is meant to make the agent *reach for the feature* — and every
-time a needed feature is used, the video improves toward an industry standard.
+The camera features (zoom in / zoom out, character/face zoom, focus pulls …) are
+as mandatory as the exotic ones. A build that omits the fundamentals reads as
+amateur even if it nails the flashy parts.
 
 ---
 
-## 1 · Timeline & structure
-- **Multi-track timeline** — layer video, audio and effects; never a flat single
-  track. Plan V1/V2/V3 + A1/A2 and keep the structure legible.
-- **Multi-camera editing** — sync angles by waveform or timecode, then cut on
-  speaker or on action.
-- **Proxy editing** — cut on low-res proxies, then re-render the SAME cut list
-  against the originals.
-- **Batch export & render** — deliver every ratio/resolution from one master.
-- **Project collaboration** — shared bins, markers and a naming convention so a
-  second editor can pick up the timeline.
+## 1 · Camera & framing
+The grammar of the lens. Every move needs a reason (see the Camera Law).
+- **Zoom in / zoom out** — anchor zoom to a detail (origin on the target) and a
+  zoom-out reveal; the wide↔detail rhythm is the pacing engine.
+- **Character zoom / face zoom** — push in to a person's face for emotion; the
+  classic "character zoom in focus" beat.
+- **Push in / pull out (dolly)** — move the camera, not the lens, for a natural
+  perspective change.
+- **Pan / tilt** — reframe across a scene or up a subject.
+- **Truck / pedestal / crane / boom** — lateral, vertical and arcing moves.
+- **Orbit / arc** — circle a subject for dimension.
+- **Whip pan** — fast pan used as a transition.
+- **Snap zoom / crash zoom** — a violent, sudden zoom for a punch.
+- **Dolly zoom (Vertigo effect)** — dolly in while zooming out for disorientation.
+- **Rack focus / focus pull** — shift focus from one subject to another in-frame.
+- **Follow focus** — keep a moving subject sharp.
+- **Parallax move** — layered depth as the camera travels.
+- **Dutch angle / roll** — tilt the horizon for unease.
+- **Handheld vs stabilised** — energy vs calm; choose deliberately.
+- **Drone / aerial, top-down, worm's-eye, over-the-shoulder, POV.**
+- **Slow reveal / pull-back reveal** — start tight, reveal the context.
+- **Reframe / auto-reframe** — recompose for 9:16 / 1:1 / 4:5.
 
 ## 2 · Motion & animation
-- **Keyframing** — animate position, scale, opacity, rotation, blur on an eased
-  curve. Nothing moves without keys.
-- **Motion tracking** — attach text/effects to a moving object (point or planar
-  track). Smooth the track with a short lowpass before binding, or the graphic
-  will jitter.
-- **Masking & rotoscoping** — isolate a person or object frame-by-frame for a
-  cut-out, a reveal or a replacement.
-- **Speed ramping / time remapping** — speed curves across a beat; ramp into and
-  out of the key moment.
-- **Stabilisation** — 2-pass warp stabilise; crop a few percent to hide the warp.
-- **Frame blending / optical flow** — smooth slow motion without stutter.
+- **Keyframing** — animate position, scale, opacity, rotation, blur; nothing
+  moves without keys.
+- **Easing / bezier** — ease every move; curve the *path*, not just the timing.
+- **Anchor-point control** — set the transform origin before animating.
+- **Motion tracking** — point, planar or 3D; lowpass the track before binding.
+- **Masking / rotoscoping** — frame-by-frame isolation; garbage matte.
+- **Shape morph** — morph one shape into another.
+- **Puppet / rig / character animation** — pins and skeletons.
+- **Expressions / wiggle / auto-animate** — procedural motion.
+- **Text animators / range selectors** — per-word and per-character animation.
+- **Spring / follow** — damped follow for organic motion.
 
-## 3 · Colour
-- **Colour correction** — exposure, white balance and contrast FIRST.
-- **Colour grading** — the look (LUT, film emulation, split-tone) SECOND.
-- **Scopes** — waveform, vectorscope, histogram and RGB parade: grade by the
-  numbers, not by eye. Legalise with the scope, not the monitor.
-- **HDR grading** — only on explicit request; tone-map to SDR for delivery.
+## 3 · Speed & time
+- **Speed ramp** — slow→fast or fast→slow across a beat.
+- **Time remap** — a full speed curve with easing.
+- **Reverse** — play a clip backwards for a reveal or a reset.
+- **Freeze frame / hold** — stop on the moment that matters.
+- **Slow motion (optical flow)** — smooth slow-mo without stutter.
+- **Timelapse / hyperlapse / fast motion.**
+- **Strobe / echo / posterize time** — the 12fps stutter, ghost trails.
+- **Frame blending** — interpolation between frames.
+- **Jump cut** — compress time; a stylistic cut.
 
-## 4 · Compositing & effects
-- **Chroma key** — green/blue-screen removal with spill suppression and a clean
-  edge; refine with a matte choke and a light wrap.
-- **Compositing / VFX** — combine multiple layers into one scene (screen
-  replacement, set extension, particle passes, light wraps).
-- **3D camera tracking** — solve the camera move and add 3D elements that sit in
-  real footage.
-- **Advanced transitions & effects** — blur, glow, glitch, light leaks, film
-  grain, chromatic aberration — each timed to a cut or a beat.
+## 4 · Transitions & cutting
+- **Hard cut · J-cut · L-cut · match cut · cut on action · cut on beat.**
+- **Cross dissolve · dip to black / white.**
+- **Whip-pan / zoom / blur transition** — the Vox camera-blur transition.
+- **Mask / wipe / iris / shape wipe.**
+- **Light leak / film burn / luma wipe.**
+- **Glitch / RGB split / datamosh.**
+- **Morph cut · slide / push · 3D flip · cube.**
+- **Match-frame / invisible (seamless) cut.**
+- **Speed-warp transition** — blur + zoom + speed at the cut.
 
-## 5 · Audio
-- **Noise reduction** — remove hiss, hum and room tone before anything else.
-- **EQ** — high-pass dialogue, de-mud the low-mids, carve space for the music.
-- **Audio syncing** — match audio to picture by waveform or timecode.
-- **Multi-track mixing** — dialogue, music and SFX balanced; duck music 12–18 dB
-  under voice.
-- **Surround / spatial** — only where the delivery needs it (cinema, 360/VR).
+## 5 · Text & titling
+- **Kinetic typography · word-pop · karaoke.**
+- **Lower thirds · titles · end cards · chyrons.**
+- **Text behind subject · text on a path · type-on / draw-on.**
+- **Highlight · underline · hand-drawn circle** (the highlighter, the circle).
+- **Sticker captions · transparent (alpha) captions.**
+- **Count-ups · stat cards · data labels.**
+- **Subtitles / captions · SRT / VTT sidecar.**
 
-## 6 · AI & smart features
-- **Auto subtitles (speech-to-text)** — word-level timing drives the captions AND
+## 6 · Colour
+- **Correction** — exposure, white balance, contrast, curves, levels FIRST.
+- **Grading** — LUT, film emulation, split-tone, teal-orange, bleach bypass.
+- **Scopes** — waveform, vectorscope, RGB parade, histogram; grade by numbers.
+- **Colour match** between shots; **skin-tone protection.**
+- **LOG → Rec.709 conversion · HDR grading · SDR tone-mapping.**
+- **Vignette · grain · halation · bloom.**
+
+## 7 · Compositing & VFX
+- **Chroma key** — flat green (#00B140) / blue; despill, choke, light wrap,
+  garbage matte.
+- **Rotoscoping · tracking · planar track · 3D camera tracking (matchmove).**
+- **Set extension · screen replacement · camera projection.**
+- **Particles · simulations · shaders.**
+- **Light wrap · glow · lens flare · light leak.**
+- **Object removal · clone / stamp · clean plate · rig removal.**
+- **2.5D parallax · sky replacement · green-screen comp.**
+- **Motion-graphics templates (MOGRT-style) · pre-comps / nesting.**
+
+## 8 · Audio
+- **Noise reduction** — de-noise, de-hum, de-click, room-tone removal.
+- **EQ · compression · limiting.**
+- **Audio sync** — waveform / timecode.
+- **Multi-track mixing** — dialogue / music / SFX buses; duck music 12–18 dB.
+- **Sound design · SFX · foley.**
+- **Music editing · beat mapping** (drive cuts from the BPM).
+- **Dialogue editing · ADR · voiceover.**
+- **Spatial / surround** (only where the delivery needs it).
+- **Loudness normalisation** — integrated LUFS + true-peak ceiling.
+
+## 9 · AI & smart features
+- **Auto subtitles (speech-to-text)** — word-level timing drives captions AND
   the narration plan.
-- **AI background removal** — matte a subject without a green screen.
-- **Auto reframing** — re-frame the master for 9:16 / 1:1 / 4:5 keeping the
-  subject in the safe zone.
-- **Scene detection & auto cutting** — build a cut list from detected scene
-  changes.
-- **AI colour / exposure correction** — a first-pass normalisation, then grade by
-  hand.
+- **AI background removal / AI matte** — no green screen needed.
+- **Auto reframing** — 9:16 / 1:1 / 4:5.
+- **Scene detection & auto cutting** — build a cut list from scene changes.
+- **AI colour / exposure correction** — first pass, then grade by hand.
+- **Generative fill / object removal.**
+- **AI upscale · AI denoise.**
+- **Face / object detection · smart tracking.**
 
-## 7 · Assets & stills (for every generated image and graphic)
-The photo- and design-craft features apply to every asset the build makes:
+## 10 · Stills & design craft (every generated asset)
 - Layer-based editing · layer masks · blending modes.
 - Frequency separation (skin retouch) · dodge & burn.
 - Content-aware fill / object removal · perspective correction.
@@ -80,48 +128,64 @@ The photo- and design-craft features apply to every asset the build makes:
 - AI-assisted selection · non-destructive workflow.
 - Vector editing (bezier) · gradient mesh · typography controls (kerning,
   tracking, leading) · symbol/asset libraries · artboards · grid systems ·
-  export for multiple formats/resolutions.
+  multi-format export.
 
-## 8 · The Camera Law (mandatory wherever there is a camera)
+## 11 · Workflow & delivery
+- **Multi-track timeline** — V1/V2/V3 + A1/A2, never a flat single track.
+- **Multi-camera editing** — sync angles, cut on speaker/action.
+- **Proxy editing** — cut proxies, re-render the same cut list on the originals.
+- **Nesting / pre-comps · adjustment layers · render queue.**
+- **Batch export** — every ratio/resolution from one master.
+- **Colour management · project templates · collaboration.**
 
-A camera move is a feature, not a decoration. Five rules:
+---
 
-1. **One camera wrapper only.** All zooms and pans come from a single master
-   camera. Never apply local ad-hoc transforms to multiple nested elements.
-2. **One camera move at a time.** Never stack camera transforms. If two moves
-   overlap, resolve priority or queue them.
-3. **Every zoom has a reason** — READ · EMPHASIZE · REVEAL · FOLLOW · BREATHE.
-   If you cannot justify it, remove it. **Constant zoom = no zoom.**
-4. **Do not cut while zoomed.** Either return to rest or hold the scene; cuts
-   while scaled break spatial continuity.
-5. **Motion blur only during fast motion.** Compute blur from the instantaneous
-   camera velocity and apply it only while velocity is high: `blur = clamp(v*k,
-   0, max)` (start k ≈ 0.012, max ≈ 24 px). Blur at rest = soft focus.
+## The Camera Law (mandatory wherever there is a camera)
+1. **One camera wrapper only** — all zooms/pans from a single master camera;
+   never local ad-hoc transforms on nested elements.
+2. **One camera move at a time** — never stack camera transforms.
+3. **Every zoom has a reason** — READ / EMPHASIZE / REVEAL / FOLLOW / BREATHE.
+   Constant zoom = no zoom.
+4. **Do not cut while zoomed** — return to rest or hold the scene.
+5. **Motion blur only during fast motion** — `blur = clamp(v*k, 0, max)`, zero at
+   rest (start k ≈ 0.012, max ≈ 24 px). **Anchor zoom** sets the origin on the
+   target; **follow** keeps the subject in a safe zone with a damped spring.
 
-**Anchor zoom** — set the transform origin on the target (its centre) before you
-animate scale, so the zoom grows *out of* the thing being read. **Follow
-(motion trace)** — keep the tracked subject inside a safe rectangle with a
-critically-damped spring; trigger a gentle auto-zoom when subject activity
-exceeds a threshold.
+## The Sentence Law (mandatory)
+Every narration sentence gets its own visual event, bound to its stressed word
+(±100 ms). No visual-less sentences; no sentence-less visuals.
 
-## 9 · Sentence-level narration — the Sentence Law (mandatory)
+---
 
-Every **sentence** of narration gets its own visual event, bound to that
-sentence's stressed word. See the Visual Narration Layer in each skill.
+## THE FEATURE PASS (mandatory — run it while writing CONCEPT.md)
 
-- One sentence → one visual beat (a cutaway, a reveal, a label, a count, a camera
-  move).
-- Land the visual on the sentence's **stressed word** (±100 ms), not the sentence
-  start.
-- If a sentence has no visual, either give it one or cut the sentence.
-- If a visual has no sentence, it belongs to a different beat.
-- The camera move (READ / EMPHASIZE / REVEAL) is itself a sentence-level event,
-  bound to a word or phrase.
+**When the concept is being written, walk this entire catalogue and decide, for
+every feature, whether it applies and how it will be implemented.** The concept
+is not finished until every applicable feature has a row. This is the step where
+the agent thinks about *how it will build the advanced features* before building.
 
-## 10 · The test
+Write a **FEATURE MAP** into CONCEPT.md:
 
+| # | Feature | Applies? | Where (scene / timecode / sentence) | How (implementation) | Why (the job it does) |
+|---|---|---|---|---|---|
+| 1 | Zoom in / anchor zoom | yes | 0:03 on the logo | scale 1.0→1.15, origin on logo, ease-out 400 ms | read the mark |
+| 2 | Character zoom | yes | 0:11 on the founder's face | push to face, hold 1.5 s | emotion |
+| 3 | Rack focus | no | — | — | — |
+| … | … | … | … | … | … |
+
+Rules for the Feature Pass:
+- **Every group is visited** (camera, motion, speed, transitions, text, colour,
+  compositing, audio, AI, stills, workflow) — no group is skipped.
+- Every "yes" row has a **where**, a **how** and a **why**. A "yes" with no how is
+  not a plan.
+- Every "no" is deliberate — the feature was considered and does not serve this
+  concept.
+- The map feeds the **asset manifest** (STEP 2) and the **QA gate**
+  (`edit-qa-validator`, `tools/qa_check.py`), which re-checks that every "yes"
+  actually made it into the edit.
+
+## The test
 Walk the timeline. For each feature the concept needed, ask: **"is it there, and
 is it doing a job?"** A missing needed feature — a flat single track, an ungraded
-image, a jittery tracked label, a static sentence — means the edit is not
-finished. Reading "mandatory" is the prompt to use the feature; using the feature
-is what makes the video hold up.
+image, no zoom on the key detail, a jittery tracked label, a static sentence —
+means the edit is not finished.

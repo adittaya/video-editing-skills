@@ -108,6 +108,12 @@ Only then is the edit **PASS**. Otherwise loop PASS 2 -> PASS 3 until clean.
 - ★ cut-on-beat / cut-on-action · ★ a sound for every cut ·
   ★ correct-then-grade · seamless loop.
 
+**2b · Camera & framing (the fundamentals — as mandatory as the exotic)**
+- Zoom in / anchor zoom · zoom out / reveal.
+- Character / face zoom · push in / pull out · rack focus / focus pull.
+- Pan / tilt / orbit · whip pan / snap zoom · dolly zoom (Vertigo) · parallax.
+- Handheld vs stabilised · drone/aerial · slow reveal / pull-back.
+
 **3 · Camera Law**
 - One camera wrapper only · one move at a time.
 - Every zoom has a reason (READ/EMPHASIZE/REVEAL/FOLLOW/BREATHE); no constant zoom.

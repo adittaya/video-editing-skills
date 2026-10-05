@@ -34,11 +34,26 @@ every later stage writes its result back here.**
 - **Camera-track plan** — the ordered camera entries
   (READ / EMPHASIZE / REVEAL / FOLLOW / BREATHE) with their word bindings.
   (The Camera Law.)
+- **FEATURE MAP — the Feature Pass (mandatory).** Walk the **full catalogue** in
+  `ADVANCED-FEATURE-USE-CASES.md` — camera & framing, motion & animation, speed &
+  time, transitions, text, colour, compositing & VFX, audio, AI, stills & design,
+  workflow — and record for **every** feature whether it applies and how:
+
+  `feature -> applies? -> where (scene/timecode/sentence) -> how (implementation)
+  -> why (the job it does)`
+
+  **Every group is visited; no group is skipped.** The concept is **not finished
+  until every applicable advanced feature has a row** (a "yes" with no *how* is
+  not a plan; every "no" is a deliberate choice). This is the step where you
+  think about **how you will implement the advanced features before building** —
+  zoom in/out, character/face zoom, focus pulls, keyframing, motion tracking,
+  chroma key, grade, captions, and the rest.
 - **Contact-sheet plan** — which sign-off variants will be built (V1 Classic Grid
   / V2 Storyboard Filmstrip / V3 Pro QC Sheet) and why. **The variant the user
   picks is written back here.**
 - **Sync map** — the word-level timings that drive text and visuals.
-- **Asset manifest** — what the build needs; this feeds STEP 2.
+- **Asset manifest** — what the build needs (fed by the feature map); this feeds
+  STEP 2.
 
 Then STEP 2 writes `ASSETS-PROMPT.md` from this plan.
 
@@ -47,13 +62,16 @@ Everything is connected — no stage is decided in isolation, and no stage is
 skipped:
 
 - **SOURCE** -> analysed into `SOURCE-ANALYSIS.json`, which feeds the concept.
-- **CONCEPT** -> drives the asset manifest, the camera track and the sentence
-  table; it is the single source of truth for the build.
+- **CONCEPT** -> drives the asset manifest, the camera track, the sentence table
+  and the **feature map**; it is the single source of truth for the build.
 - **ASSETS-PROMPT** -> written from the concept's manifest; nothing unplanned
   appears in the build.
-- **BUILD** -> follows the concept's sentence table and camera track exactly.
+- **BUILD** -> follows the concept's sentence table, camera track and feature map
+  exactly.
 - **RENDER GATE** -> the contact-sheet variants visualise the concept's beat map;
   the variant the user picks is written **back into CONCEPT.md**.
+- **QA GATE** -> `edit-qa-validator` / `tools/qa_check.py` re-check that every
+  feature the map marked "yes" actually made it into the edit.
 - **SIGN-OFF -> RENDER** -> the full render happens only after the variant AND
   the cut are finalised.
 - **A new contact sheet means a new CONCEPT revision.** If the sheet reveals a

@@ -94,6 +94,49 @@ F = [
 
  ("D1","Delivery","Loudness measured",["lufs","true peak","loudness"],True,"Measure integrated LUFS + true peak, don't guess."),
  ("D2","Delivery","Safe zones + captions file",["safe zone","srt","vtt"],True,"Check safe zones and ship a caption sidecar."),
+
+ ("CF1","Camera","Zoom in / anchor zoom",["zoom in","anchor zoom"],True,"Anchor-zoom a key detail (origin on target), return to rest before the cut."),
+ ("CF2","Camera","Zoom out / reveal",["zoom out"],True,"Pull back for context after a detail; wide<->detail rhythm."),
+ ("CF3","Camera","Character / face zoom",["face zoom","character zoom","push to face"],False,"Push in to a face for emotion (the character-zoom beat)."),
+ ("CF4","Camera","Push in / pull out (dolly)",["push in","pull out","dolly"],False,"Move the camera, not the lens."),
+ ("CF5","Camera","Rack focus / focus pull",["rack focus","focus pull"],False,"Shift focus between subjects in-frame."),
+ ("CF6","Camera","Pan / tilt / orbit",["pan","tilt","orbit"],False,"Reframe or arc the camera."),
+ ("CF7","Camera","Whip pan / snap zoom",["whip","snap zoom","crash zoom"],False,"Fast pan or sudden zoom for a punch/transition."),
+ ("CF8","Camera","Dolly zoom (Vertigo)",["dolly zoom","vertigo"],False,"Dolly + counter-zoom for disorientation."),
+ ("CF9","Camera","Parallax move",["parallax"],False,"Layered depth as the camera travels."),
+ ("CF10","Camera","Handheld vs stabilised",["handheld"],False,"Choose energy vs calm deliberately."),
+ ("CF11","Camera","Drone / aerial",["drone","aerial"],False,"Aerial coverage where it serves."),
+ ("CF12","Camera","Slow reveal / pull-back reveal",["pull-back","slow reveal"],False,"Start tight, reveal context."),
+
+ ("T1","Transitions","Match cut / J-cut / L-cut",["match cut","j-cut","l-cut"],False,"Use audio-lead/trail and match cuts."),
+ ("T2","Transitions","Dissolve / dip to black",["dissolve","dip to black"],False,"Signal a temporal/thematic shift."),
+ ("T3","Transitions","Whip / zoom / blur transition",["blur transition","zoom transition","whip transition"],False,"Blend the cut with a camera move + blur."),
+ ("T4","Transitions","Mask / wipe / iris",["wipe","iris"],False,"Shape-based transitions where they fit."),
+ ("T5","Transitions","Light leak / film burn",["light leak","film burn"],False,"Organic transition accents."),
+ ("T6","Transitions","Glitch / RGB split",["glitch","rgb split"],False,"Kinetic accent, short windows only."),
+
+ ("SP1","Speed","Reverse",["reverse"],False,"Backwards reveal/reset."),
+ ("SP2","Speed","Timelapse / hyperlapse",["timelapse","hyperlapse"],False,"Compress long time."),
+ ("SP3","Speed","Strobe / posterize (12fps)",["12fps","posterize","strobe"],False,"The hand-animated stutter where it fits."),
+
+ ("MO1","Motion","Shape morph",["morph"],False,"Morph one shape into another."),
+ ("MO2","Motion","Puppet / rig animation",["puppet","rig"],False,"Character/pin animation where needed."),
+
+ ("CO1","Colour","Colour match / skin-tone protection",["colour match","color match","skin tone"],False,"Match shots; protect skin."),
+ ("CO2","Colour","LOG/HDR conversion + tone-map",["log","tone map"],False,"Convert LOG, tone-map HDR to SDR."),
+ ("CO3","Colour","Vignette / grain / halation",["vignette","halation","grain"],False,"Finish textures."),
+
+ ("VX1","VFX","3D camera tracking / matchmove",["3d camera","matchmove"],False,"Solve the move, place 3D in real footage."),
+ ("VX2","VFX","Set extension / screen replacement",["set extension","screen replacement"],False,"Extend or replace in-scene surfaces."),
+ ("VX3","VFX","Object removal / clean plate",["object removal","clean plate","clone"],False,"Remove rigs/objects."),
+ ("VX4","VFX","Particles / shaders",["particle","shader"],False,"Procedural effects where they serve."),
+
+ ("AU1","Audio","Sound design / SFX / foley",["sound design","sfx","foley"],True,"Design the sound; a sound for every cut."),
+ ("AU2","Audio","Music beat mapping",["beat map","bpm"],False,"Drive cuts from the track's BPM."),
+ ("AU3","Audio","Dialogue editing / VO",["dialogue","voiceover","adr"],False,"Clean dialogue; place VO."),
+
+ ("WF1","Workflow","Nesting / pre-comp / adjustment layers",["nesting","pre-comp","adjustment layer"],False,"Structure the timeline properly."),
+ ("WF2","Workflow","Batch export / render queue",["batch export","render queue"],False,"Deliver every ratio from one master."),
 ]
 
 def read_text(path):

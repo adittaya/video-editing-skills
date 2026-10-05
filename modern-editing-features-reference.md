@@ -469,3 +469,47 @@ Sheet (timecode + cut flag + safe-zone overlay + palette strip + summary header)
 
 `tools/cutlist.py`, `tools/track_text.py` — cut-list application and text-to-object
 tracking. Typical flow: contact_sheet -> pick variant -> qa_check -> fix -> re-run.
+
+
+## Part 16 — The complete advanced-feature catalogue (11 groups)
+
+`ADVANCED-FEATURE-USE-CASES.md` is now a full catalogue, and CONCEPT.md runs a
+mandatory **Feature Pass** over it.
+
+1. **Camera & framing** — zoom in/out · character/face zoom · push in/pull out ·
+   pan/tilt · truck/pedestal/crane/boom · orbit/arc · whip pan · snap/crash zoom ·
+   dolly zoom (Vertigo) · rack focus/focus pull · follow focus · parallax move ·
+   Dutch angle · handheld vs stabilised · drone/aerial · slow reveal · reframe.
+2. **Motion & animation** — keyframing · easing/bezier · anchor point · motion
+   tracking · masking/rotoscoping · shape morph · puppet/rig · expressions ·
+   text animators · spring/follow.
+3. **Speed & time** — speed ramp · time remap · reverse · freeze · slow motion
+   (optical flow) · timelapse/hyperlapse · strobe/posterize · frame blending ·
+   jump cut.
+4. **Transitions & cutting** — hard/J/L/match/cut-on-action/cut-on-beat · cross
+   dissolve · dip to black · whip/zoom/blur · mask/wipe/iris · light leak/film
+   burn · glitch/RGB split · morph cut · slide/push/3D flip · invisible cut.
+5. **Text & titling** — kinetic type · word-pop · karaoke · lower thirds · text
+   behind subject · type-on/draw-on · highlight/underline/circle · sticker/alpha
+   captions · count-ups · SRT/VTT.
+6. **Colour** — correction · grading (LUT/film/split-tone) · scopes · colour
+   match · skin-tone protection · LOG/HDR conversion · vignette/grain/halation.
+7. **Compositing & VFX** — chroma key · rotoscoping · tracking · 3D camera
+   tracking/matchmove · set extension · screen replacement · particles/shaders ·
+   light wrap/glow/flare · object removal/clean plate · 2.5D parallax · nesting.
+8. **Audio** — noise reduction · EQ/compression/limiting · sync · multi-track
+   mixing · sound design/SFX/foley · music beat mapping · dialogue/VO · spatial ·
+   loudness.
+9. **AI & smart** — auto subtitles · AI background removal · auto reframing ·
+   scene detection · AI colour · generative fill · AI upscale/denoise · face/
+   object detection.
+10. **Stills & design** — layers/masks/blending · frequency separation · dodge &
+    burn · content-aware fill · perspective correction · RAW/curves/HDR merge/
+    panorama · AI selection · vector/bezier · gradient mesh · typography ·
+    symbols · artboards · grids · multi-format export.
+11. **Workflow & delivery** — multi-track · multicam · proxy · nesting · batch
+    export · colour management · collaboration.
+
+**The Feature Pass:** walk all 11 groups, record every feature in the FEATURE MAP
+(applies? -> where -> how -> why). No group skipped; every applicable feature has
+a row; the map feeds the asset manifest and the QA gate.
