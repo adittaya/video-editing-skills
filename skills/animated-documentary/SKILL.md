@@ -9,12 +9,12 @@ description: "Animated documentary: rotoscope and illustrated sequences used as 
 
 **Asset tier: 2 — MANDATORY: reference footage or oral-history audio, plus the real people's testimony. Label all animation.**
 
-> **THE LOOK.** The graphic chrome (cards, captions, lower-thirds, colour tags)
-> defaults to the **Apple Standard** in the look section. This skill's named
-> style governs the **footage treatment, structure and signature techniques**;
-> where the style's own palette or typography is essential, that named style is
-> the sanctioned override — chosen by the user picking this skill.
-> **LOOK OVERRIDE (sanctioned).** The hand-drawn / rotoscoped aesthetic IS the style. This named style is the override.
+> **THE LOOK.** Chosen in the **Style Pass**, not fixed. The graphic chrome
+> (cards, captions, lower-thirds, colour tags) starts from the **Apple Standard**
+> (the house default); this skill's named style governs the **footage treatment,
+> structure and signature techniques**. Pick the best fit for the brief — Apple,
+> this skill's named style, or another from `MOTION-UI-STYLE-LIBRARY.md` — and
+> say why. **No style is mandatory and none is deprecated.**
 
 
 ## STEP 0 — SOURCE GATE (mandatory, BEFORE the assets prompt)

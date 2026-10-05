@@ -5,11 +5,13 @@ description: "Automotive video: model reveals, feature demos, dealership and dri
 
 # Automotive Reveal & Drive Film
 
-> **THE LOOK IS APPLE STANDARD — MANDATORY AND THE ONLY OPTION.**
-> Every graphic, card, caption and colour in this video uses the Apple Standard
-> in section 3. Any other palette or style mentioned anywhere in this file is
-> deprecated. Vertical differences are only in WHAT the graphics depict and
-> which single accent carries meaning.
+> **THE LOOK IS CHOSEN, NOT MANDATED.** Pick it in the **Style Pass** — a motion
+> style + a UI style (`MOTION-UI-STYLE-LIBRARY.md`) and a caption style
+> (`CAPTION-STYLES.md`) — chosen for THIS job and recorded in CONCEPT.md. The
+> **Apple Standard** (section 3) is the house default and a strong starting point
+> for most product, UI and corporate work, but it is a **recommendation, not a
+> rule**. If another style fits the brief better, recommend it with your reasoning
+> and use it. **No style is deprecated.**
 
 **Scope.** Vehicle reveal films (30–90 s), feature demos (30–60 s), dealership/inventory reels (10–30 s) and drive montages (45–120 s). Cinematic, sound-led, spec-accurate.
 
@@ -173,12 +175,14 @@ Tier 2 elements: STOP and wait for the client's real files. Never fabricate a re
 - **Emotional beat:** drive through landscape; let the sound lead.
 - **End card (last 4–6 s):** model name, tagline, dealer/URL, legal line.
 
-## 3. The look — THE APPLE STANDARD (mandatory; the only look)
+## 3. The look — the house default (Apple Standard) + the Style Pass
 
-This pack has **one look**. Every skill uses the Apple Standard — there is no
-other palette, type system, or motion grammar. Verticals differ only in **what
-the graphics depict** and **which single accent carries meaning**; never in the
-underlying system. Any other palette named anywhere in this file is deprecated.
+**The house default.** The Apple Standard below is the pack's default look and
+the right starting point for most product, UI and corporate work — verified
+tokens, one accent, restrained motion. It is a **recommendation, not a mandate**:
+choose the look in the **Style Pass** (`MOTION-UI-STYLE-LIBRARY.md`). If a
+different style fits this brief better, recommend it with your reasoning and use
+it. **No style is deprecated.**
 
 - **Canvas:** alternating `#ffffff` / `#f5f5f7` bands — the colour change IS the
   divider (no borders, no rules). Dark variant `#0d0d0f` with glow

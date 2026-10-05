@@ -9,12 +9,12 @@ description: "Evidence-led documentary built from raw institutional footage: bod
 
 **Asset tier: 2 — MANDATORY: the raw footage and audio, lawfully obtained; sensitivity to the people in it.**
 
-> **THE LOOK.** The graphic chrome (cards, captions, lower-thirds, colour tags)
-> defaults to the **Apple Standard** in the look section. This skill's named
-> style governs the **footage treatment, structure and signature techniques**;
-> where the style's own palette or typography is essential, that named style is
-> the sanctioned override — chosen by the user picking this skill.
-> **LOOK OVERRIDE (sanctioned).** Institutional footage texture — the real formats, sizes and grit — is the style; it is not upscaled to look clean. This named style is the override.
+> **THE LOOK.** Chosen in the **Style Pass**, not fixed. The graphic chrome
+> (cards, captions, lower-thirds, colour tags) starts from the **Apple Standard**
+> (the house default); this skill's named style governs the **footage treatment,
+> structure and signature techniques**. Pick the best fit for the brief — Apple,
+> this skill's named style, or another from `MOTION-UI-STYLE-LIBRARY.md` — and
+> say why. **No style is mandatory and none is deprecated.**
 
 
 ## STEP 0 — SOURCE GATE (mandatory, BEFORE the assets prompt)
