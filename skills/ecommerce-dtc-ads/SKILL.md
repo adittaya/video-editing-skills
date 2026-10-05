@@ -638,19 +638,43 @@ almost every build.
 it where the concept needed it?" If a needed ★ is missing, the edit is not
 finished.
 
-## RENDER GATE — the 1 FPS contact sheet (mandatory before the full render)
+## RENDER GATE — the contact sheet (mandatory before the full render)
 
-**Never render the full video without sign-off.** Before the final render:
+**Never render the full video without sign-off.** Before the final render,
+extract one frame per second and build a **contact sheet** for approval:
 
-1. Extract one frame per second from the finished timeline:
-   `ffmpeg -i build.mp4 -vf fps=1 sheet/f%04d.jpg`
-2. Tile them into a **contact sheet** — a grid in time order, each frame
-   labelled with its timestamp — so the whole edit reads at a glance.
-3. **Show the user the contact sheet and wait for approval.** Render the full
-   video only after they finalise.
+`ffmpeg -i build.mp4 -vf fps=1 sheet/f%04d.jpg`
 
-The contact sheet is the cheapest place to catch pacing, composition,
-safe-zone and continuity problems — an hour of render saved by one image.
+Then **offer the user a choice of contact-sheet variants** — build 2-3 and let
+them pick. The sheet is the cheapest place to catch pacing, composition,
+safe-zone and continuity problems; a variant lets the reviewer read the edit the
+way that suits them.
+
+### The contact-sheet variants (build at least TWO; label them V1 / V2 / V3)
+- **V1 — Classic Grid.** A uniform grid of 1 FPS frames in time order (left to
+  right, top to bottom), each frame labelled with its **timestamp**. The baseline
+  read of the whole edit at a glance.
+- **V2 — Storyboard Filmstrip.** Larger frames laid in horizontal rows over a
+  **time ruler**, with **scene-cut ticks** marked on the ruler and a one-line
+  **caption** under each frame (what happens in that second). Reads like a
+  storyboard; best for reviewing pacing, flow and the beat map.
+- **V3 — Pro QC Sheet.** A dense technical sheet: each thumbnail carries its
+  **timecode**, a **scene-cut flag**, a **motion/velocity indicator**, and a
+  **safe-zone overlay**; a **colour-swatch strip** (the sampled palette) and a
+  **summary header** run across the top (duration, shot count, ASL, loudness
+  LUFS + true-peak, palette). Best for technical sign-off and continuity.
+
+Build them at whatever aspect suits the cut (grid for a horizontal piece, a
+vertical column for 9:16). Keep the Apple Standard chrome and the brand accent.
+
+### The ask (mandatory)
+Present the variants and ask the user directly:
+
+> "Here are the contact-sheet variants — V1, V2, V3. **Did you like any of
+> these, or shall I generate more variants so you can choose?**"
+
+Then wait. If they want more, generate additional variants. **Render the full
+video only after they finalise** — both the variant they prefer and the cut.
 
 ## Platform & delivery standards (self-contained reference)
 Platform UI and specs change; values are working standards (2026). Where sources disagreed the more conservative value is used. Re-verify before a paid campaign.
