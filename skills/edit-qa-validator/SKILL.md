@@ -64,6 +64,21 @@ After the fixes are applied, re-run PASS 1. Require:
 - a **re-audit diff** (what moved from MISSING/WEAK to OK).
 Only then is the edit **PASS**. Otherwise loop PASS 2 -> PASS 3 until clean.
 
+## THE GOVERNING LAWS (apply to everything you direct and audit)
+
+- **No mandatory style.** The look is chosen in the **Style Pass**
+  (`MOTION-UI-STYLE-LIBRARY.md` + `CAPTION-STYLES.md`); recommend the best fit and
+  say why. Apple Standard is the house default, not a rule. Nothing is deprecated.
+- **Camera Law** — one camera wrapper only · one move at a time · every zoom has a
+  reason (READ / EMPHASIZE / REVEAL / FOLLOW / BREATHE) · never cut while zoomed ·
+  motion blur only during fast motion.
+- **Sentence Law** — every narration sentence gets its own visual event, bound to
+  its stressed word (+/-100 ms).
+- **Caption system** — one declared style from `CAPTION-STYLES.md`; styled,
+  transparent-background (alpha) and chroma-key captions as needed.
+- **Feature catalogue** — `ADVANCED-FEATURE-USE-CASES.md`; mandatory where the
+  concept needs it.
+
 ## THE MASTER CHECKLIST (every mandatory list, in one place)
 
 **0 · Pipeline connectivity (PIPELINE CONNECTIVITY LAW)**
