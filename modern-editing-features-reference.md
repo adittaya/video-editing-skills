@@ -557,3 +557,16 @@ risk), and a handoff to the build skill. It is the front door to the pack.
 `tools/think_check.py` scaffolds a CONCEPT.md from a raw script (sentences ->
 beats -> the two-column -> visual plan -> style pass -> feature map), so the
 only-a-script thinking pass is ready to complete.
+
+
+## Part 19 — Style freedom (the barrier removed)
+
+There is **no mandatory style**. The Apple Standard is the pack's **house
+default** — a strong starting point for product, UI and corporate work — and a
+**recommendation, not a rule**. Every build chooses its look in the **Style Pass**
+(a motion style + a UI style from `MOTION-UI-STYLE-LIBRARY.md`, and a caption
+style from `CAPTION-STYLES.md`), the agent recommends the best fit with its
+reasoning, and **no style is deprecated**. Each skill still names the style
+natural to its vertical as a reference; the agent may recommend another when it
+fits the brief better. The remedy (`AGENT-PROMPT.md`) and every skill's look
+notice carry this framing.

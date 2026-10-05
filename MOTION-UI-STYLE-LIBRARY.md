@@ -121,7 +121,12 @@ ethical / transparent design · responsible glassmorphism · bento grids.
 
 ---
 
-## PART D · The Style Pass (mandatory — run it while writing CONCEPT.md)
+## PART D · The Style Pass (run it while writing CONCEPT.md)
+
+**No style is mandatory.** There is no house look you must use. Pick the style
+that fits the brief, recommend it with your reasoning, and use it. The Apple
+Standard is the pack's default *suggestion* for product/UI/corporate work — one
+option among many, not a rule. Nothing is deprecated.
 
 Before building, pick deliberately and record it in CONCEPT.md:
 

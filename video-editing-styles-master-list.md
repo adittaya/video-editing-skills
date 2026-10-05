@@ -12,6 +12,9 @@ estate × 9:16 Reels.
 
 ---
 
+> **No mandatory style.** The look is chosen per job in the **Style Pass**
+> (`MOTION-UI-STYLE-LIBRARY.md`); Apple Standard is the house default, not a rule.
+>
 > **Start here: `AGENT-PROMPT.md`** (the copy-paste brief) and the
 > **`creative-director`** skill (intake -> options -> recommendation -> handoff).
 >

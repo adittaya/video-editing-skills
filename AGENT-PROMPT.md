@@ -69,8 +69,11 @@ PHASE 5 — BUILD & GATES.
   - Render/deliver only after both gates pass.
 
 HARD RULES
-- The look is APPLE STANDARD, mandatory and the only option, unless a preset or
-  a named documentary style is explicitly requested.
+- THE LOOK IS CHOSEN, NOT MANDATED. Pick it in the Style Pass (a motion style +
+  a UI style from MOTION-UI-STYLE-LIBRARY.md, and a caption style from
+  CAPTION-STYLES.md). Apple Standard is the house default and a strong starting
+  point for product/UI/corporate work — recommend it when it fits, recommend
+  something else when that fits better, and say why. No style is deprecated.
 - Captions: declare ONE style from CAPTION-STYLES.md and hold it; use styled,
   transparent-background (alpha) and chroma-key captions as needed.
 - The ADVANCED FEATURE CATALOGUE is mandatory where the concept needs it.

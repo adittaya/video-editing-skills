@@ -1,24 +1,25 @@
 # The Video Editing Skills Pack
 
-30 narrow, client-ready skills — one per editing style / client vertical — plus
+47 narrow, client-ready skills — one per editing style / client vertical — plus
 the master list of every style in the landscape.
 
 **Why narrow:** one generalist skill carries the *average* of every style
 (pacing tuned for nothing, graphics tuned for nothing). A podcast and an Apple
 product film are different crafts. Each skill here has exactly one voice.
 
-## THE LOOK — APPLE STANDARD ONLY (mandatory)
+## THE LOOK — chosen per job (no mandatory style)
 
-**Every skill in this pack uses one look: the Apple Standard.** There is no
-style menu and no alternative palette. The verified tokens (canvas
-`#ffffff`/`#f5f5f7`, text `#1d1d1f`/`#6e6e73`, the one blue `#0071e3`/`#0066cc`/
-`#2997ff`, the type ramp down to the 17px body, the 980px pill buttons, the
-one-shadow philosophy, the spring motion) are mandatory in all 30 skills.
+**There is no mandatory style.** The look is chosen in the **Style Pass**: a
+motion style + a UI style from `MOTION-UI-STYLE-LIBRARY.md`, and a caption style
+from `CAPTION-STYLES.md`, picked for the job and recorded in CONCEPT.md.
 
-Verticals differ **only** in what the graphics depict and which single accent
-carries meaning — never in the underlying system. Each skill's look section
-carries the full token set plus its vertical application; any other palette
-named anywhere in a skill is deprecated.
+The **Apple Standard** (canvas `#ffffff`/`#f5f5f7`, text `#1d1d1f`/`#6e6e73`, the
+one blue `#0071e3`/`#0066cc`/`#2997ff`, the 17px body ramp, 980px pill buttons,
+one shadow, spring motion) is the **house default** — a strong starting point for
+most product, UI and corporate work — and it is a **recommendation, not a rule**.
+Every skill also names the style natural to its vertical. If another style fits
+the brief better, the agent recommends it, says why, and uses it. **No style is
+mandatory and none is deprecated.**
 
 ## ▶ Copy-paste prompt (give this to your AI agent)
 
@@ -73,7 +74,7 @@ Hard rules:
 - The ADVANCED FEATURE CATALOGUE is mandatory where the concept needs it.
 - Obey the CAMERA LAW and the SENTENCE LAW.
 - If the task is a documentary, pick the style from DOCUMENTARY-STYLE-GUIDE.md.
-- The look is APPLE STANDARD unless a preset or named documentary style is asked.
+- The look is chosen in the Style Pass (Apple Standard is the house default; recommend the best-fit style and say why).
 - NEVER include voiceover or video clips in ASSETS-PROMPT.md. I supply the
   A-roll up front; ask for B-roll SEPARATELY. You generate images, audio, code.
 - Never invent facts; label every recreation, animation and composite.
@@ -112,11 +113,14 @@ Work in five phases, skipping none:
    (tools/qa_check.py + edit-qa-validator: audit, AI re-think, revalidate,
    EDIT-QA.md). Render/deliver only after both gates pass.
 
-Rules: Apple Standard look unless a preset/named documentary style is asked;
-captions from CAPTION-STYLES.md; the advanced feature catalogue is mandatory where
-the concept needs it; obey the Camera Law and the Sentence Law; never include
-voiceover or video clips in ASSETS-PROMPT.md (ask for B-roll separately); never
-invent facts; label every recreation, animation and composite.
+Rules: NO MANDATORY STYLE — choose the look in the Style Pass (a motion style +
+a UI style from MOTION-UI-STYLE-LIBRARY.md and a caption style from
+CAPTION-STYLES.md); Apple Standard is the house default, a recommendation, not a
+rule — recommend the best fit and say why; nothing is deprecated. Captions from
+CAPTION-STYLES.md; the advanced feature catalogue is mandatory where the concept
+needs it; obey the Camera Law and the Sentence Law; never include voiceover or
+video clips in ASSETS-PROMPT.md (ask for B-roll separately); never invent facts;
+label every recreation, animation and composite.
 
 Start by telling me which build skill you will use, then ask your intake
 questions.
