@@ -369,6 +369,10 @@ on-screen text. Every build declares ONE caption style and holds it.
 - Composite over the graphic layer with matched grain and colour; grade the
   subject and background together so the seam disappears.
 
+### Pick the style from CAPTION-STYLES.md
+Choose ONE named caption style — **Apple-Clean · Vox-Highlighter · Sticker-Pop ·
+Outline-Alpha · Karaoke-Word** — and declare it in CONCEPT.md.
+
 ### Request these in ASSETS-PROMPT.md
 The transparent caption PNGs / alpha clips go under **transparent images
 (PNG/alpha)** (category 2); the styled-caption font/style and any animated
@@ -420,6 +424,25 @@ Present the variants and ask the user directly:
 
 Then wait. If they want more, generate additional variants. **Render the full
 video only after they finalise** — both the variant they prefer and the cut.
+
+## QA GATE — validate before delivery (mandatory)
+
+Before the full render and again before delivery, run the **`edit-qa-validator`**
+skill. It does three passes:
+
+1. **AUDIT** — walk the MASTER CHECKLIST (every mandatory list in the pack: the
+   advanced toolset, the modern-standard features, the Camera Law, the Sentence
+   Law, the Caption & Text System, the visual narration layer, the render gate,
+   ethics and platform) and mark each item OK / WEAK / MISSING / N/A.
+2. **AI RE-THINK** — for every WEAK or MISSING item, propose the concrete fix:
+   what to add, where (scene / timecode / sentence), how (the exact move or kit),
+   why it improves the video, and the expected gain.
+3. **REVALIDATE** — re-audit after the fixes and produce the diff; PASS only when
+   no star-mandatory item is MISSING and the caption system, Camera Law and
+   Sentence Law are clean.
+
+Write the report as `EDIT-QA.md`. **The edit is not finished until the QA gate
+passes.**
 
 ## Platform & delivery standards (self-contained reference)
 Working standards (2026); re-verify before a paid campaign.
