@@ -12,8 +12,7 @@ and pacing are **pre-decided from a captured reference** instead of chosen.
 **Provenance.** Captured from "Turning ideas into visuals" (an editor portfolio
 reel, 31 s, 16:9) via a frame-level contact sheet (1 s sampling, 32 frames).
 Palette = **measured** (sampled from the frames). Motion, audio and exact cut
-times = **inferred** from frames. This is the pack's one sanctioned override of
-the Apple Standard: the user explicitly requested this style.
+times = **inferred** from frames. This is a captured style, requested by the user.
 
 **Scope.** Portfolio and personal-brand reels in this captured style: hook,
 identity, tools, client questions, proof, close. 20-40 s, 16:9 with a 9:16 cut.
@@ -22,9 +21,8 @@ identity, tools, client questions, proof, close. 20-40 s, 16:9 with a 9:16 cut.
 needs **the speaker's footage** (supplied by the user, not generated). All
 generatable assets get prompts in ASSETS-PROMPT.md.
 
-> **PRESET OVERRIDE — EXPLICITLY REQUESTED.** This preset is the pack's one
-> sanctioned exception to the Apple-Standard-only rule: the palette and
-> surfaces below are the captured style, requested by the user. The Apple
+> **CAPTURED STYLE.** The palette and surfaces below are the measured
+> reference, requested by the user. The Apple
 > Standard's type proportions, motion grammar, readability, word-sync and QA
 > still apply — only the palette and surfaces are overridden.
 
