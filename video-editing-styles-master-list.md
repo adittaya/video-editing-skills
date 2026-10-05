@@ -241,6 +241,7 @@ router: find the vertical, open that skill.
 | Reels / Shorts / TikTok retention | `short-form-retention` |
 | Podcast, interview, talking-head | `podcast-talking-head` |
 | Corporate / brand film, culture, investor | `corporate-brand-film` |
+| Documentary, mini-doc, observational, archival | `documentary-film` |
 | E-commerce / DTC product ads, UGC | `ecommerce-dtc-ads` |
 | YouTube long-form essay / explainer / doc | `youtube-long-form-essay` |
 | Real estate listing, agent, neighbourhood, CGI | `real-estate-video` |

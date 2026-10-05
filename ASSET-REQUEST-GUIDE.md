@@ -38,6 +38,22 @@ concept's asset manifest.
 
 ---
 
+# BEFORE THE RENDER — the 1 FPS contact sheet (mandatory)
+
+Never render the full video without sign-off. Before the final render:
+`ffmpeg -i build.mp4 -vf fps=1 sheet/f%04d.jpg`, tile the frames into a contact
+sheet in time order (each labelled with its timestamp), show it to the user, and
+wait. Render only after they finalise. It is the cheapest place to catch pacing,
+composition, safe-zone and continuity problems.
+
+# WHICH LANE IS THE A-ROLL? (function, not source)
+
+A-roll = whatever carries the meaning; B-roll = whatever supports it. In a
+talking-head piece the speaker is the A-roll. In a graphics-led piece the motion
+graphics ARE the A-roll and the footage becomes B-roll — the hybrid inversion.
+
+---
+
 # ASSETS-PROMPT.md IS ITSELF A PROMPT
 
 The file is not a spec sheet for a human to read — **it is a prompt you hand
