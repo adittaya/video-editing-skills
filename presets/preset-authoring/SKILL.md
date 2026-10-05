@@ -64,6 +64,84 @@ State plainly which of the three you got.
    breathes. From a video file, compute ASL; from frames, approximate.
 7. **Name the signature devices** — the 3–6 moves that make it feel like itself.
 
+## ADVANCED FEATURE USE-CASES (mandatory — the professional toolset)
+
+**"Mandatory" means: if the concept needs it, you use it.** These are the
+features that separate a professional edit from an amateur one. Reading
+"mandatory" is the prompt to reach for the feature; using the feature is what
+makes the video hold up. Full guide + terminal recipes:
+`ADVANCED-FEATURE-USE-CASES.md`.
+
+**Timeline & structure** — **multi-track timeline** (layer video/audio/effects,
+never a flat single track) · **multi-camera editing** (sync angles, cut on
+speaker/action) · **proxy editing** (cut proxies, re-render the same cut list on
+the originals) · **batch export** (every ratio from one master) · project
+collaboration.
+
+**Motion & animation** — **keyframing** (position, scale, opacity, rotation,
+blur on an eased curve) · **motion tracking** (bind text/effects to a moving
+object; lowpass the track first) · **masking & rotoscoping** (frame-by-frame
+isolation) · **speed ramping / time remapping** (speed curves across a beat) ·
+**stabilisation** (2-pass warp) · **frame blending / optical flow** (smooth slow
+motion).
+
+**Colour** — **colour correction** (exposure, white balance, contrast FIRST) ·
+**colour grading** (the look: LUT, film emulation, split-tone, SECOND) ·
+**scopes** (waveform, vectorscope, histogram, RGB parade — grade by the numbers)
+· **HDR grading** (only on request; tone-map to SDR for delivery).
+
+**Compositing & effects** — **chroma key** (green/blue removal with spill
+suppression and a clean edge) · **compositing / VFX** (combine layers into one
+scene) · **3D camera tracking** (solve the move, place 3D in real footage) ·
+**advanced transitions & effects** (blur, glow, glitch, light leaks, grain,
+chromatic aberration — each timed to a cut or beat).
+
+**Audio** — **noise reduction** (hiss, hum, room tone) · **EQ** (high-pass
+dialogue, de-mud, carve space for music) · **audio syncing** (by waveform or
+timecode) · **multi-track mixing** (dialogue/music/SFX; duck music 12–18 dB under
+voice) · surround/spatial only where the delivery needs it.
+
+**AI & smart** — **auto subtitles** (word-level timing drives captions AND the
+narration plan) · **AI background removal** (matte without a green screen) ·
+**auto reframing** (re-frame for 9:16 / 1:1 / 4:5 keeping the subject safe) ·
+**scene detection & auto cutting** (cut list from scene changes) · **AI
+colour/exposure correction** (first pass, then grade by hand).
+
+**Assets & stills** (for every generated image/graphic) — layer-based editing,
+layer masks, blending modes · frequency separation (skin retouch) · dodge & burn ·
+content-aware fill / object removal · perspective correction · RAW processing ·
+tone curves · HDR merge · panorama stitch · AI-assisted selection ·
+non-destructive workflow · vector editing (bezier) · gradient mesh · typography
+controls (kerning, tracking, leading) · symbol/asset libraries · artboards · grid
+systems · multi-format export.
+
+### The Camera Law (mandatory wherever there is a camera)
+1. **One camera wrapper only** — all zooms/pans from a single master camera;
+   never local ad-hoc transforms on nested elements.
+2. **One camera move at a time** — never stack camera transforms.
+3. **Every zoom has a reason** — READ / EMPHASIZE / REVEAL / FOLLOW / BREATHE.
+   Constant zoom = no zoom.
+4. **Do not cut while zoomed** — return to rest or hold the scene.
+5. **Motion blur only during fast motion** — `blur = clamp(v*k, 0, max)`, zero at
+   rest (start k ≈ 0.012, max ≈ 24 px). **Anchor zoom** sets the origin on the
+   target; **follow** keeps the subject in a safe zone with a damped spring.
+
+**The test:** walk the timeline. For each feature the concept needed, ask "is it
+there, and is it doing a job?" A missing needed feature — a flat single track, an
+ungraded image, a jittery tracked label — means the edit is not finished.
+
+**For this skill:** every preset applies the advanced toolset the concept needs — keyframing, motion tracking, chroma key, masking, colour grade, audio mixing and the AI features.
+
+### Sentence-level narration — the Sentence Law (mandatory)
+Every **sentence** of narration gets its own visual event, bound to that
+sentence's stressed word.
+- One sentence -> one visual beat (a cutaway, a reveal, a label, a count, a camera move).
+- Land the visual on the sentence's **stressed word** (±100 ms), not the sentence start.
+- If a sentence has no visual, either give it one or cut the sentence.
+- If a visual has no sentence, it belongs to a different beat.
+- The camera move (READ / EMPHASIZE / REVEAL) is itself a sentence-level event, bound to a word or phrase.
+
+
 ## MANDATORY FEATURE USE-CASES (the modern standard)
 
 Every preset build applies the mandatory feature set carried by the pack skills:
