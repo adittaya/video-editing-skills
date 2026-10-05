@@ -51,6 +51,8 @@ exists), say so and record it — the concept you write becomes the script.
 **Only once the source is in hand and analysed** do you write
 `ASSETS-PROMPT.md` — so every prompt reflects what the build actually needs.
 
+> **Captured style available:** `presets/preset-007-creator-kinetic-text` — see `presets/INDEX.md`.
+
 ## STEP 0.5 — A-ROLL PREP (matting first — mandatory when a person speaks)
 
 If this piece has a **person speaking to camera** (talking-head, voiceover,

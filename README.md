@@ -165,13 +165,14 @@ Also included: `tools/cutlist.py` (ripple/slip/slide cut-list renderer) and `too
 - **No-Clank Law** — aligned, consistent, smooth, restrained, clean sound.
 - **Runnable tools (`tools/`)** — `qa_check.py` (audits a project and writes `EDIT-QA.md`), `contact_sheet.py` (renders the V1/V2/V3 contact sheets), `cutlist.py`, `track_text.py`.
 - **QA validator (`edit-qa-validator`)** — the final gate on every build: audits the edit against every mandatory list (OK/WEAK/MISSING), **AI-re-thinks** how to add each missing feature and why it improves the video, then **revalidates** and writes `EDIT-QA.md`. Every skill now ends with a QA GATE pointing to it.
-- **Captured presets (`presets/`)** — full skills locked to a measured reference style (001 Blue Glass; 002 Realtor Word-Caption; 003 SaaSWave Tactile Purple; 004 Cloudy eSport Neon; 005 Higgsfield Dark-UI).
+- **Captured presets (`presets/`)** — full skills locked to a measured reference style (001 Blue Glass; 002 Realtor Word-Caption; 003 SaaSWave Tactile Purple; 004 Cloudy eSport Neon; 005 Higgsfield Dark-UI; 006 Podcast-Overlay Explainer; 007 Creator Kinetic-Text).
 - **Caption style library (`CAPTION-STYLES.md`)** — 5 named styles: Apple-Clean · Vox-Highlighter · Sticker-Pop · Outline-Alpha · Karaoke-Word.
 - **Caption & text system** — styled text captions · transparent-background (alpha) captions · chroma-key text & subject, with the style sheet, word-level timing, alpha/despill/choke/light-wrap specs, and a text-motion surprise pack (kinetic typography, word-pop, text-behind-subject).
 - **Pipeline connectivity law** — everything is connected: SOURCE → CONCEPT (sentence table + camera track + contact-sheet plan) → ASSETS-PROMPT → BUILD → RENDER GATE → SIGN-OFF → RENDER; the chosen contact-sheet variant is written back into CONCEPT.md, and a new contact sheet means a new CONCEPT revision.
 - **Contact-sheet variants (render gate)** — before the full render the agent offers **V1 Classic Grid · V2 Storyboard Filmstrip · V3 Pro QC Sheet**, presents them, and asks "did you like any of these, or shall I generate more variants?" Render only after sign-off.
 - **Edit Map (`EDIT-MAP.md`)** — every kind of edit and its fast path (the first job, the skill, the fast features, the trap).
 - **A-roll matting (`skills/a-roll-matting`)** — the FIRST job when a person speaks: get the character off the background (chroma key / temporal AI matting / rembg / roto), with a verified local recipe and `tools/matte.py`.
+- **PRESET -> SKILL LINKAGE LAW** — capturing a preset also patches its **parent skill** with the reference-learned patterns, so the AI that triggers the *skill* (not the preset) gets smarter from every reference.
 - **Preset index (`presets/INDEX.md`)** — the 5 captured styles, with "ask for this when…".
 - **Agent prompt (`AGENT-PROMPT.md`)** — the copy-paste brief: the agent runs INTAKE → OPTIONS → RECOMMENDATION (its own thinking + trade-offs) → PLAN → BUILD & GATES.
 - **Creative director (`creative-director` skill)** — the front door: collects the brief, offers 2–3 directions, scores and recommends one, then hands off.

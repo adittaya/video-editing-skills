@@ -51,6 +51,27 @@ exists), say so and record it — the concept you write becomes the script.
 **Only once the source is in hand and analysed** do you write
 `ASSETS-PROMPT.md` — so every prompt reflects what the build actually needs.
 
+## REFERENCE-LEARNED PATTERNS (from captured presets)
+
+Real-world patterns measured from reference edits in this vertical. Apply them;
+the matching preset locks the exact look (see `presets/INDEX.md`).
+
+**From `presets/preset-007-creator-kinetic-text`** (a 76 s creator talking-head,
+"infotainment"):
+- **Kinetic word-by-word text overlaid on the chest**, synced to speech
+  (~every 0.5 s) — the text IS the edit.
+- One accent colour (orange) for a **script** connective + **pill badges**;
+  everything else white/black.
+- **Outlined grey section numerals** (01 / 02 / 03) to mark structure.
+- **Screenshot / UI proof** cutaways (dark-mode UI, phone mockups, DMs).
+- A **colour-inverted emphasis frame** for a hard beat.
+- A **3-step structure** (hook / body / CTA) made explicit on screen.
+- Fast: ~2 s ASL.
+
+**From `presets/preset-002-realtor-word-caption`**: word-by-word captions with a
+two-colour keyword accent system; a strong hook ("STOP SCROLLING"); a frosted-
+glass pill end card.
+
 ## STEP 0.5 — A-ROLL PREP (matting first — mandatory when a person speaks)
 
 If this piece has a **person speaking to camera** (talking-head, voiceover,

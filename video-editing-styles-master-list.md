@@ -288,6 +288,8 @@ router: find the vertical, open that skill.
 | **Captured style — SaaSWave tactile-purple product reel** | `presets/preset-003-saaswave-tactile-purple` |
 | **Captured style — Cloudy eSport neon montage** | `presets/preset-004-cloudy-esport-neon` |
 | **Captured style — Higgsfield dark-UI product demo** | `presets/preset-005-higgsfield-dark-ui` |
+| **Captured style — podcast-overlay explainer (talking-head + graphics)** | `presets/preset-006-podcast-overlay-explainer` |
+| **Captured style — creator kinetic-text talking-head** | `presets/preset-007-creator-kinetic-text` |
 | E-commerce / DTC product ads, UGC | `ecommerce-dtc-ads` |
 | YouTube long-form essay / explainer / doc | `youtube-long-form-essay` |
 | Real estate listing, agent, neighbourhood, CGI | `real-estate-video` |

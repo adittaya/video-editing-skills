@@ -59,6 +59,23 @@ exists), say so and record it — the concept you write becomes the script.
 **Only once the source is in hand and analysed** do you write
 `ASSETS-PROMPT.md` — so every prompt reflects what the build actually needs.
 
+## REFERENCE-LEARNED PATTERNS (from captured presets)
+
+Real-world patterns measured from reference edits in this vertical. Apply them;
+the matching preset locks the exact look (see `presets/INDEX.md`).
+
+**From `presets/preset-006-podcast-overlay-explainer`** (a 56.6 s single-presenter
+explainer, "podcast framing + explainer engine"):
+- One **static medium shot** — motion lives in the graphics, not the camera.
+- Alternate **on-speaker overlays** (face visible) with **full-screen cutaways** —
+  never three graphic beats in a row.
+- **UI mime**: build a real interface on screen in sync with the speech (a search
+  bar that types; results that appear one by one).
+- **One yellow keyword** per beat; white drop-shadow captions.
+- **Dark, desaturated footage + bright graphics** — the contrast is the strategy.
+- **Breathing stretches** of unbroken talking-head (~10 s) so the graphic beats land.
+- Resolve into a **brand end-card**.
+
 ## STEP 0.5 — A-ROLL PREP (matting first — mandatory when a person speaks)
 
 If this piece has a **person speaking to camera** (talking-head, voiceover,

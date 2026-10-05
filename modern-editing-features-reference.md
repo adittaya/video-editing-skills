@@ -594,3 +594,26 @@ skill, the fast features, the trap) across 10 families: talking-person, product
 **`presets/INDEX.md`** lists the five captured styles (Blue Glass, Realtor
 Word-Caption, SaaSWave Tactile Purple, Cloudy eSport Neon, Higgsfield Dark-UI)
 with "ask for this when…".
+
+
+## Part 21 — Presets 006-007 and the preset -> skill linkage law
+
+**preset-006 Podcast-Overlay Explainer** (from a 56.6 s single-presenter
+explainer): one static dark talking-head carrying a bright graphics layer —
+on-speaker overlays alternated with full-screen cutaways, UI mime (a search bar
+built in sync with the speech), one yellow keyword, white drop-shadow captions,
+dark footage + bright graphics, breathing stretches, a brand end-card. Parent
+skill: `podcast-talking-head`.
+
+**preset-007 Creator Kinetic-Text** (from a 76 s creator talking-head): stark
+white studio, presenter in a black tee, kinetic word-by-word text on the chest,
+an orange script + pill badges, outlined grey section numerals (01/02/03),
+screenshot/UI proof cutaways, a colour-inverted emphasis frame, a 3-step
+structure, a brand end-card. Parent skill: `personal-brand-creator`.
+
+**PRESET -> SKILL LINKAGE LAW (mandatory):** capturing a reference into a preset
+also patches the **parent skill** with a "Reference-learned patterns" section (the
+4-8 concrete patterns measured from the reference) plus a pointer each way. A
+preset locks ONE look; the *skill* must get smarter from every reference captured.
+Applied here: `podcast-talking-head` <- preset-006; `personal-brand-creator` <-
+preset-007; pointers in `youtube-long-form-essay` and `short-form-retention`.

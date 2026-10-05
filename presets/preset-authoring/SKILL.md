@@ -12,6 +12,25 @@ one `presets/preset-NNN-<name>/SKILL.md`.
 **This is the one sanctioned override of the Apple Standard** — a preset is
 explicitly requested by the user. Everywhere else, Apple Standard governs.
 
+## PRESET -> SKILL LINKAGE LAW (mandatory)
+
+A preset is not a dead end. When you capture a reference into a preset you MUST
+also **patch the parent skill** it belongs to, so the AI that triggers the *skill*
+by name (not the preset) inherits the real-world learnings.
+
+For every new preset:
+1. Name its **parent skill** (e.g. a podcast-explainer preset -> `podcast-talking-head`).
+2. Add a **"Reference-learned patterns"** section to that skill: the 4-8 concrete
+   patterns measured from the reference (the camera rule, the overlay grammar, the
+   type system, the rhythm).
+3. Add a one-line **pointer** in the parent skill to the preset, and in the preset
+   to the parent skill (the "Parent skill (PRESET -> SKILL LINKAGE)" line).
+4. Keep the pack's laws (Camera Law, Sentence Law, caption system, gates) unless
+   the reference genuinely differs - then say so.
+
+This is why "the skill vs the real editing concept is the main thing": the preset
+locks ONE look, but the *skill* must get smarter from every reference captured.
+
 ## STEP 0 — SOURCE GATE (mandatory)
 
 Before anything, obtain at least one of: the **video clip**, the
