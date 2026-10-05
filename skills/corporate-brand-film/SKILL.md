@@ -54,10 +54,24 @@ exists), say so and record it — the concept you write becomes the script.
 
 With the source analysed, write **CONCEPT.md** — the single plan the whole build
 follows. **Everything is connected: every line here drives a later stage, and
-every later stage writes its result back here.**
+every later stage writes its result back here.** Follow `THINKING-SYSTEM.md` — the
+planning stack, the four lenses (EZRA), and (when you have only a script) the
+only-a-script path.
 
 - **Premise** — the video in one sentence + its emotional arc.
-- **Style** — the named style (this skill) and how it applies here.
+- **THINKING PASS (mandatory).** Work the stack **top-down** — goal -> audience ->
+  angle -> concept -> script -> beats -> shots — and record:
+  - the target **emotion** per section (EZRA: Emotion, Story, Rhythm, Action);
+  - the **beat map** with the **two-column (said | shown)** filled for every row;
+  - the **visual plan** table: beat -> viewer question -> visual evidence ->
+    risk to review -> final asset;
+  - the **retention check** — where the video is most likely to lose people, and
+    the fix.
+- **Style** — the named build style (this skill) and how it applies here.
+- **STYLE PASS (mandatory).** Pick deliberately and record: the **motion style**
+  and the **UI style** from `MOTION-UI-STYLE-LIBRARY.md`, and the **caption
+  style** from `CAPTION-STYLES.md`. One primary + at most one garnish; name the
+  chosen style's failure mode.
 - **Segment plan** — the beat map with timings, taken from the analysis.
 - **Sentence table** — one row per narration sentence: sentence -> visual concept
   -> lane (A speaker / B visual) -> the **stressed word** to land on -> timing ->
@@ -69,16 +83,10 @@ every later stage writes its result back here.**
   `ADVANCED-FEATURE-USE-CASES.md` — camera & framing, motion & animation, speed &
   time, transitions, text, colour, compositing & VFX, audio, AI, stills & design,
   workflow — and record for **every** feature whether it applies and how:
-
   `feature -> applies? -> where (scene/timecode/sentence) -> how (implementation)
-  -> why (the job it does)`
-
-  **Every group is visited; no group is skipped.** The concept is **not finished
-  until every applicable advanced feature has a row** (a "yes" with no *how* is
-  not a plan; every "no" is a deliberate choice). This is the step where you
-  think about **how you will implement the advanced features before building** —
-  zoom in/out, character/face zoom, focus pulls, keyframing, motion tracking,
-  chroma key, grade, captions, and the rest.
+  -> why (the job it does)`. **Every group is visited; no group is skipped.** The
+  concept is not finished until every applicable advanced feature has a row (a
+  "yes" with no *how* is not a plan; every "no" is a deliberate choice).
 - **Contact-sheet plan** — which sign-off variants will be built (V1 Classic Grid
   / V2 Storyboard Filmstrip / V3 Pro QC Sheet) and why. **The variant the user
   picks is written back here.**
@@ -93,8 +101,9 @@ Everything is connected — no stage is decided in isolation, and no stage is
 skipped:
 
 - **SOURCE** -> analysed into `SOURCE-ANALYSIS.json`, which feeds the concept.
-- **CONCEPT** -> drives the asset manifest, the camera track, the sentence table
-  and the **feature map**; it is the single source of truth for the build.
+- **CONCEPT** -> drives the thinking pass, the style pass, the asset manifest, the
+  camera track, the sentence table and the feature map; it is the single source of
+  truth for the build.
 - **ASSETS-PROMPT** -> written from the concept's manifest; nothing unplanned
   appears in the build.
 - **BUILD** -> follows the concept's sentence table, camera track and feature map
