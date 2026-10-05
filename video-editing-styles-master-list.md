@@ -282,6 +282,9 @@ router: find the vertical, open that skill.
 | **QA — validate any finished edit (audit / re-think / revalidate)** | `edit-qa-validator` |
 | **START — intake, options, recommendation (any video)** | `creative-director` |
 | **Captured style — realtor word-caption talking-head reel** | `presets/preset-002-realtor-word-caption` |
+| **Captured style — SaaSWave tactile-purple product reel** | `presets/preset-003-saaswave-tactile-purple` |
+| **Captured style — Cloudy eSport neon montage** | `presets/preset-004-cloudy-esport-neon` |
+| **Captured style — Higgsfield dark-UI product demo** | `presets/preset-005-higgsfield-dark-ui` |
 | E-commerce / DTC product ads, UGC | `ecommerce-dtc-ads` |
 | YouTube long-form essay / explainer / doc | `youtube-long-form-essay` |
 | Real estate listing, agent, neighbourhood, CGI | `real-estate-video` |

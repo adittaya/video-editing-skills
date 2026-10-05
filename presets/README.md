@@ -15,7 +15,10 @@ demand. Nothing here is an "override"; it is one of the available styles.
 |---|---|
 | `preset-authoring/SKILL.md` | The skill that turns a reference (contact-sheet PDF, video file, or link) into a preset. Read this first. |
 | `preset-001-zayyan-blue-glass/SKILL.md` | The first captured preset — from the "Turning ideas into visuals" reel. |
-| `preset-002-realtor-word-caption/SKILL.md` | The second captured preset — a bright, high-key vertical talking-head reel with word-by-word bold captions and a two-colour keyword accent system (blue/cyan + orange/amber). |
+| `preset-002-realtor-word-caption/SKILL.md` | A bright, high-key vertical talking-head reel with word-by-word bold captions and a two-colour keyword accent system (blue/cyan + orange/amber). |
+| `preset-003-saaswave-tactile-purple/SKILL.md` | A bright, high-key 3D "digital workspace" product reel — photoreal objects in a purple/magenta wash, floating UI cards, a purple cursor, a morph-to-logo. |
+| `preset-004-cloudy-esport-neon/SKILL.md` | A high-energy vertical eSports montage — blue-neon architecture, silhouettes, glow/bloom, glitch/whip transitions, 3D milestone numerals, a gold trophy. |
+| `preset-005-higgsfield-dark-ui/SKILL.md` | A high-contrast dark-mode product demo — white UI floating in a black void, 2D→3D spatial UI transforms, a neon lime-green accent, a neon-blue command line. |
 
 ## A preset is a full skill
 
