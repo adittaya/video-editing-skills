@@ -1,9 +1,22 @@
 ---
-name: crypto-web3-launch
-description: "Crypto and Web3 video: protocol explainers, product launches, community reels and ecosystem updates. Clean Apple-technical look, data-accurate on-chain visuals, with strict risk-disclosure and no-promise rules and a mandatory asset-request protocol. Use for protocols, exchanges, wallets, DAOs and NFT/gaming projects."
+name: documentary-film
+description: "Documentary-style video: observational films, mini-docs, subject-led stories and archival pieces. Truth-first assembly, interview-led structure, natural sound, long takes, graded footage, and a mandatory asset-request protocol. Use for documentaries, mini-docs, brand documentaries and subject-led storytelling."
 ---
 
-# Crypto / Web3 Launch & Explainer
+# Documentary Film
+
+**Scope.** Observational documentaries, mini-docs, subject-led stories, archival
+films, brand documentaries. Truth-first: the edit serves what actually happened.
+
+**Asset tier: 2 — MANDATORY.** A documentary cannot be invented. Required: **the
+interviews, the observational footage and any archival material**, plus consent
+for every person shown. Request and wait.
+
+> **THE LOOK IS APPLE STANDARD — MANDATORY AND THE ONLY OPTION.** Every graphic,
+> card, caption and colour uses the Apple Standard in the look section. Any other
+> palette or style mentioned anywhere in this file is deprecated. Vertical
+> differences are only in WHAT the graphics depict and which single accent
+> carries meaning.
 
 > **THE LOOK IS APPLE STANDARD — MANDATORY AND THE ONLY OPTION.**
 > Every graphic, card, caption and colour in this video uses the Apple Standard
@@ -11,9 +24,14 @@ description: "Crypto and Web3 video: protocol explainers, product launches, comm
 > deprecated. Vertical differences are only in WHAT the graphics depict and
 > which single accent carries meaning.
 
-**Scope.** Launch films (30–90 s), protocol explainers (60–120 s), community/AMA reels (15–45 s), roadmap and ecosystem updates.
 
-**Asset tier: 1–2.** Tier 1 = an animated explainer and kinetic launch film are synthesizable from the client's facts. Tier 2 = founder/community footage, real product captures and any numbers/metrics need the client's own files. **Ask first.**
+**Scope.** Brand films, company stories, culture and recruitment films, investor
+updates, thought-leadership pieces, event films. Interview-led documentary
+grammar with a graded, premium finish.
+
+**Asset tier: 1–2.** Tier 1 = a motion-graphics-led brand film (synthesized).
+Tier 2 = interview-led needs **real footage**: interviews, B-roll, locations,
+people. **Ask which path and request accordingly.**
 
 ## STEP 0 — SOURCE GATE (mandatory, BEFORE the assets prompt)
 
@@ -92,33 +110,41 @@ the user for it **separately**; clips are never listed in this prompt file.
 
 Full format, the kit shape, and a worked example: `ASSET-REQUEST-GUIDE.md`.
 
-## 1. Intake — ask before you build
-One batch, every question skippable; unanswered = marked ASSUMPTION.
-1. What is the product/protocol, and what ONE thing does it do better for the user?
-2. Format: launch film, explainer, community reel or update? Audience: retail, developers or institutions?
-3. Which numbers (TVL, users, supply, dates) may be shown, with source and as-of date?
-4. Which risk/regulatory disclosures are required in the target jurisdictions?
-5. Brand kit, product captures, community footage?
-
-Then emit **ASSET-REQUEST.md**:
-```
-# ASSET REQUEST — <project>
-## Facts & metrics (MANDATORY) — each with source, link and as-of date
-## Required risk disclosures (MANDATORY) — verbatim
-## Product captures / UI — real, not mocked unless disclosed
-## Brand — logo, colours, fonts, token/mark usage rules
-## Community/founder footage (optional)
-## Music & SFX — prompts in ASSETS-PROMPT.md
-```
-Tier 2 elements: STOP and wait for the client's real files. Never fabricate a real person, listing, event or testimonial.
-
-## 2. Structure
-- **Hook (0–3 s):** the problem or promise in one line, motion on the first frame.
-- **What it is (3–20 s):** one diagram showing flow of value/steps.
-- **Why it matters (20–45 s):** 2–3 benefits with real metrics.
-- **How to start (45–60 s):** one action; link/URL.
-- **Disclosure (last 4 s):** risk wording, legible.
-
+## 1. Intake - ask before you build
+1. Whose story is this, and what actually happened (the true arc)?
+2. What access do we have - interviews, observational time, archival?
+3. What must never be implied or dramatised (accuracy limits)?
+4. Consent status for every person, and archival rights?
+Then produce **ASSETS-PROMPT.md** and request the footage + consents.
+## Interviews (MANDATORY)
+1. Each subject to camera - 1080p+, lapel audio separate, 20+ min raw per person
+## Observational footage (MANDATORY)
+1. The subject doing the thing - long unbroken takes (30s+), no commentary
+## Archival / stills
+1. Photos, documents, footage from the period - with rights/clearance
+## Natural sound (MANDATORY)
+1. Room tone, ambience and the real sounds of the place (not only music)
+## Music & SFX - prompts in ASSETS-PROMPT.md (voiceover supplied separately)
+## Titles & brand
+1. Title cards, lower-thirds and any client marks - Apple Standard
+## Consent & rights (MANDATORY)
+1. Signed consent for every person shown; archival licence per item
+## 2. Structure - documentary grammar
+- **Cold open** - one arresting moment or line (5-15s), no context yet.
+- **Act 1 - the world** - who, where, the situation as it stands.
+- **Act 2 - the turn** - the problem, the change, the conflict; the stakes.
+- **Act 3 - the resolution** - what happened, honestly (including if it did not work).
+- **Close** - the line that lands; a quiet button, not a hard CTA.
+Runtime 8-25 min typical; chapters at act/theme boundaries.
+## 3. The edit
+- **Observational pacing:** let shots run (3-8s, longer for stillness). This is
+  the opposite of retention editing - do not chop.
+- **Natural sound first:** the room, the work, the ambience carry the scene;
+  music is sparing and never manipulative.
+- Interviews carry the argument; observational footage carries the truth.
+- J/L cuts across scenes; hide interview edits under observational footage.
+- Archival: full frame where possible, sources labelled.
+- **Never manufacture a moment.** If it did not happen on camera, say so in text.
 ## 3. The look — THE APPLE STANDARD (mandatory; the only look)
 
 This pack has **one look**. Every skill uses the Apple Standard — there is no
@@ -154,38 +180,17 @@ underlying system. Any other palette named anywhere in this file is deprecated.
 - **Layout:** symmetric, centred, one focal point, >=30% whitespace, <=6
   elements per scene.
 
-**Vertical application for this skill:** the tech is explained in Apple-clean cards and diagrams; the accent carries the token/feature. No neon cyberpunk.
-## 4. The edit
-- Fast cuts 1–2 s for launch, 3–5 s for explainers; kinetic type lands on beats.
-- Diagrams draw on the narration, one concept per step.
-- Count-ups finish on the spoken number; label units and chain/network.
-- Never show price charts as implied predictions.
-
+**Vertical application for this skill:** documentary footage graded natural and
+matched; observational scenes graded neutral; titles and lower-thirds are Apple
+cards; the accent marks one chapter or one key term - never a "mood" colour.
 ## 5. Audio
-Electronic bed 100–140 BPM for launch, minimal for explainers; SFX on diagram steps. Voice highest. −14 LUFS YouTube/X, −16 social, −1 dBTP.
-
-## Industry benchmarks (working conventions)
-- Launch 30–60 s; explainer 60–120 s; community reel 15–45 s; X/Twitter autoplay often muted, so rely on visual mapping.
-- Every metric: source + as-of date on screen.
-- Risk disclosure ≥ 4 s on screen, ≥ ~24 px at 1080p.
-- Provide captions (SRT) and a 9:16 cut.
-
-## Worked example
-**Example — 45 s protocol explainer**
-| t | Beat | Edit |
-|---|---|---|
-| 0–3 | Hook | "Swap without a middleman" text, glitch-in |
-| 3–20 | How it works | 3-node flow diagram draws on narration ① |
-| 20–35 | Proof | client metric count-up with source + date ① |
-| 35–41 | Start | URL pill, one CTA |
-| 41–45 | Disclosure | verbatim risk text |
-
-## Common mistakes to avoid
-- Implying profit or price targets.
-- Metrics without source/date.
-- Fake UI mockups presented as the real product.
-- Hype language for numbers instead of stating them.
-
+Natural sound is the bed - room tone, ambience, the real sounds of the work.
+Music sparing and licensed; duck -18 to -24 dB under speech. Speech -16 LUFS,
+true peak <= -1 dBTP. Never use music to force an emotion the footage has not
+earned.
+## 6. Delivery
+16:9 1080p/4K; 8-25 min typical; chapters. -14/-16 LUFS. Cutdowns: a 90s and a
+30s version, plus a 9:16 cut. Deliver a transcript.
 ## Visual narration layer — full spec (mandatory wherever a person speaks)
 The market-dominant format: the speaker carries the voice, the **visuals carry the
 meaning**. Whoever is speaking — on camera, walking, or voiceover — the video
@@ -224,14 +229,34 @@ or cutaway; every list gets a build-in with one item per spoken item.
 - Lower-third: in at first speech, on screen 4–5 s, out ≥ 0.3 s before the next cut.
 - Cutaway length = the length of the spoken idea (usually 2–5 s); return to speaker on the sentence boundary.
 
-## Signature techniques for this style (use these, with the recipes below)
-- **Apple clean-technical system** — one accent only; a subtle RGB split on beats (sparingly, recipes 4, 21).
-- **Flow diagrams that draw** node-to-node on narration (SVG/GSAP via HyperFrames).
-- **Metric count-ups with source + as-of date**, chain/network named.
-- **Shader-style transitions** (flash-through-white, glitch) — one signature, reused sparingly.
-- **Real product capture or labelled mock UI**; never imply live results from a mock.
-- **Verbatim risk disclosure** ≥ 4 s; no price-prediction visuals.
-
+## Industry benchmarks (working conventions)
+- ASL 3-8s (far longer than retention editing); silence is allowed and used.
+- 8-25 min typical; chapters at act/theme boundaries.
+- Interviews cut on the breath; observational takes are allowed to breathe.
+- Natural sound is present in almost every scene.
+## Worked example
+| t | Beat | Edit |
+|---|---|---|
+| 0:00 | Cold open | the single most arresting line or image, no context |
+| 0:30 | Title card | Apple title card; subject introduced |
+| 1:00 | Act 1 | the world - interviews + observational establishing |
+| 4:00 | Act 2 | the turn - the problem; stakes raised |
+| 9:00 | Act 3 | the resolution, honestly |
+| 12:00 | Close | the line that lands; a quiet button |
+## Common mistakes to avoid
+- Chopping observational footage like a vlog (let it breathe).
+- Music carrying emotion the footage did not earn.
+- Implying events that were not filmed (fabrication).
+- Missing consent or archival rights.
+- Making the subject perform rather than observing.
+## Signature techniques for this style
+1. **Cold open on a real moment** - no context, just the truth of it.
+2. **Observational long take** - the camera waits; the subject forgets it.
+3. **Natural-sound scene** - ambience carries the scene with no music.
+4. **Archival integration** - period material, labelled and respected.
+5. **Act-turn interview** - the line that reframes everything, cut on the breath.
+6. **Honest resolution** - what actually happened, including failure.
+7. **Quiet button** - a closing line, not a hard CTA.
 ## Modern editing toolkit (techniques editors use today + how to do them from the terminal)
 
 ### A. The technique catalogue — what top editors actually reach for
@@ -490,7 +515,7 @@ open(out,'w').write(hdr+"\n".join(ev)); print(len(ev),"tracked frames ->",out)
 - Do not copy a creator's specific artwork, brand or wording. Match the *system* (hierarchy, rhythm, motion), never the content.
 
 ### H8. Hybrid dial for this skill
-**Default dial: 3: accent glow, subtle glitch on beats, flow-diagram draws, UI cards; risk disclosure verbatim.** Ask the client to confirm; if they have not supplied the H4 assets, drop one level and say what unlocks the next.
+**Default dial: 1 (restrained): accent colour, hierarchy lower-thirds, subtle push, depth blur; no flash/glitch.** Ask the client to confirm; if they have not supplied the H4 assets, drop one level and say what unlocks the next.
 
 ## WHICH LANE IS THE A-ROLL? (function, not source)
 
@@ -578,8 +603,11 @@ Hook/first frame verified · loudness + true peak measured, not guessed · safe
 zones checked in platform overlay · captions file delivered · colour tags set ·
 CFR confirmed · file plays on a phone in sound-off AND sound-on.
 
-## 6. QA
-Every figure sourced and dated · risk text verbatim and legible · no price predictions · product visuals real or disclosed · captions delivered. Director's review: would the target viewer understand and trust this in the first 5 seconds?
+## 7. QA
+Every claim has a picture · interviews matched and clean · no filler · grade
+consistent · music licensed · no invented facts (verify every number and quote).
+Director's review: does it move someone who does not know the company?
 
-## 7. Hard limits
-No financial advice, no return or price promises, no invented metrics, no endorsements of tokens. Risk disclosures verbatim. Disclose mockups/recreations. No voice generation.
+## 8. Hard limits
+No fabricated quotes or statistics — verify against source. No voice
+generation. No unlicensed music or footage. Disclose anything recreated.
