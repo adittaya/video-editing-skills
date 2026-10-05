@@ -504,6 +504,61 @@ lane is defined by FUNCTION, never by whether it came off a camera.
 - So when the visual narration carries the meaning, treat the graphics as the
   spine: plan them first, bind them to the words, and let the footage serve them.
 
+## MANDATORY FEATURE USE-CASES (the modern standard)
+
+These are not optional extras. Each has a job; if the job is missing, the edit
+reads as amateur. Apply what the concept needs — the items marked **★** apply to
+almost every build.
+
+**Camera & motion**
+- **★ Zoom in (anchor zoom)** — bring a detail to readable size; origin on the
+  target; return to rest before the next cut.
+- **★ Zoom out (reveal)** — pull back for context after a detail; wide <-> detail
+  rhythm is the pacing engine.
+- **★ Motion tracing / follow camera** — the camera follows the cursor or the
+  action (safe-zone follow, spring-damped); never leave motion under a static
+  frame.
+- **Slow push** — <=8% over 3-5s for tension.
+- **Camera shake on impact** — a brief 2-4 frame shake on a hit.
+- **Speed ramp** — slow->fast or fast->slow across a key beat.
+- **Motion blur (velocity)** — blur only while fast; exactly 0 at rest.
+
+**Keyframing & animation**
+- **★ Keyframe everything** — position, scale, opacity, rotation, blur; nothing
+  moves without keyframes and a curve.
+- **★ Easing curves (bezier)** — every move eased, never linear; curve the PATH
+  (bezier), not just the timing.
+- **Mask / wipe reveal** — draw-on reveals, mask transitions, trim-path draws.
+- **Parallax / 2.5D depth** — layers move at different rates (<=3-6% travel).
+- **Freeze frame / hold** — stop on the moment that matters.
+
+**Text & data**
+- **★ Kinetic text / word-pop** — words appear on the beat; one accent keyword
+  per line.
+- **★ Count-up numbers** — every stat animates to its value on the spoken word.
+- **Text tracked to an object** / **text behind the subject** — for hybrid pieces.
+- **Callouts & arrows** — draw-on annotations pointing at the thing.
+
+**UI & product (mandatory for ANY demo)**
+- **★ Readability zoom** — any UI text the viewer must read renders >=4% of frame
+  height (>=44px at 1080p).
+- **★ Micro-interactions** — hover, press, ripple, toggle, focus; the UI answers
+  the cursor.
+- **★ Screen transitions** — push/pull navigation, modal rise + scrim, sheet slide.
+- **★ Cursor physics** — bezier path, minimum-jerk timing, overshoot, click anatomy.
+- **Comparison split / PiP** — two states side by side.
+- **Screen replacement** — UI on a device.
+
+**Edit & finish**
+- **★ Cut-on-beat / cut-on-action** — cuts land on the beat or mid-movement.
+- **★ A sound for every cut** — whoosh/impact/tick; silence before the biggest hit.
+- **★ Correct then grade** — exposure and white balance first, then the look.
+- **Seamless loop** — for social/web loops (end state = start state).
+
+**The test:** open the finished timeline and ask, for each ★, "did this build use
+it where the concept needed it?" If a needed ★ is missing, the edit is not
+finished.
+
 ## RENDER GATE — the 1 FPS contact sheet (mandatory before the full render)
 
 **Never render the full video without sign-off.** Before the final render:
