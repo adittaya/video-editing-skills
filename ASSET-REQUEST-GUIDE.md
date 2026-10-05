@@ -38,7 +38,11 @@ concept's asset manifest.
 
 ---
 
-# THE MANDATORY FEATURE USE-CASES (modern standard)
+# THE MANDATORY FEATURE USE-CASES (modern standard + advanced toolset)
+See `ADVANCED-FEATURE-USE-CASES.md` for the full professional toolset (multi-track,
+colour/scopes/HDR, chroma key, motion tracking, rotoscoping, multicam, speed
+ramping, stabilisation, 3D tracking, audio mixing, AI features, stills craft) and
+the Camera Law.
 
 Before the render gate, confirm the build used the required techniques where the
 concept needs them: anchor zoom in/out, motion tracing, keyframing, bezier
@@ -135,6 +139,30 @@ produce a **self-contained kit folder**, exactly like this:
 ```
 Ask for it zipped, with a README, and with the palette exposed as variables so it
 can be recolored without editing the code.
+
+**Advanced-feature kits to request (pick what the concept needs).** Beyond the
+graphics, ask the coding agent for the *tooling* the build uses, each as its own
+kit:
+- **camera-track** — one master camera wrapper with a per-frame resolver
+  (anchor zoom, follow/safe-zone spring, velocity->motion-blur), driven by a
+  keyframe array (READ / EMPHASIZE / REVEAL / FOLLOW / BREATHE).
+- **motion-track** — a point/planar tracker that binds a DOM element to a moving
+  target, with a lowpass on the track.
+- **chroma-key** — a canvas/WebGL green-screen keyer with spill suppression and a
+  matte choke control.
+- **mask-rotoscope** — an SVG/canvas mask tool for frame-by-frame isolation and
+  reveals.
+- **grade-stack** — a CSS/WebGL colour pipeline (exposure, white balance,
+  contrast, LUT, split-tone) with a scope readout (waveform/vectorscope).
+- **speed-ramp** — a time-remap curve editor (keyframed speed with easing).
+- **audio-mix** — a multi-track mixer stub (dialogue/music/SFX buses, ducking,
+  EQ, noise-reduction placeholder).
+- **subtitle-sync** — a word-level caption engine fed by the transcription JSON.
+- **reframe** — an auto-reframe helper that keeps a subject inside 9:16/1:1/4:5
+  safe zones.
+Each kit uses the same folder shape (`index.html`, `styles.css`, `README.md`,
+`assets/`) and exposes its values as CSS/JS variables.
+
 
 ---
 

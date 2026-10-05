@@ -12,6 +12,12 @@ estate × 9:16 Reels.
 
 ---
 
+> **The advanced toolset is mandatory in every skill.** See
+> `ADVANCED-FEATURE-USE-CASES.md` (multi-track, colour/scopes/HDR, chroma key,
+> motion tracking, rotoscoping, multicam, speed ramping, stabilisation, 3D
+> tracking, audio mixing, AI features, stills craft, the Camera Law and the
+> Sentence Law).
+>
 > **Documentary has its own router.** For the full documentary family (14 styles
 > + the Nichols modes + the selector), see `DOCUMENTARY-STYLE-GUIDE.md`.
 

@@ -33,12 +33,13 @@ https://raw.githubusercontent.com/adittaya/video-editing-skills/main/):
 
 1. README.md
 2. ASSET-REQUEST-GUIDE.md
-3. modern-editing-features-reference.md
-4. video-editing-styles-master-list.md     (the router: vertical -> skill)
-5. DOCUMENTARY-STYLE-GUIDE.md              (the documentary router: 14 styles)
-6. EXAMPLE-ASSETS-PROMPT.md
-7. presets/README.md
-8. The ONE skill under skills/<name>/SKILL.md that matches my task.
+3. ADVANCED-FEATURE-USE-CASES.md          (the mandatory professional toolset)
+4. modern-editing-features-reference.md
+5. video-editing-styles-master-list.md     (the router: vertical -> skill)
+6. DOCUMENTARY-STYLE-GUIDE.md              (the documentary router: 14 styles)
+7. EXAMPLE-ASSETS-PROMPT.md
+8. presets/README.md
+9. The ONE skill under skills/<name>/SKILL.md that matches my task.
 
 Work strictly in this order:
 
@@ -47,32 +48,37 @@ Work strictly in this order:
   SOURCE-ANALYSIS.json — video analytics (ffprobe, scene detection, loudness,
   palette, BPM) and, if there is audio, a WORD-LEVEL TRANSCRIPTION JSON
   (faster-whisper, word_timestamps=True).
-- STEP 1 — CONCEPT. Write CONCEPT.md per the skill.
+- STEP 1 — CONCEPT. Write CONCEPT.md per the skill, including a camera column
+  (reason + target + zoom per scene).
 - STEP 2 — ASSETS-PROMPT. Write ASSETS-PROMPT.md: one executable brief per
   asset, addressed to YOU (you have image generation, audio generation and
   coding). Categories: images, transparent images (PNG/alpha), logos, music,
   sound effects, code components. Return ONE master zip containing MULTIPLE
-  zips inside — a zip per category and a zip per component kit.
+  zips inside — a zip per category and a zip per component kit (including the
+  advanced-feature kits: camera-track, motion-track, chroma-key,
+  mask-rotoscope, grade-stack, speed-ramp, audio-mix, subtitle-sync, reframe).
 
 Hard rules:
 - Before rendering the full video, give me a 1 FPS CONTACT SHEET (one frame per
   second, tiled in time order) and WAIT for my sign-off. Never render the full
   video before I approve.
-- Use the MANDATORY FEATURE USE-CASES the skill lists (anchor zoom in/out,
-  motion tracing, keyframing, bezier easing, word-pop, count-ups, readability
-  zoom, micro-interactions, screen transitions, cursor physics, cut-on-beat, a
-  sound for every cut, correct-then-grade, speed ramps, motion blur, parallax,
-  mask reveals, freeze frames, callouts, PiP, loops) — they are required, not
-  optional.
-- If the task is a documentary, pick the style from DOCUMENTARY-STYLE-GUIDE.md
-  (Vox explainer, map-led geo, docuseries, true crime, investigative, immersive
-  field, archival essay, Ken Burns, animated, essay film, nature, docudrama,
-  Op-Docs short, bodycam).
+- The ADVANCED FEATURE USE-CASES are MANDATORY where the concept needs them:
+  multi-track timeline, multicam, proxy editing, keyframing, motion tracking,
+  masking/rotoscoping, speed ramping, stabilisation, optical flow, colour
+  correction + grading + scopes + HDR, chroma key, compositing/VFX, 3D camera
+  tracking, advanced transitions, noise reduction/EQ/sync/multi-track mixing,
+  auto subtitles, AI background removal, auto reframing, scene detection, AI
+  colour — plus the stills/design craft.
+- Obey the CAMERA LAW: one camera wrapper only, one move at a time, every zoom
+  has a reason (READ/EMPHASIZE/REVEAL/FOLLOW/BREATHE), never cut while zoomed,
+  motion blur only during fast motion.
+- Obey the SENTENCE LAW: every narration sentence gets its own visual event,
+  bound to its stressed word (±100 ms).
+- If the task is a documentary, pick the style from DOCUMENTARY-STYLE-GUIDE.md.
 - The look is APPLE STANDARD, mandatory and the only option, unless a preset or
   a named documentary style is explicitly requested.
 - NEVER include voiceover or video clips in ASSETS-PROMPT.md. I supply the
-  A-roll (voice / footage / transcription) up front; if you need any B-roll
-  clip, ask me SEPARATELY. You generate images, audio and code only.
+  A-roll up front; ask for B-roll SEPARATELY. You generate images, audio, code.
 - A-roll = whatever carries the meaning. In a graphics-led piece the motion
   graphics ARE the A-roll and the footage becomes B-roll.
 - Text on screen maps the visual; it is never generic subtitles.
@@ -222,6 +228,7 @@ Also included: `tools/cutlist.py` (ripple/slip/slide cut-list renderer) and `too
 - **Palette & Gradient Law** — clean premium palette + background gradient.
 - **Asset & Clearance Protocol** — always free to ask the client for assets.
 - **No-Clank Law** — aligned, consistent, smooth, restrained, clean sound.
+- **Advanced feature use-cases** — the full professional toolset is mandatory in every skill (multi-track timeline, multicam, proxy editing, keyframing, motion tracking, masking/rotoscoping, speed ramping, stabilisation, optical flow, colour correction + grading + scopes + HDR, chroma key, compositing/VFX, 3D camera tracking, advanced transitions, noise reduction/EQ/sync/mixing, auto subtitles, AI background removal, auto reframing, scene detection, AI colour, plus the stills/design craft) — with the **Camera Law** and the **Sentence Law**. Full guide: `ADVANCED-FEATURE-USE-CASES.md`.
 - **Documentary family** — 14 documentary-style skills (Vox explainer, map-led geo, streaming docuseries, true crime, investigative, immersive field, archival essay, Ken Burns, animated, essay film, nature, docudrama, Op-Docs short, bodycam) plus `DOCUMENTARY-STYLE-GUIDE.md`, the router.
 - **Mandatory feature use-cases** — every skill carries the modern-standard set
   (anchor zoom in/out, motion tracing, keyframing, bezier easing, word-pop,

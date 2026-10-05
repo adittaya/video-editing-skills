@@ -345,3 +345,34 @@ participatory, reflexive, performative) and the craft approaches (evidentiary,
 verité, montage, radio-cut, additive, subtractive). Ethics that hold everywhere:
 no fabricated quotes/stats, label every recreation/animation/composite, never
 manufacture a confession, never distort meaning, and never trick the audience.
+
+
+## Part 10 — The advanced professional toolset (mandatory in every skill)
+
+Every skill now carries an **ADVANCED FEATURE USE-CASES** section (mandatory) and
+a pointer to `ADVANCED-FEATURE-USE-CASES.md`. The toolset:
+
+**Timeline** multi-track layering · multi-camera editing · proxy editing · batch
+export · collaboration. **Motion** keyframing · motion tracking · masking/
+rotoscoping · speed ramping / time remapping · stabilisation · frame blending /
+optical flow. **Colour** colour correction -> grading · scopes (waveform,
+vectorscope, histogram, parade) · HDR grading. **Compositing** chroma key ·
+compositing/VFX · 3D camera tracking · advanced transitions & effects.
+**Audio** noise reduction · EQ · audio syncing · multi-track mixing ·
+surround/spatial. **AI** auto subtitles · AI background removal · auto reframing ·
+scene detection & auto cutting · AI colour/exposure. **Stills & design** layers,
+masks, blending modes · frequency separation · dodge & burn · content-aware fill ·
+perspective correction · RAW/tone curves/HDR merge/panorama · AI selection ·
+non-destructive · vector/bezier · gradient mesh · kerning/tracking/leading ·
+symbols · artboards · grids · multi-format export.
+
+**The Camera Law** (mandatory where there is a camera): one camera wrapper only ·
+one move at a time · every zoom has a reason (READ/EMPHASIZE/REVEAL/FOLLOW/
+BREATHE) · never cut while zoomed · motion blur only during fast motion
+(`blur = clamp(v*k, 0, max)`; k~0.012, max~24px). Anchor zoom sets the origin on
+the target; follow keeps the subject in a safe zone with a damped spring.
+
+**The Sentence Law** (mandatory): every narration sentence gets its own visual
+event, bound to the sentence's stressed word (+/-100 ms); no visual-less
+sentences, no sentence-less visuals; the camera move is itself a sentence-level
+event.
