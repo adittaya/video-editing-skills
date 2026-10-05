@@ -409,3 +409,27 @@ manifest) -> BUILD (follows the sentence table + camera track) -> RENDER GATE
 **A new contact sheet means a new CONCEPT revision** — if the sheet reveals a
 change, the concept is updated first, then the build follows. Nothing is decided
 in isolation and no stage is skipped.
+
+
+## Part 13 — The caption & text system
+
+Every skill now carries a mandatory **CAPTION & TEXT SYSTEM** section:
+
+**Three modes** — styled text captions (designed, on-brand, animated, timed to
+the word) · transparent-background captions (alpha PNG or alpha clip: outline
+text, sticker/karaoke text, cut-out words, text-behind-subject) · chroma-key text
+& subject (flat green #00B140 / blue, despill, 1-2 px choke, light wrap, garbage
+matte).
+
+**Styled-caption spec** — style sheet (font, weight, size, tracking, leading,
+case, fill, stroke/box, accent, entrance/exit); word-level timing (+/-100 ms);
+<=2 lines; <=17 chars/s; minimum cue ~0.84 s; inside the text-safe zone.
+
+**Transparent-caption spec** — PNG with alpha, no background (or WebM VP9 alpha /
+ProRes 4444); 1-2 px feather, no halo, premultiplied; text-behind-subject uses a
+clean matte.
+
+**Surprise pack** — kinetic typography (word-by-word, anchor repositioning) ·
+word-pop / karaoke captions · animated underline / highlight / hand-drawn circle ·
+text-behind-subject / rotoscoped text · alpha overlays (lower-thirds, sticker
+captions, floating labels).

@@ -43,23 +43,28 @@ https://raw.githubusercontent.com/adittaya/video-editing-skills/main/):
 
 Everything is connected — work strictly in this order and keep the record linked:
 
-- STEP 0 — SOURCE. Ask me for the source first: a video clip, the voiceover/
-  audio, or a transcript/script. Analyse it and save SOURCE-ANALYSIS.json.
+- STEP 0 — SOURCE. Ask me for the source first (clip, voiceover/audio, or
+  transcript). Analyse it and save SOURCE-ANALYSIS.json.
 - STEP 1 — CONCEPT. Write CONCEPT.md: premise, segment plan, SENTENCE TABLE
-  (one row per sentence -> visual -> lane -> stressed word -> camera), CAMERA-
-  TRACK PLAN, CONTACT-SHEET PLAN (which V1/V2/V3 variants), sync map, asset
+  (sentence -> visual -> lane -> stressed word -> camera), CAMERA-TRACK PLAN,
+  CONTACT-SHEET PLAN (V1/V2/V3), the CAPTION STYLE SHEET, sync map, asset
   manifest. It is the single source of truth.
-- STEP 2 — ASSETS-PROMPT. Write it from the concept's manifest: images,
-  transparent images, logos, music, sound effects, code components (including
-  the advanced-feature kits). Return ONE master zip containing MULTIPLE zips.
+- STEP 2 — ASSETS-PROMPT. Write it from the manifest: images, transparent images
+  (incl. transparent caption PNGs / alpha clips), logos, music, sound effects,
+  code components (incl. the advanced-feature kits and the caption engine).
+  Return ONE master zip containing MULTIPLE zips inside.
 
 Hard rules:
+- CAPTIONS: declare ONE styled-caption style and hold it; use styled captions,
+  transparent-background (alpha) captions and chroma-key text/subject as the
+  concept needs. A plain SRT is an optional sidecar, never the on-screen text.
+  Chroma key: flat green #00B140/blue, despill, 1-2px choke, light wrap, garbage
+  matte.
 - RENDER GATE: build contact-sheet VARIANTS from 1 FPS frames — V1 Classic Grid,
   V2 Storyboard Filmstrip, V3 Pro QC Sheet — present them, and ASK ME: "Did you
   like any of these, or shall I generate more variants so you can choose?" The
   variant I pick is written BACK INTO CONCEPT.md. Render only after I finalise.
-- A new contact sheet means a new CONCEPT revision — update the concept first,
-  then the build follows.
+- A new contact sheet means a new CONCEPT revision.
 - The ADVANCED FEATURE USE-CASES are mandatory where the concept needs them.
 - Obey the CAMERA LAW and the SENTENCE LAW.
 - If the task is a documentary, pick the style from DOCUMENTARY-STYLE-GUIDE.md.
@@ -67,8 +72,8 @@ Hard rules:
   a named documentary style is explicitly requested.
 - NEVER include voiceover or video clips in ASSETS-PROMPT.md. I supply the
   A-roll up front; ask for B-roll SEPARATELY. You generate images, audio, code.
-- A-roll = whatever carries the meaning. Text maps the visual, never generic
-  subtitles. Never invent facts; label every recreation, animation, composite.
+- A-roll = whatever carries the meaning. Never invent facts; label every
+  recreation, animation and composite.
 
 Start by telling me which skill you will use and what source you need from me.
 ```
@@ -213,6 +218,7 @@ Also included: `tools/cutlist.py` (ripple/slip/slide cut-list renderer) and `too
 - **Palette & Gradient Law** — clean premium palette + background gradient.
 - **Asset & Clearance Protocol** — always free to ask the client for assets.
 - **No-Clank Law** — aligned, consistent, smooth, restrained, clean sound.
+- **Caption & text system** — styled text captions · transparent-background (alpha) captions · chroma-key text & subject, with the style sheet, word-level timing, alpha/despill/choke/light-wrap specs, and a text-motion surprise pack (kinetic typography, word-pop, text-behind-subject).
 - **Pipeline connectivity law** — everything is connected: SOURCE → CONCEPT (sentence table + camera track + contact-sheet plan) → ASSETS-PROMPT → BUILD → RENDER GATE → SIGN-OFF → RENDER; the chosen contact-sheet variant is written back into CONCEPT.md, and a new contact sheet means a new CONCEPT revision.
 - **Contact-sheet variants (render gate)** — before the full render the agent offers **V1 Classic Grid · V2 Storyboard Filmstrip · V3 Pro QC Sheet**, presents them, and asks "did you like any of these, or shall I generate more variants?" Render only after sign-off.
 - **Advanced feature use-cases** — the full professional toolset is mandatory in every skill (multi-track timeline, multicam, proxy editing, keyframing, motion tracking, masking/rotoscoping, speed ramping, stabilisation, optical flow, colour correction + grading + scopes + HDR, chroma key, compositing/VFX, 3D camera tracking, advanced transitions, noise reduction/EQ/sync/mixing, auto subtitles, AI background removal, auto reframing, scene detection, AI colour, plus the stills/design craft) — with the **Camera Law** and the **Sentence Law**. Full guide: `ADVANCED-FEATURE-USE-CASES.md`.

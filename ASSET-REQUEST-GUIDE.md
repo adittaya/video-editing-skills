@@ -68,6 +68,28 @@ concept's asset manifest.
 
 ---
 
+# THE CAPTION & TEXT SYSTEM (mandatory)
+
+The Text Law: on-screen text maps the visual; a plain SRT is an optional sidecar,
+never the on-screen text. Every build declares one caption style and holds it,
+and uses up to three caption modes:
+
+1. **Styled text captions** — designed, on-brand, animated (style sheet: font,
+   weight, size, tracking, leading, case, fill, stroke/box, accent, entrance/
+   exit; timed to the word; <=2 lines; <=17 chars/s).
+2. **Transparent-background captions (alpha)** — no background: transparent PNGs
+   or an alpha clip (WebM VP9 alpha / ProRes 4444) for outline text, sticker/
+   karaoke text, cut-out words and text-behind-subject. Clean premultiplied edge.
+3. **Chroma key** — text or a subject shot on flat green (#00B140)/blue, keyed
+   with despill, a 1-2 px matte choke, a light wrap and a garbage matte.
+
+**Where to ask for them in ASSETS-PROMPT.md:** transparent caption PNGs / alpha
+clips under **transparent images (category 2)**; the caption font/style and any
+animated caption engine under **code components (category 6)**.
+
+**Surprise pack:** kinetic typography · word-pop/karaoke captions · animated
+underline/highlight/circle · text-behind-subject · alpha overlays.
+
 # THE MANDATORY FEATURE USE-CASES (modern standard + advanced toolset)
 See `ADVANCED-FEATURE-USE-CASES.md` for the full professional toolset (multi-track,
 colour/scopes/HDR, chroma key, motion tracking, rotoscoping, multicam, speed
