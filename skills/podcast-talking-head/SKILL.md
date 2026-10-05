@@ -64,7 +64,7 @@ exists), say so and record it — the concept you write becomes the script.
 Real-world patterns measured from reference edits in this vertical. Apply them;
 the matching preset locks the exact look (see `presets/INDEX.md`).
 
-**From `presets/preset-006-podcast-overlay-explainer`** (a 56.6 s single-presenter
+**From `presets/podcast/preset-006-podcast-overlay-explainer`** (a 56.6 s single-presenter
 explainer, "podcast framing + explainer engine"):
 - One **static medium shot** — motion lives in the graphics, not the camera.
 - Alternate **on-speaker overlays** (face visible) with **full-screen cutaways** —

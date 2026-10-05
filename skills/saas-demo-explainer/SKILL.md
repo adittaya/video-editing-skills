@@ -52,6 +52,21 @@ exists), say so and record it — the concept you write becomes the script.
 **Only once the source is in hand and analysed** do you write
 `ASSETS-PROMPT.md` — so every prompt reflects what the build actually needs.
 
+## REFERENCE-LEARNED PATTERNS (from captured presets)
+
+Real-world patterns measured from reference edits in this vertical. Apply
+them; the matching preset locks the exact look (see `presets/INDEX.md`).
+
+**From `presets/product/preset-003-saaswave-tactile-purple`** (a tactile 3D
+product reel):
+- **Tactile 3D objects** in a colour wash; **floating UI cards**; a **cursor that
+  operates the UI**; **3D buttons** with glow feedback; a **morph-to-logo**.
+
+**From `presets/product/preset-005-higgsfield-dark-ui`** (a dark-mode product demo):
+- **Dark-mode UI floating in a void**; **2D -> 3D spatial** UI transforms;
+  **cursor micro-interactions** (click / toggle / drag); a **neon accent** + a
+  **monospace command line**; a **light-mode end card**.
+
 ## STEP 0.5 — A-ROLL PREP (matting first — mandatory when a person speaks)
 
 If this piece has a **person speaking to camera** (talking-head, voiceover,

@@ -51,7 +51,19 @@ exists), say so and record it — the concept you write becomes the script.
 **Only once the source is in hand and analysed** do you write
 `ASSETS-PROMPT.md` — so every prompt reflects what the build actually needs.
 
-> **Captured style available:** `presets/preset-007-creator-kinetic-text` — see `presets/INDEX.md`.
+> **Captured style available:** `presets/creator/preset-007-creator-kinetic-text` — see `presets/INDEX.md`.
+
+## REFERENCE-LEARNED PATTERNS (from captured presets)
+
+Real-world patterns measured from reference edits in this vertical. Apply
+them; the matching preset locks the exact look (see `presets/INDEX.md`).
+
+**From `presets/short-form/preset-002-realtor-word-caption`** (a 9:16
+talking-head reel):
+- **Word-by-word bold captions** with a **two-colour keyword accent** (blue/cyan +
+  orange/amber); a hard hook ("STOP SCROLLING").
+- **Hard cuts + a whip / motion-blur transition**; a **frosted-glass pill** end card.
+- High-key, warm-neutral, sound-off-first.
 
 ## STEP 0.5 — A-ROLL PREP (matting first — mandatory when a person speaks)
 

@@ -51,6 +51,16 @@ exists), say so and record it — the concept you write becomes the script.
 **Only once the source is in hand and analysed** do you write
 `ASSETS-PROMPT.md` — so every prompt reflects what the build actually needs.
 
+## REFERENCE-LEARNED PATTERNS (from captured presets)
+
+Real-world patterns measured from reference edits in this vertical. Apply
+them; the matching preset locks the exact look (see `presets/INDEX.md`).
+
+**From `presets/esport/preset-004-cloudy-esport-neon`** (a neon eSports montage):
+- **Neon architecture + silhouettes**; heavy **glow/bloom**; **glitch / shutter /
+  whip** transitions **on the beat**; **3D milestone numerals**; a **chat-bubble
+  UI**; a **smoke-bomb** transition; a **gold trophy** close.
+
 ## STEP 0.5 — A-ROLL PREP (matting first — mandatory when a person speaks)
 
 If this piece has a **person speaking to camera** (talking-head, voiceover,

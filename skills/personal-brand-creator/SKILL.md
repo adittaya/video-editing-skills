@@ -56,7 +56,7 @@ exists), say so and record it — the concept you write becomes the script.
 Real-world patterns measured from reference edits in this vertical. Apply them;
 the matching preset locks the exact look (see `presets/INDEX.md`).
 
-**From `presets/preset-007-creator-kinetic-text`** (a 76 s creator talking-head,
+**From `presets/creator/preset-007-creator-kinetic-text`** (a 76 s creator talking-head,
 "infotainment"):
 - **Kinetic word-by-word text overlaid on the chest**, synced to speech
   (~every 0.5 s) — the text IS the edit.
@@ -68,7 +68,7 @@ the matching preset locks the exact look (see `presets/INDEX.md`).
 - A **3-step structure** (hook / body / CTA) made explicit on screen.
 - Fast: ~2 s ASL.
 
-**From `presets/preset-002-realtor-word-caption`**: word-by-word captions with a
+**From `presets/short-form/preset-002-realtor-word-caption`**: word-by-word captions with a
 two-colour keyword accent system; a strong hook ("STOP SCROLLING"); a frosted-
 glass pill end card.
 
