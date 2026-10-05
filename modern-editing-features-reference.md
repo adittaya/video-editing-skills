@@ -394,3 +394,18 @@ from 1 FPS frames (`ffmpeg -i build.mp4 -vf fps=1`), at least two of:
 The agent must present the variants and ask: "Did you like any of these, or shall
 I generate more variants so you can choose?" Render the full video only after the
 variant and the cut are finalised.
+
+
+## Part 12 — Pipeline connectivity (everything is connected)
+
+CONCEPT.md is the single source of truth, and each stage feeds the next and
+writes its result back:
+
+SOURCE -> `SOURCE-ANALYSIS.json` -> CONCEPT (premise, sentence table, camera-track
+plan, **contact-sheet plan**, sync map, asset manifest) -> ASSETS-PROMPT (from the
+manifest) -> BUILD (follows the sentence table + camera track) -> RENDER GATE
+(contact-sheet variants V1/V2/V3 visualise the beat map) -> SIGN-OFF -> RENDER.
+
+**A new contact sheet means a new CONCEPT revision** — if the sheet reveals a
+change, the concept is updated first, then the build follows. Nothing is decided
+in isolation and no stage is skipped.
