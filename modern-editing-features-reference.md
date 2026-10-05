@@ -617,3 +617,17 @@ also patches the **parent skill** with a "Reference-learned patterns" section (t
 preset locks ONE look; the *skill* must get smarter from every reference captured.
 Applied here: `podcast-talking-head` <- preset-006; `personal-brand-creator` <-
 preset-007; pointers in `youtube-long-form-essay` and `short-form-retention`.
+
+
+## Part 22 — Preset subfolders and the retroactive linkage
+
+`presets/` is now organised into **category subfolders** so the library stays
+readable: `portfolio/` (001), `short-form/` (002), `product/` (003, 005),
+`esport/` (004), `podcast/` (006), `creator/` (007), plus `preset-authoring/`,
+`README.md` and `INDEX.md` at the top. Every preset path across the pack was
+updated.
+
+**Retroactive linkage:** presets 001-005 now also name their parent skill, and
+those parents (`agency-showreel`, `short-form-retention`, `saas-demo-explainer`,
+`esports-gaming-hype`) now carry **"Reference-learned patterns"** sections drawn
+from their presets. So all seven presets obey the PRESET -> SKILL LINKAGE LAW.
