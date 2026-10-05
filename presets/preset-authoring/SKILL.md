@@ -64,6 +64,19 @@ State plainly which of the three you got.
    breathes. From a video file, compute ASL; from frames, approximate.
 7. **Name the signature devices** — the 3–6 moves that make it feel like itself.
 
+## RENDER GATE — the 1 FPS contact sheet (mandatory before the full render)
+
+Never render the full video without sign-off: `ffmpeg -i build.mp4 -vf fps=1
+sheet/f%04d.jpg`, tile the frames into a contact sheet in time order (each
+labelled with its timestamp), show it to the user, and wait. Render only after
+they finalise.
+
+## WHICH LANE IS THE A-ROLL? (function, not source)
+
+A-roll = whatever carries the meaning; B-roll = whatever supports it. In a
+graphics-led piece the motion graphics ARE the A-roll and the footage becomes
+B-roll — the hybrid inversion.
+
 ## 2b. A preset is a FULL skill — same depth, locked to one style
 
 A preset is **not a separate, thinner document**. It is the same skill as every
