@@ -513,3 +513,28 @@ mandatory **Feature Pass** over it.
 **The Feature Pass:** walk all 11 groups, record every feature in the FEATURE MAP
 (applies? -> where -> how -> why). No group skipped; every applicable feature has
 a row; the map feeds the asset manifest and the QA gate.
+
+
+## Part 17 — The Thinking System & the Style library
+
+`THINKING-SYSTEM.md` — the decision-making: the **planning stack** (goal →
+audience → angle → concept → script → beats → shots, top-down); the **EZRA**
+lenses (Emotion, Story, Rhythm, Action); **Murch's Rule of Six** (emotion 51%,
+story 23%, rhythm 10%, eye-trace 7%, 2D plane 5%, 3D space 4%); the two mental
+states (audience + architect); and the **only-a-script path** — script audit →
+thesis test → beat map → two-column (said | shown) → shot cards → visual plan
+(beat → viewer question → evidence → risk → asset) → style/feature pass →
+animatic. Plus the motion-design pre-production chain (brief → script → boards →
+styleframes → animatic → animation → sound → delivery), where each stage locks a
+layer and changes are cheapest earliest.
+
+`MOTION-UI-STYLE-LIBRARY.md` — the motion-style catalogue (types, ~25 styles,
+techniques) and the UI/UX style families (depth/surface, flat/structured,
+raw/experimental, retro, layout-led, nature, spatial, motion-first, vendor
+languages) plus the 2026 UI/UX patterns. The **Style Pass** picks a motion style,
+a UI style and a caption style deliberately, with one primary + one garnish, the
+failure mode named, and a style frame proved before the build.
+
+Both are wired into **STEP 1** of every skill: CONCEPT.md now carries a mandatory
+**THINKING PASS** and **STYLE PASS** alongside the feature map and contact-sheet
+plan.

@@ -12,6 +12,9 @@ estate × 9:16 Reels.
 
 ---
 
+> **Before the plan: read `THINKING-SYSTEM.md`** (how to think) and
+> **`MOTION-UI-STYLE-LIBRARY.md`** (the Style Pass).
+>
 > **Every build ends at the QA gate.** Run `edit-qa-validator` before the
 > render and before delivery (audit -> AI re-think -> revalidate).
 >
