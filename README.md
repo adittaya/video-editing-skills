@@ -51,14 +51,14 @@ Everything is connected — work strictly in this order:
 - STEP 2 — ASSETS-PROMPT. Write it from the manifest; return ONE master zip
   containing MULTIPLE zips (incl. transparent caption PNGs/alpha clips and the
   advanced-feature code kits).
-- RENDER GATE. Build contact-sheet VARIANTS from 1 FPS frames (V1 Classic Grid,
-  V2 Storyboard Filmstrip, V3 Pro QC Sheet), present them and ASK ME: "Did you
-  like any of these, or shall I generate more variants so you can choose?" The
-  variant I pick is written BACK INTO CONCEPT.md.
-- QA GATE. Run skills/edit-qa-validator: (1) AUDIT the edit against every
-  mandatory list (OK/WEAK/MISSING), (2) AI RE-THINK each missing feature — what
-  to add, where, how, why it improves the video, the expected gain — (3)
-  REVALIDATE and write EDIT-QA.md. Render/deliver only when the QA gate passes.
+- RENDER GATE. Build contact-sheet VARIANTS with tools/contact_sheet.py (V1
+  Classic Grid, V2 Storyboard Filmstrip, V3 Pro QC Sheet), present them and ASK
+  ME: "Did you like any of these, or shall I generate more variants so you can
+  choose?" The variant I pick is written BACK INTO CONCEPT.md.
+- QA GATE. Run tools/qa_check.py (and skills/edit-qa-validator): AUDIT the edit
+  against every mandatory list, AI RE-THINK each missing feature (what to add,
+  where, how, why it improves the video, the expected gain), REVALIDATE and
+  write EDIT-QA.md. Render/deliver only when the QA gate passes.
 
 Hard rules:
 - Captions: declare ONE style from CAPTION-STYLES.md and hold it; use styled,
@@ -215,6 +215,7 @@ Also included: `tools/cutlist.py` (ripple/slip/slide cut-list renderer) and `too
 - **Palette & Gradient Law** — clean premium palette + background gradient.
 - **Asset & Clearance Protocol** — always free to ask the client for assets.
 - **No-Clank Law** — aligned, consistent, smooth, restrained, clean sound.
+- **Runnable tools (`tools/`)** — `qa_check.py` (audits a project and writes `EDIT-QA.md`), `contact_sheet.py` (renders the V1/V2/V3 contact sheets), `cutlist.py`, `track_text.py`.
 - **QA validator (`edit-qa-validator`)** — the final gate on every build: audits the edit against every mandatory list (OK/WEAK/MISSING), **AI-re-thinks** how to add each missing feature and why it improves the video, then **revalidates** and writes `EDIT-QA.md`. Every skill now ends with a QA GATE pointing to it.
 - **Caption style library (`CAPTION-STYLES.md`)** — 5 named styles: Apple-Clean · Vox-Highlighter · Sticker-Pop · Outline-Alpha · Karaoke-Word.
 - **Caption & text system** — styled text captions · transparent-background (alpha) captions · chroma-key text & subject, with the style sheet, word-level timing, alpha/despill/choke/light-wrap specs, and a text-motion surprise pack (kinetic typography, word-pop, text-behind-subject).

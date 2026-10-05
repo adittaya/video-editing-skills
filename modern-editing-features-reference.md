@@ -453,3 +453,19 @@ Every build ends at the QA gate. The `edit-qa-validator` skill runs three passes
 **Caption style library (`CAPTION-STYLES.md`):** Apple-Clean, Vox-Highlighter,
 Sticker-Pop, Outline-Alpha, Karaoke-Word — each with a full style sheet, motion,
 timing, alpha notes and when to use it.
+
+
+## Part 15 — Runnable tools
+
+`tools/qa_check.py` — the machine half of the QA validator: audits a project
+folder (pipeline artifacts + every mandatory feature keyword + video analytics:
+resolution, duration, scene cuts, ASL, loudness LUFS/true-peak), scores each item
+OK/MISSING/N/A, lists a fix for each MISSING item, and writes `EDIT-QA.md`
+(PASS 1 audit, PASS 2 AI re-think, PASS 3 revalidate, verdict).
+
+`tools/contact_sheet.py` — renders the three render-gate variants from a video:
+V1 Classic Grid, V2 Storyboard Filmstrip (time ruler + scene-cut ticks), V3 Pro QC
+Sheet (timecode + cut flag + safe-zone overlay + palette strip + summary header).
+
+`tools/cutlist.py`, `tools/track_text.py` — cut-list application and text-to-object
+tracking. Typical flow: contact_sheet -> pick variant -> qa_check -> fix -> re-run.
