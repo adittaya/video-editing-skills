@@ -496,6 +496,34 @@ open(out,'w').write(hdr+"\n".join(ev)); print(len(ev),"tracked frames ->",out)
 ### H8. Hybrid dial for this skill
 **Default dial: 1: accessible hierarchy type, one accent colour, stat cards; no flashes/shake.** Ask the client to confirm; if they have not supplied the H4 assets, drop one level and say what unlocks the next.
 
+## WHICH LANE IS THE A-ROLL? (function, not source)
+
+**A-roll = whatever carries the meaning. B-roll = whatever supports it.** The
+lane is defined by FUNCTION, never by whether it came off a camera.
+
+- In a **talking-head** piece the speaker is the A-roll; graphics and footage
+  are B-roll.
+- In a **graphics-led** piece — the motion graphics carrying the argument, the
+  footage used as cutaways — **the motion graphics ARE the A-roll and the
+  footage becomes B-roll.** This inversion is normal and correct; it is the
+  hybrid format.
+- So when the visual narration carries the meaning, treat the graphics as the
+  spine: plan them first, bind them to the words, and let the footage serve them.
+
+## RENDER GATE — the 1 FPS contact sheet (mandatory before the full render)
+
+**Never render the full video without sign-off.** Before the final render:
+
+1. Extract one frame per second from the finished timeline:
+   `ffmpeg -i build.mp4 -vf fps=1 sheet/f%04d.jpg`
+2. Tile them into a **contact sheet** — a grid in time order, each frame
+   labelled with its timestamp — so the whole edit reads at a glance.
+3. **Show the user the contact sheet and wait for approval.** Render the full
+   video only after they finalise.
+
+The contact sheet is the cheapest place to catch pacing, composition,
+safe-zone and continuity problems — an hour of render saved by one image.
+
 ## Platform & delivery standards (self-contained reference)
 Platform UI and specs change; values are working standards (2026). Where sources disagreed the more conservative value is used. Re-verify before a paid campaign.
 
