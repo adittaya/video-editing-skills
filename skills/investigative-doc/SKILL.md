@@ -323,6 +323,67 @@ video must SHOW what is being said.
 | Timecode | Spoken phrase (word to land on) | Concept | Placement | Visual | Duration | Sound |
 
 
+## CAPTION & TEXT SYSTEM (mandatory)
+
+**The Text Law.** On-screen text maps the visual — it is never generic subtitles.
+A plain SRT ships separately as an optional accessibility file; it is NOT the
+on-screen text. Every build declares ONE caption style and holds it.
+
+### The three caption modes (choose per build; a build may use all three)
+1. **Styled text captions** — designed, on-brand and animated: a declared style
+   (font, weight, size, tracking, leading, case, fill, stroke/box, accent colour,
+   entrance/exit) held consistently, keywords accented, text timed to the word.
+   Never the OS default font, never a plain white box.
+2. **Transparent-background captions (alpha)** — captions with **no background**,
+   delivered as transparent PNGs (or an alpha clip: WebM VP9 alpha / ProRes 4444),
+   so the type sits over or behind the picture: outline-only text, sticker/karaoke
+   text, cut-out words, and **text-behind-subject**. Clean, premultiplied alpha.
+3. **Chroma-key text & subject** — text or a subject shot on a flat green/blue
+   screen and keyed so it floats over the graphic layer; or the subject keyed so
+   text can pass behind them.
+
+### Styled-caption spec (write it into CONCEPT.md)
+- **Style sheet** — font · size (>=4% frame height for anything the viewer must
+  read) · weight · tracking · leading · case · fill · stroke/shadow · box (none /
+  subtle / solid) · accent colour · safe-zone position.
+- **Timing** — word-level (from the transcription JSON); the caption lands on the
+  spoken word (+/-100 ms); <=2 lines; <=17 characters/second; minimum cue ~0.84 s.
+- **Motion** — entrance/exit eased (fade + rise, or a word-pop scale), never
+  linear; one accent keyword per line.
+- **Placement** — inside the text-safe zone (Platform standards); never under the
+  platform UI.
+
+### Transparent-caption spec
+- Deliver as **PNG with alpha, no background** (or an alpha clip for animated
+  type). Clean the edge: 1-2 px feather, no dark/light halo, premultiplied.
+- **Text-behind-subject** — composite a text layer UNDER the subject's alpha
+  matte (matte from chroma key or an AI matte). The subject needs a clean cut-out;
+  where the cut is rough, choke the matte.
+- Never a white box behind a "transparent" caption.
+
+### Chroma-key spec
+- Key on a **flat, evenly lit green (#00B140) or blue**; avoid green clothing,
+  props and spill on hair/shoulders.
+- Key, then: **despill** the edges · **choke** the matte 1-2 px · add a **light
+  wrap** so the subject belongs to the new background · a **garbage matte** to
+  remove rigs.
+- Composite over the graphic layer with matched grain and colour; grade the
+  subject and background together so the seam disappears.
+
+### Request these in ASSETS-PROMPT.md
+The transparent caption PNGs / alpha clips go under **transparent images
+(PNG/alpha)** (category 2); the styled-caption font/style and any animated
+caption engine go under **code components** (category 6).
+
+### Surprise pack — make the text move (use where the concept needs it)
+- **Kinetic typography** — word-by-word reveal, anchor repositioning before each
+  word, one accent word per line.
+- **Word-pop / karaoke captions** — per-word scale pop from word-level timing.
+- **Animated underline / highlight / hand-drawn circle** — draw-on accents on the
+  key word.
+- **Text-behind-subject / rotoscoped text** — type passing behind a keyed subject.
+- **Alpha overlays** — lower-thirds, sticker captions, floating labels as PNG/alpha.
+
 ## RENDER GATE — the contact sheet (mandatory before the full render)
 
 **Never render the full video without sign-off.** Before the final render,
