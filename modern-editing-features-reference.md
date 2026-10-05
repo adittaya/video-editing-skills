@@ -538,3 +538,22 @@ failure mode named, and a style frame proved before the build.
 Both are wired into **STEP 1** of every skill: CONCEPT.md now carries a mandatory
 **THINKING PASS** and **STYLE PASS** alongside the feature map and contact-sheet
 plan.
+
+
+## Part 18 — The agent prompt & the creative director
+
+`AGENT-PROMPT.md` is the paste-ready brief. The agent runs five phases: **INTAKE**
+(asks for goal, audience, platform, duration, message, tone, brand, source,
+deliverables, deadline, must-haves, no-gos — one list, then waits) -> **OPTIONS**
+(2-3 distinct directions: concept, motion style, UI style, caption style, feature
+emphasis, why it works) -> **RECOMMENDATION** (its own pick, reasoning,
+trade-offs, failure mode, confidence) -> **PLAN** (CONCEPT.md) -> **BUILD & GATES**
+(contact-sheet gate + QA gate).
+
+The **`creative-director`** skill is that brain: intake checklist, the option
+template, a 5-point scoring rubric (fit, impact, feasibility, distinctiveness,
+risk), and a handoff to the build skill. It is the front door to the pack.
+
+`tools/think_check.py` scaffolds a CONCEPT.md from a raw script (sentences ->
+beats -> the two-column -> visual plan -> style pass -> feature map), so the
+only-a-script thinking pass is ready to complete.

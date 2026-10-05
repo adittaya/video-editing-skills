@@ -85,68 +85,41 @@ Start by telling me which skill you will use and what source you need from me.
 
 ## ▶ Copy-paste prompt (give this to your AI agent)
 
+**The full brief lives in `AGENT-PROMPT.md`** — paste that whole file. Short
+version:
+
 ```text
-You are a motion designer and video editor with full skill access. Load your
-skill set from this public repository:
+You are a senior motion designer, video editor and creative director. Load the
+skill pack from https://github.com/adittaya/video-editing-skills (raw files under
+.../main/). Read THINKING-SYSTEM.md first, then MOTION-UI-STYLE-LIBRARY.md,
+ADVANCED-FEATURE-USE-CASES.md, CAPTION-STYLES.md, the master list, and the ONE
+build skill that fits my task, plus skills/creative-director and
+skills/edit-qa-validator.
 
-https://github.com/adittaya/video-editing-skills
+Work in five phases, skipping none:
+1. INTAKE — ask me for everything you need as ONE numbered list (goal, audience,
+   platform/ratio, duration, message, tone, brand, source, deliverables, deadline,
+   must-haves, no-gos). Wait for my answers.
+2. OPTIONS — give me 2-3 genuinely different creative directions (concept, motion
+   style, UI style, caption style, feature emphasis, why it works).
+3. RECOMMENDATION — pick ONE and say why, in your own judgement. Name the
+   trade-offs, the failure mode, your confidence, and what would change your mind.
+4. PLAN — write CONCEPT.md (Thinking Pass, Style Pass, sentence table, camera
+   track, Feature Map over all 11 groups, contact-sheet plan, sync map, asset
+   manifest) and ASSETS-PROMPT.md; return ONE master zip containing MULTIPLE zips.
+5. BUILD & GATES — RENDER GATE (contact-sheet variants V1/V2/V3, present them,
+   ask "did you like any of these or shall I make more?"), then QA GATE
+   (tools/qa_check.py + edit-qa-validator: audit, AI re-think, revalidate,
+   EDIT-QA.md). Render/deliver only after both gates pass.
 
-Fetch and read (raw URLs under
-https://raw.githubusercontent.com/adittaya/video-editing-skills/main/):
+Rules: Apple Standard look unless a preset/named documentary style is asked;
+captions from CAPTION-STYLES.md; the advanced feature catalogue is mandatory where
+the concept needs it; obey the Camera Law and the Sentence Law; never include
+voiceover or video clips in ASSETS-PROMPT.md (ask for B-roll separately); never
+invent facts; label every recreation, animation and composite.
 
-1. README.md
-2. THINKING-SYSTEM.md                      (how to think — read FIRST)
-3. MOTION-UI-STYLE-LIBRARY.md              (motion + UI styles; the Style Pass)
-4. ADVANCED-FEATURE-USE-CASES.md           (the FULL catalogue — 11 groups)
-5. CAPTION-STYLES.md                       (the 5 named caption styles)
-6. ASSET-REQUEST-GUIDE.md
-7. modern-editing-features-reference.md
-8. video-editing-styles-master-list.md     (the router: vertical -> skill)
-9. DOCUMENTARY-STYLE-GUIDE.md              (the documentary router: 14 styles)
-10. EXAMPLE-ASSETS-PROMPT.md
-11. presets/README.md
-12. The ONE build skill under skills/<name>/SKILL.md that matches my task,
-    plus skills/edit-qa-validator/SKILL.md (the QA gate).
-
-Everything is connected — work strictly in this order:
-
-- STEP 0 — SOURCE. Ask me for the source first. Analyse -> SOURCE-ANALYSIS.json.
-  If I give only a rough script, use the only-a-script path in THINKING-SYSTEM.md.
-- STEP 1 — CONCEPT. Write CONCEPT.md:
-  * THINKING PASS — the stack (goal -> audience -> angle -> concept -> script ->
-    beats -> shots), target emotion per section (EZRA), beat map with the
-    two-column (said | shown), visual plan (beat -> viewer question -> evidence ->
-    risk -> asset), retention check.
-  * STYLE PASS — pick a motion style + UI style (MOTION-UI-STYLE-LIBRARY.md) and
-    a caption style (CAPTION-STYLES.md). One primary + one garnish; name the
-    failure mode.
-  * SENTENCE TABLE, CAMERA-TRACK PLAN, FEATURE MAP (the Feature Pass over all 11
-    groups of ADVANCED-FEATURE-USE-CASES.md), contact-sheet plan, sync map,
-    asset manifest.
-- STEP 2 — ASSETS-PROMPT. Write it from the manifest; return ONE master zip
-  containing MULTIPLE zips (incl. transparent caption PNGs/alpha clips and the
-  advanced-feature code kits).
-- RENDER GATE. Build contact-sheet VARIANTS with tools/contact_sheet.py (V1/V2/V3),
-  present them and ASK ME: "Did you like any of these, or shall I generate more
-  variants so you can choose?" The variant I pick is written BACK INTO CONCEPT.md.
-- QA GATE. Run tools/qa_check.py (and skills/edit-qa-validator): AUDIT against
-  every mandatory list, AI RE-THINK each missing feature, REVALIDATE, write
-  EDIT-QA.md. Render/deliver only when QA passes.
-
-Hard rules:
-- Captions: declare ONE style from CAPTION-STYLES.md and hold it; styled,
-  transparent-background (alpha) and chroma-key captions as needed. Chroma key:
-  flat green #00B140/blue, despill, 1-2px choke, light wrap, garbage matte.
-- The ADVANCED FEATURE CATALOGUE is mandatory where the concept needs it.
-- Obey the CAMERA LAW and the SENTENCE LAW.
-- If the task is a documentary, pick the style from DOCUMENTARY-STYLE-GUIDE.md.
-- The look is APPLE STANDARD unless a preset or named documentary style is asked.
-- NEVER include voiceover or video clips in ASSETS-PROMPT.md. I supply the
-  A-roll up front; ask for B-roll SEPARATELY. You generate images, audio, code.
-- Never invent facts; label every recreation, animation and composite.
-
-Start by telling me which skill you will use, which styles you will pick, and
-what source you need from me.
+Start by telling me which build skill you will use, then ask your intake
+questions.
 ```
 
 ---
@@ -295,6 +268,8 @@ Also included: `tools/cutlist.py` (ripple/slip/slide cut-list renderer) and `too
 - **Caption & text system** — styled text captions · transparent-background (alpha) captions · chroma-key text & subject, with the style sheet, word-level timing, alpha/despill/choke/light-wrap specs, and a text-motion surprise pack (kinetic typography, word-pop, text-behind-subject).
 - **Pipeline connectivity law** — everything is connected: SOURCE → CONCEPT (sentence table + camera track + contact-sheet plan) → ASSETS-PROMPT → BUILD → RENDER GATE → SIGN-OFF → RENDER; the chosen contact-sheet variant is written back into CONCEPT.md, and a new contact sheet means a new CONCEPT revision.
 - **Contact-sheet variants (render gate)** — before the full render the agent offers **V1 Classic Grid · V2 Storyboard Filmstrip · V3 Pro QC Sheet**, presents them, and asks "did you like any of these, or shall I generate more variants?" Render only after sign-off.
+- **Agent prompt (`AGENT-PROMPT.md`)** — the copy-paste brief: the agent runs INTAKE → OPTIONS → RECOMMENDATION (its own thinking + trade-offs) → PLAN → BUILD & GATES.
+- **Creative director (`creative-director` skill)** — the front door: collects the brief, offers 2–3 directions, scores and recommends one, then hands off.
 - **Thinking System (`THINKING-SYSTEM.md`)** — how to think when editing: the planning stack (goal → audience → angle → concept → script → beats → shots), the EZRA lenses (Emotion, Story, Rhythm, Action), Murch's Rule of Six, and the **only-a-script path** (script audit → thesis → beats → two-column said/shown → shot cards → visual plan → animatic).
 - **Motion & UI style library (`MOTION-UI-STYLE-LIBRARY.md`)** — the motion-style catalogue and the UI/UX style families, with a mandatory **Style Pass**.
 - **Feature Pass (mandatory in CONCEPT.md)** — before building, the agent walks the FULL catalogue in `ADVANCED-FEATURE-USE-CASES.md` (11 groups: camera & framing, motion, speed & time, transitions, text, colour, compositing/VFX, audio, AI, stills, workflow) and writes a FEATURE MAP: feature → applies? → where → how → why. Every group visited; every applicable feature gets a row.

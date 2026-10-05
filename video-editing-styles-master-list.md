@@ -12,6 +12,9 @@ estate × 9:16 Reels.
 
 ---
 
+> **Start here: `AGENT-PROMPT.md`** (the copy-paste brief) and the
+> **`creative-director`** skill (intake -> options -> recommendation -> handoff).
+>
 > **Before the plan: read `THINKING-SYSTEM.md`** (how to think) and
 > **`MOTION-UI-STYLE-LIBRARY.md`** (the Style Pass).
 >
@@ -274,6 +277,7 @@ router: find the vertical, open that skill.
 | Documentary — short prestige (NYT Op-Docs) | `op-docs-short` |
 | Documentary — bodycam / evidence-led | `bodycam-evidence-doc` |
 | **QA — validate any finished edit (audit / re-think / revalidate)** | `edit-qa-validator` |
+| **START — intake, options, recommendation (any video)** | `creative-director` |
 | E-commerce / DTC product ads, UGC | `ecommerce-dtc-ads` |
 | YouTube long-form essay / explainer / doc | `youtube-long-form-essay` |
 | Real estate listing, agent, neighbourhood, CGI | `real-estate-video` |

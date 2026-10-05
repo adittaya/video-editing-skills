@@ -31,6 +31,15 @@ python tools/contact_sheet.py VIDEO [--out DIR] [--variant all|v1|v2|v3] [--fps 
 Needs Pillow. Uses `ffmpeg -vf fps=1` for frames and ffmpeg scene detection for
 the cut ticks.
 
+## think_check.py — scaffold a CONCEPT.md from a raw script
+```bash
+python tools/think_check.py SCRIPT [--out CONCEPT.md] [--title "My Video"]
+```
+Splits the script into sentences and beats and emits a CONCEPT.md skeleton
+pre-filled with the beat map, the two-column (said | shown), the visual plan, the
+style pass, the sentence table and the feature map (all 11 groups) — the
+only-a-script path, ready to complete. Standard library only.
+
 ## cutlist.py — apply a cut list
 Applies a ripple/slip/slide/speed cut list to a source (see the pack's FFmpeg
 cookbook). 
