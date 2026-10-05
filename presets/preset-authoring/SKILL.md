@@ -64,6 +64,18 @@ State plainly which of the three you got.
    breathes. From a video file, compute ASL; from frames, approximate.
 7. **Name the signature devices** — the 3–6 moves that make it feel like itself.
 
+## MANDATORY FEATURE USE-CASES (the modern standard)
+
+Every preset build applies the mandatory feature set carried by the pack skills:
+**★ zoom in (anchor zoom) · ★ zoom out (reveal) · ★ motion tracing / follow
+camera · ★ keyframe everything · ★ easing curves (bezier) · ★ kinetic text /
+word-pop · ★ count-up numbers · ★ readability zoom · ★ micro-interactions · ★
+screen transitions · ★ cursor physics · ★ cut-on-beat · ★ a sound for every cut ·
+★ correct then grade** — plus speed ramps, motion blur, parallax, mask reveals,
+freeze frames, callouts, PiP, screen replacement and seamless loops where the
+concept needs them. The preset's style governs HOW they look, never WHETHER they
+are used.
+
 ## RENDER GATE — the 1 FPS contact sheet (mandatory before the full render)
 
 Never render the full video without sign-off: `ffmpeg -i build.mp4 -vf fps=1
