@@ -5,11 +5,13 @@ description: "High-retention vertical short-form editing for Reels, Shorts, and 
 
 # Short-Form Retention (Reels · Shorts · TikTok)
 
-> **THE LOOK IS APPLE STANDARD — MANDATORY AND THE ONLY OPTION.**
-> Every graphic, card, caption and colour in this video uses the Apple Standard
-> in the look section. Any other palette or style mentioned anywhere in this
-> file is deprecated. Vertical differences are only in WHAT the graphics depict
-> and which single accent carries meaning.
+> **THE LOOK IS CHOSEN, NOT MANDATED.** Pick it in the **Style Pass** — a motion
+> style + a UI style (`MOTION-UI-STYLE-LIBRARY.md`) and a caption style
+> (`CAPTION-STYLES.md`) — chosen for THIS job and recorded in CONCEPT.md. The
+> **Apple Standard** (section 3) is the house default and a strong starting point
+> for most product, UI and corporate work, but it is a **recommendation, not a
+> rule**. If another style fits the brief better, recommend it with your reasoning
+> and use it. **No style is deprecated.**
 
 
 **Scope.** Vertical short-form built to hold attention: 7–60s, 9:16, hook in
@@ -212,10 +214,12 @@ Trending or licensed track; SFX on every cut; voice highest, music lowest.
 
 ## The look — THE APPLE STANDARD (mandatory; the only look)
 
-This pack has **one look**. Every skill uses the Apple Standard — there is no
-other palette, type system, or motion grammar. Verticals differ only in **what
-the graphics depict** and **which single accent carries meaning**; never in the
-underlying system. Any other palette named anywhere in this file is deprecated.
+**The house default.** The Apple Standard below is the pack's default look and
+the right starting point for most product, UI and corporate work — verified
+tokens, one accent, restrained motion. It is a **recommendation, not a mandate**:
+choose the look in the **Style Pass** (`MOTION-UI-STYLE-LIBRARY.md`). If a
+different style fits this brief better, recommend it with your reasoning and use
+it. **No style is deprecated.**
 
 - **Canvas:** alternating `#ffffff` / `#f5f5f7` bands — the colour change IS the
   divider (no borders, no rules). Dark variant `#0d0d0f` with glow

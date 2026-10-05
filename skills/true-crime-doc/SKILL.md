@@ -9,12 +9,12 @@ description: "True-crime documentary and docuseries: thriller structure, hook ep
 
 **Asset tier: 2 — MANDATORY: case materials, interviews, archival, CCTV/bodycam where lawfully obtained. Label recreations.**
 
-> **THE LOOK.** The graphic chrome (cards, captions, lower-thirds, colour tags)
-> defaults to the **Apple Standard** in the look section. This skill's named
-> style governs the **footage treatment, structure and signature techniques**;
-> where the style's own palette or typography is essential, that named style is
-> the sanctioned override — chosen by the user picking this skill.
-> **LOOK OVERRIDE (sanctioned).** Low-resolution surveillance texture and noir low-key lighting for reconstructions are the style. People do not want a high-definition courtroom camera — the grit sells the 'realness'. This named style is the override.
+> **THE LOOK.** Chosen in the **Style Pass**, not fixed. The graphic chrome
+> (cards, captions, lower-thirds, colour tags) starts from the **Apple Standard**
+> (the house default); this skill's named style governs the **footage treatment,
+> structure and signature techniques**. Pick the best fit for the brief — Apple,
+> this skill's named style, or another from `MOTION-UI-STYLE-LIBRARY.md` — and
+> say why. **No style is mandatory and none is deprecated.**
 
 
 ## STEP 0 — SOURCE GATE (mandatory, BEFORE the assets prompt)
