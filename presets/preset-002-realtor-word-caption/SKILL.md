@@ -60,6 +60,17 @@ exists), say so and record it — the concept you write becomes the script.
 **Only once the source is in hand and analysed** do you write
 `ASSETS-PROMPT.md` — so every prompt reflects what the build actually needs.
 
+## STEP 0.5 — A-ROLL PREP (matting first — mandatory when a person speaks)
+
+If this piece has a **person speaking to camera** (talking-head, voiceover,
+avatar, podcast), the **first job is the background**, before the concept.
+Decide the path in `a-roll-matting`: **keep it / matte it / key it** — and by
+default get the character **off the background** (or onto green). Matte FIRST
+unlocks text-behind-subject, screen replacement, graphic backgrounds and floating
+UI. Use `tools/matte.py` for the local matte (rembg + ffmpeg). Record the matte
+as an asset in the manifest and check it at the QA gate (no holes, no baked-
+caption artifacts, stable alpha). If the background is the message, keep it.
+
 ## STEP 1 — CONCEPT.md (write the plan before any prompt)
 
 With the source analysed, write **CONCEPT.md** — the single plan the whole build
