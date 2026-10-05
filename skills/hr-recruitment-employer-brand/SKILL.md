@@ -47,17 +47,45 @@ exists), say so and record it — the concept you write becomes the script.
 
 ## STEP 1 — CONCEPT.md (write the plan before any prompt)
 
-With the source analysed, write **CONCEPT.md** — the plan the whole build follows:
+With the source analysed, write **CONCEPT.md** — the single plan the whole build
+follows. **Everything is connected: every line here drives a later stage, and
+every later stage writes its result back here.**
+
 - **Premise** — the video in one sentence + its emotional arc.
-- **Style** — Apple Standard (or the preset in use) and how it applies here.
+- **Style** — the named style (this skill) and how it applies here.
 - **Segment plan** — the beat map with timings, taken from the analysis.
-- **Scene table** — sentence -> visual concept -> lane (D speaker / E visual) ->
-  timing -> element bindings -> camera.
-- **Visual narration plan** — every spoken concept and the visual that shows it.
+- **Sentence table** — one row per narration sentence: sentence -> visual concept
+  -> lane (A speaker / B visual) -> the **stressed word** to land on -> timing ->
+  element bindings -> **camera** (reason + target + zoom). (The Sentence Law.)
+- **Camera-track plan** — the ordered camera entries
+  (READ / EMPHASIZE / REVEAL / FOLLOW / BREATHE) with their word bindings.
+  (The Camera Law.)
+- **Contact-sheet plan** — which sign-off variants will be built (V1 Classic Grid
+  / V2 Storyboard Filmstrip / V3 Pro QC Sheet) and why. **The variant the user
+  picks is written back here.**
 - **Sync map** — the word-level timings that drive text and visuals.
 - **Asset manifest** — what the build needs; this feeds STEP 2.
 
 Then STEP 2 writes `ASSETS-PROMPT.md` from this plan.
+
+### PIPELINE CONNECTIVITY LAW (mandatory)
+Everything is connected — no stage is decided in isolation, and no stage is
+skipped:
+
+- **SOURCE** -> analysed into `SOURCE-ANALYSIS.json`, which feeds the concept.
+- **CONCEPT** -> drives the asset manifest, the camera track and the sentence
+  table; it is the single source of truth for the build.
+- **ASSETS-PROMPT** -> written from the concept's manifest; nothing unplanned
+  appears in the build.
+- **BUILD** -> follows the concept's sentence table and camera track exactly.
+- **RENDER GATE** -> the contact-sheet variants visualise the concept's beat map;
+  the variant the user picks is written **back into CONCEPT.md**.
+- **SIGN-OFF -> RENDER** -> the full render happens only after the variant AND
+  the cut are finalised.
+- **A new contact sheet means a new CONCEPT revision.** If the sheet reveals a
+  change, the concept is updated FIRST, then the build follows. The record stays
+  connected end to end: source -> concept -> assets -> build -> sheet -> sign-off
+  -> render.
 
 ## ASSETS-PROMPT.md — MANDATORY (strict rule)
 
