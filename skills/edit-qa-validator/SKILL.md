@@ -30,6 +30,17 @@ Ask for, or locate:
 If any are missing, the pipeline is broken — say which stage to run first (the
 **PIPELINE CONNECTIVITY LAW**).
 
+## STEP 0.5 — A-ROLL PREP (matting first — mandatory when a person speaks)
+
+If this piece has a **person speaking to camera** (talking-head, voiceover,
+avatar, podcast), the **first job is the background**, before the concept.
+Decide the path in `a-roll-matting`: **keep it / matte it / key it** — and by
+default get the character **off the background** (or onto green). Matte FIRST
+unlocks text-behind-subject, screen replacement, graphic backgrounds and floating
+UI. Use `tools/matte.py` for the local matte (rembg + ffmpeg). Record the matte
+as an asset in the manifest and check it at the QA gate (no holes, no baked-
+caption artifacts, stable alpha). If the background is the message, keep it.
+
 ## STEP 1 — load the ruleset
 Read `ADVANCED-FEATURE-USE-CASES.md`, the build skill's **MANDATORY FEATURE
 USE-CASES** and **ADVANCED FEATURE USE-CASES** sections, the **CAPTION & TEXT
