@@ -376,3 +376,21 @@ the target; follow keeps the subject in a safe zone with a damped spring.
 event, bound to the sentence's stressed word (+/-100 ms); no visual-less
 sentences, no sentence-less visuals; the camera move is itself a sentence-level
 event.
+
+
+## Part 11 — Contact-sheet variants (the render gate)
+
+The render gate now offers the reviewer a choice of contact-sheet designs, built
+from 1 FPS frames (`ffmpeg -i build.mp4 -vf fps=1`), at least two of:
+
+- **V1 — Classic Grid**: uniform grid in time order, each frame timestamped.
+- **V2 — Storyboard Filmstrip**: larger frames over a time ruler with scene-cut
+  ticks and a one-line caption per frame (reads like a storyboard; best for
+  pacing/flow).
+- **V3 — Pro QC Sheet**: timecode + scene-cut flag + motion indicator + safe-zone
+  overlay per thumbnail, plus a colour-swatch strip and a summary header
+  (duration, shots, ASL, loudness, palette).
+
+The agent must present the variants and ask: "Did you like any of these, or shall
+I generate more variants so you can choose?" Render the full video only after the
+variant and the cut are finalised.
