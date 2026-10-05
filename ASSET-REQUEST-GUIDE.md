@@ -38,6 +38,15 @@ concept's asset manifest.
 
 ---
 
+# THE MANDATORY FEATURE USE-CASES (modern standard)
+
+Before the render gate, confirm the build used the required techniques where the
+concept needs them: anchor zoom in/out, motion tracing, keyframing, bezier
+easing, word-pop, count-ups, readability zoom, micro-interactions, screen
+transitions, cursor physics, cut-on-beat, a sound for every cut, correct-then-
+grade — plus speed ramps, motion blur, parallax, mask reveals, freeze frames,
+callouts, PiP and loops. Each skill lists the set with its per-style emphasis.
+
 # BEFORE THE RENDER — the 1 FPS contact sheet (mandatory)
 
 Never render the full video without sign-off. Before the final render:

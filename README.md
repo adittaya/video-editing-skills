@@ -57,6 +57,12 @@ Hard rules:
 - Before rendering the full video, give me a 1 FPS CONTACT SHEET (one frame per
   second, tiled in time order) and WAIT for my sign-off. Never render the full
   video before I approve.
+- Use the MANDATORY FEATURE USE-CASES the skill lists (anchor zoom in/out,
+  motion tracing, keyframing, bezier easing, word-pop, count-ups, readability
+  zoom, micro-interactions, screen transitions, cursor physics, cut-on-beat, a
+  sound for every cut, correct-then-grade, speed ramps, motion blur, parallax,
+  mask reveals, freeze frames, callouts, PiP, loops) — they are required, not
+  optional.
 - The look is APPLE STANDARD, mandatory and the only option, unless a preset
   under presets/ is explicitly requested.
 - NEVER include voiceover or video clips in ASSETS-PROMPT.md. I supply the
@@ -210,6 +216,12 @@ Also included: `tools/cutlist.py` (ripple/slip/slide cut-list renderer) and `too
 - **Palette & Gradient Law** — clean premium palette + background gradient.
 - **Asset & Clearance Protocol** — always free to ask the client for assets.
 - **No-Clank Law** — aligned, consistent, smooth, restrained, clean sound.
+- **Mandatory feature use-cases** — every skill carries the modern-standard set
+  (anchor zoom in/out, motion tracing, keyframing, bezier easing, word-pop,
+  count-ups, readability zoom, micro-interactions, screen transitions, cursor
+  physics, cut-on-beat, a sound per cut, correct-then-grade, speed ramps, motion
+  blur, parallax, mask reveals, freeze frames, callouts, PiP, loops). They are
+  required, not optional — without them the edit reads as amateur.
 - **Render Gate** — before the full render, always produce a **1 FPS contact
   sheet** (`ffmpeg -i build.mp4 -vf fps=1`) and wait for the user's sign-off.
 - **The lane is defined by function** — A-roll is whatever carries the meaning.

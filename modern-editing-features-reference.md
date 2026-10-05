@@ -287,3 +287,29 @@ difference = what the graphics depict + which one accent carries meaning. Where
 Part 1's technique catalogue names a stylised palette (neon, glitch, teal-orange,
 halftone), treat it as a **technique to use sparingly inside the Apple system**,
 never as an alternative look.
+
+## Part 8 — The mandatory feature use-cases (modern standard)
+
+A build is not finished until it uses these where the concept needs them:
+
+**Camera & motion** — anchor zoom in · zoom out (reveal) · motion tracing /
+follow camera · slow push · camera shake on impact · speed ramp · motion blur
+(velocity; zero at rest).
+
+**Keyframing & animation** — keyframe everything (position, scale, opacity,
+rotation, blur) · bezier easing (curve the path, never linear) · mask / wipe
+reveal · parallax / 2.5D depth · freeze frame / hold.
+
+**Text & data** — kinetic text / word-pop · count-up numbers · text tracked to an
+object · text behind the subject · callouts & arrows.
+
+**UI & product (any demo)** — readability zoom (>=4% of frame height) ·
+micro-interactions (hover, press, ripple, toggle, focus) · screen transitions
+(push/pull, modal + scrim, sheet) · cursor physics (bezier, minimum-jerk,
+overshoot, click anatomy) · comparison split / PiP · screen replacement.
+
+**Edit & finish** — cut-on-beat / cut-on-action · a sound for every cut ·
+correct then grade · seamless loop.
+
+Every SKILL.md lists these with a per-style emphasis line; the style governs HOW
+they look, never WHETHER they are used.
