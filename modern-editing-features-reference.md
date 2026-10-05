@@ -313,3 +313,35 @@ correct then grade · seamless loop.
 
 Every SKILL.md lists these with a per-style emphasis line; the style governs HOW
 they look, never WHETHER they are used.
+
+
+## Part 9 — The documentary style family
+
+Fourteen documentary styles, each a skill, mapped by `DOCUMENTARY-STYLE-GUIDE.md`:
+
+**Explainer family** — vox-explainer (narration-driven flat-design motion
+graphics: 12fps stutter, camera-blur transitions, animated maps, highlighter,
+narration-synced motion) · geo-explainer-maps (map-led geo storytelling) ·
+archival-essay-doc (argumentative montage, statistic typography, photo
+zoom-and-pan) · ken-burns-archival (stills-in-motion, sepia, letter narration).
+
+**Journalistic family** — investigative-doc (evidence-led reconstruction,
+documents/data, multicam sync) · true-crime-doc (thriller structure, hook
+episode, ticking clock, low-res surveillance) · bodycam-evidence-doc (raw
+institutional footage, no VO) · immersive-field-doc (embedded first-person
+reportage).
+
+**Cinematic family** — netflix-docuseries (streaming house style, Slow Media,
+episodic cliffhangers) · nature-wildlife-doc (blue-chip natural history) ·
+op-docs-short (short prestige documentary, form-forward) · documentary-film (the
+general craft).
+
+**Form-forward family** — animated-documentary (rotoscope / illustrated) ·
+docudrama-reenactment (dramatized reconstruction, labelled) · essay-film
+(first-person inquiry, lateral montage).
+
+Underneath sits **Bill Nichols' six modes** (poetic, expository, observational,
+participatory, reflexive, performative) and the craft approaches (evidentiary,
+verité, montage, radio-cut, additive, subtractive). Ethics that hold everywhere:
+no fabricated quotes/stats, label every recreation/animation/composite, never
+manufacture a confession, never distort meaning, and never trick the audience.

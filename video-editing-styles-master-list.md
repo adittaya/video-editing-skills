@@ -12,6 +12,9 @@ estate × 9:16 Reels.
 
 ---
 
+> **Documentary has its own router.** For the full documentary family (14 styles
+> + the Nichols modes + the selector), see `DOCUMENTARY-STYLE-GUIDE.md`.
+
 ## A · The 14 editing styles (the "how it is cut")
 
 | # | Style | Signature | Best for |
@@ -241,7 +244,21 @@ router: find the vertical, open that skill.
 | Reels / Shorts / TikTok retention | `short-form-retention` |
 | Podcast, interview, talking-head | `podcast-talking-head` |
 | Corporate / brand film, culture, investor | `corporate-brand-film` |
-| Documentary, mini-doc, observational, archival | `documentary-film` |
+| Documentary — general, observational, mini-doc | `documentary-film` |
+| Documentary — Vox-style explainer, "explain the news" | `vox-explainer` |
+| Documentary — map-led geo storytelling | `geo-explainer-maps` |
+| Documentary — streaming docuseries, personality, premium | `netflix-docuseries` |
+| Documentary — true crime | `true-crime-doc` |
+| Documentary — investigative / accountability | `investigative-doc` |
+| Documentary — immersive field / embedded reportage | `immersive-field-doc` |
+| Documentary — archival essay / argumentative montage | `archival-essay-doc` |
+| Documentary — stills-in-motion / Ken Burns history | `ken-burns-archival` |
+| Documentary — animated / rotoscope | `animated-documentary` |
+| Documentary — essay film / personal non-fiction | `essay-film` |
+| Documentary — nature & wildlife (blue-chip) | `nature-wildlife-doc` |
+| Documentary — docudrama / re-enactment | `docudrama-reenactment` |
+| Documentary — short prestige (NYT Op-Docs) | `op-docs-short` |
+| Documentary — bodycam / evidence-led | `bodycam-evidence-doc` |
 | E-commerce / DTC product ads, UGC | `ecommerce-dtc-ads` |
 | YouTube long-form essay / explainer / doc | `youtube-long-form-essay` |
 | Real estate listing, agent, neighbourhood, CGI | `real-estate-video` |

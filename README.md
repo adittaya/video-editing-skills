@@ -35,9 +35,10 @@ https://raw.githubusercontent.com/adittaya/video-editing-skills/main/):
 2. ASSET-REQUEST-GUIDE.md
 3. modern-editing-features-reference.md
 4. video-editing-styles-master-list.md     (the router: vertical -> skill)
-5. EXAMPLE-ASSETS-PROMPT.md
-6. presets/README.md
-7. The ONE skill under skills/<name>/SKILL.md that matches my task.
+5. DOCUMENTARY-STYLE-GUIDE.md              (the documentary router: 14 styles)
+6. EXAMPLE-ASSETS-PROMPT.md
+7. presets/README.md
+8. The ONE skill under skills/<name>/SKILL.md that matches my task.
 
 Work strictly in this order:
 
@@ -63,15 +64,20 @@ Hard rules:
   sound for every cut, correct-then-grade, speed ramps, motion blur, parallax,
   mask reveals, freeze frames, callouts, PiP, loops) — they are required, not
   optional.
-- The look is APPLE STANDARD, mandatory and the only option, unless a preset
-  under presets/ is explicitly requested.
+- If the task is a documentary, pick the style from DOCUMENTARY-STYLE-GUIDE.md
+  (Vox explainer, map-led geo, docuseries, true crime, investigative, immersive
+  field, archival essay, Ken Burns, animated, essay film, nature, docudrama,
+  Op-Docs short, bodycam).
+- The look is APPLE STANDARD, mandatory and the only option, unless a preset or
+  a named documentary style is explicitly requested.
 - NEVER include voiceover or video clips in ASSETS-PROMPT.md. I supply the
   A-roll (voice / footage / transcription) up front; if you need any B-roll
   clip, ask me SEPARATELY. You generate images, audio and code only.
 - A-roll = whatever carries the meaning. In a graphics-led piece the motion
   graphics ARE the A-roll and the footage becomes B-roll.
 - Text on screen maps the visual; it is never generic subtitles.
-- Never invent facts, prices, stats, testimonials or logos.
+- Never invent facts, prices, stats, testimonials or logos. Label every
+  recreation, animation and composite.
 
 Start by telling me which skill you will use and what source you need from me.
 ```
@@ -216,6 +222,7 @@ Also included: `tools/cutlist.py` (ripple/slip/slide cut-list renderer) and `too
 - **Palette & Gradient Law** — clean premium palette + background gradient.
 - **Asset & Clearance Protocol** — always free to ask the client for assets.
 - **No-Clank Law** — aligned, consistent, smooth, restrained, clean sound.
+- **Documentary family** — 14 documentary-style skills (Vox explainer, map-led geo, streaming docuseries, true crime, investigative, immersive field, archival essay, Ken Burns, animated, essay film, nature, docudrama, Op-Docs short, bodycam) plus `DOCUMENTARY-STYLE-GUIDE.md`, the router.
 - **Mandatory feature use-cases** — every skill carries the modern-standard set
   (anchor zoom in/out, motion tracing, keyframing, bezier easing, word-pop,
   count-ups, readability zoom, micro-interactions, screen transitions, cursor
