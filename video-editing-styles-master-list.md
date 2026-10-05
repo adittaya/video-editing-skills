@@ -12,6 +12,11 @@ estate × 9:16 Reels.
 
 ---
 
+> **Every build ends at the QA gate.** Run `edit-qa-validator` before the
+> render and before delivery (audit -> AI re-think -> revalidate).
+>
+> **Captions:** pick a named style from `CAPTION-STYLES.md`.
+>
 > **The advanced toolset is mandatory in every skill.** See
 > `ADVANCED-FEATURE-USE-CASES.md` (multi-track, colour/scopes/HDR, chroma key,
 > motion tracking, rotoscoping, multicam, speed ramping, stabilisation, 3D
@@ -265,6 +270,7 @@ router: find the vertical, open that skill.
 | Documentary — docudrama / re-enactment | `docudrama-reenactment` |
 | Documentary — short prestige (NYT Op-Docs) | `op-docs-short` |
 | Documentary — bodycam / evidence-led | `bodycam-evidence-doc` |
+| **QA — validate any finished edit (audit / re-think / revalidate)** | `edit-qa-validator` |
 | E-commerce / DTC product ads, UGC | `ecommerce-dtc-ads` |
 | YouTube long-form essay / explainer / doc | `youtube-long-form-essay` |
 | Real estate listing, agent, neighbourhood, CGI | `real-estate-video` |

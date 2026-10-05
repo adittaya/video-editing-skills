@@ -433,3 +433,23 @@ clean matte.
 word-pop / karaoke captions · animated underline / highlight / hand-drawn circle ·
 text-behind-subject / rotoscoped text · alpha overlays (lower-thirds, sticker
 captions, floating labels).
+
+
+## Part 14 — The QA validator (audit -> re-think -> revalidate)
+
+Every build ends at the QA gate. The `edit-qa-validator` skill runs three passes:
+
+1. **AUDIT** — the MASTER CHECKLIST (pipeline connectivity, advanced toolset,
+   modern-standard features, Camera Law, Sentence Law, Caption & Text System,
+   visual narration layer, render gate, ethics, platform) marked OK / WEAK /
+   MISSING / N/A, with timecode evidence.
+2. **AI RE-THINK** — for each WEAK/MISSING item, the concrete fix: what to add,
+   where (scene/timecode/sentence), how (the exact move or kit), why it improves
+   the video, and the expected gain.
+3. **REVALIDATE** — re-audit after the fixes and produce the diff; PASS only when
+   no star-mandatory item is MISSING and the caption system / Camera Law /
+   Sentence Law are clean. Report: `EDIT-QA.md`.
+
+**Caption style library (`CAPTION-STYLES.md`):** Apple-Clean, Vox-Highlighter,
+Sticker-Pop, Outline-Alpha, Karaoke-Word — each with a full style sheet, motion,
+timing, alpha notes and when to use it.
