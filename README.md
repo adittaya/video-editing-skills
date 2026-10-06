@@ -174,7 +174,7 @@ Also included: `tools/cutlist.py` (ripple/slip/slide cut-list renderer) and `too
 - **A-roll matting (`skills/a-roll-matting`)** — the FIRST job when a person speaks: get the character off the background (chroma key / temporal AI matting / rembg / roto), with a verified local recipe and `tools/matte.py`.
 - **PRESET -> SKILL LINKAGE LAW** — capturing a preset also patches its **parent skill** with the reference-learned patterns, so the AI that triggers the *skill* (not the preset) gets smarter from every reference.
 - **Preset index (`presets/INDEX.md`)** — the 5 captured styles, with "ask for this when…".
-- **Agent prompt (`AGENT-PROMPT.md`)** — the copy-paste brief: the agent runs INTAKE → OPTIONS → RECOMMENDATION (its own thinking + trade-offs) → PLAN → BUILD & GATES.
+- **Agent prompt (`AGENT-PROMPT.md`)** — the copy-paste brief: the agent runs **LOAD & WAIT** (it loads the knowledge fast, replies ready, then waits for your source) → INTAKE (only the gaps) → OPTIONS → RECOMMENDATION (its own thinking + trade-offs) → PLAN → BUILD & GATES.
 - **Creative director (`creative-director` skill)** — the front door: collects the brief, offers 2–3 directions, scores and recommends one, then hands off.
 - **Thinking System (`THINKING-SYSTEM.md`)** — how to think when editing: the planning stack (goal → audience → angle → concept → script → beats → shots), the EZRA lenses (Emotion, Story, Rhythm, Action), Murch's Rule of Six, and the **only-a-script path** (script audit → thesis → beats → two-column said/shown → shot cards → visual plan → animatic).
 - **Motion & UI style library (`MOTION-UI-STYLE-LIBRARY.md`)** — the motion-style catalogue and the UI/UX style families, with a mandatory **Style Pass**.

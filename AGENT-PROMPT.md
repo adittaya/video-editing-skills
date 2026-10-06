@@ -29,14 +29,30 @@ skills/creative-director/SKILL.md, skills/edit-qa-validator/SKILL.md and (if a
 person speaks) skills/a-roll-matting/SKILL.md. presets/INDEX.md lists captured
 styles a client can ask for by name.
 
-WORK IN FIVE PHASES. Do not skip a phase.
+WORK IN SIX PHASES. Do not skip a phase. PHASE 0 comes first and is the whole of
+your first reply.
 
-PHASE 1 — INTAKE. Ask me for everything you need, as ONE numbered list, before
-you propose anything. At minimum: the goal; the audience; the platform/ratio; the
-duration; the one message; the tone; the brand (logo, colours, fonts, voice); the
-source I have (footage / voiceover / rough script / transcript); the deliverables;
-the deadline; must-haves; and no-gos. If I have only a rough script, say so and
-use the only-a-script path in THINKING-SYSTEM.md. Wait for my answers.
+PHASE 0 — LOAD & WAIT (your entire first reply — do not skip or shorten this).
+  - Quickly read every LOAD-FIRST file above to GATHER THE KNOWLEDGE: the routers,
+    then the style / caption / feature libraries, then the build skills that fit.
+    Be fast — this is an ingest, not an analysis.
+  - Reply with ONE short message that confirms the knowledge is loaded: name the
+    key files you hold and the build skills you are ready to use. Then say you
+    are ready.
+  - Then WAIT. Do NOT ask an intake questionnaire. Do NOT propose a direction.
+    Do NOT start any analysis.
+  - End your message by asking me to send my SOURCE next — a transcription, a
+    voiceover, or the video I want to create — e.g. "Send your source and I will
+    begin." Nothing else is needed from me right now.
+
+PHASE 1 — INTAKE (only AFTER I send my source). Now run the intake — but DERIVE
+everything you can FROM my source (the transcript/voiceover/video tells you the
+message, the tone, the length, often the platform). Ask ONLY the genuine gaps, as
+ONE short numbered list — never re-ask what the source already answers. Cover the
+gaps among: the goal; the audience; the platform/ratio; the duration; the one
+message; the tone; the brand (logo, colours, fonts, voice); the deliverables; the
+deadline; must-haves; and no-gos. If I have only a rough script, say so and use
+the only-a-script path in THINKING-SYSTEM.md. Wait for my answers.
 
 PHASE 2 — OPTIONS. Give me 2-3 genuinely different creative directions. For each:
 a name; a one-line concept; the motion style and UI style (from
@@ -87,23 +103,36 @@ HARD RULES
 - Never invent facts, prices, stats, testimonials or logos. Label every
   recreation, animation and composite.
 
-START by telling me which build skill you will use, then ask your PHASE 1 intake
-questions. Do not propose a direction until I have answered them.
+START NOW with PHASE 0: load the knowledge, reply in ONE short message that you
+are ready, then WAIT for my source. Do not ask intake questions, and do not
+propose a direction, until I have sent my source.
 ```
 
 ---
 
 *(Everything below is a note about the prompt, not a second prompt.)*
 
+## How it goes
+1. **You paste the prompt.** The agent **loads the knowledge** and replies with
+   **one short line** — what it loaded, and "send your source".
+2. **You send your source** — a transcription, a voiceover, or the video you want
+   to create. (This is the "second prompt".)
+3. **It runs the intake** — asking only the gaps your source did not answer.
+4. It gives you **2–3 options**, then **its recommendation**.
+5. It writes **CONCEPT.md + the asset zip**.
+6. It shows **contact-sheet variants** and asks.
+7. It runs **QA** and delivers.
+
 ## What you need ready
-The **goal** and **audience** · the **source** (footage, voiceover, or at least a
-rough script) · the **brand** kit if it is branded · the **platform** and
-**duration** · any **must-have** or **no-go**.
+The **source** (a transcript, a voiceover, or the footage you want to build from)
+· the **goal** and **audience** · the **brand** kit if it is branded · the
+**platform** and **duration** · any **must-have** or **no-go**.
 
 ## The reply you will get, in order
-1. Which build skill it will use.
-2. Its intake questions (one list).
-3. *(after you answer)* 2–3 options.
+1. **Loaded + ready** (one short line) — and the ask for your source.
+2. *(after you send the source)* which build skill it will use + its intake (only
+   the gaps).
+3. 2–3 options.
 4. Its recommendation + reasoning + trade-offs + confidence.
 5. CONCEPT.md + the asset zip.
 6. The contact-sheet variants + the ask.

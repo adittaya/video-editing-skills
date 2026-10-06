@@ -18,6 +18,16 @@ It is the front door to the pack.
 
 ---
 
+## STEP -1 — LOAD & WAIT (the first thing you do)
+
+The moment you receive the job, **load the knowledge fast** — read the router
+files, the style / caption / feature libraries and the build skill that fits —
+and reply with **ONE short message**: what you loaded, and "send your source".
+Then **WAIT**. Do **not** ask an intake questionnaire, do **not** propose a
+direction, do **not** start any analysis yet. The user sends their source (a
+**transcription**, a **voiceover**, or the **video they want to create**) next —
+that is their "second prompt". Only then does STEP 0 begin.
+
 ## STEP 0 — SOURCE GATE (mandatory)
 Before proposing anything, obtain the source: a **video clip**, a **voiceover /
 audio**, or a **rough script / transcript**. If the user has only a script, say so
@@ -36,9 +46,11 @@ UI. Use `tools/matte.py` for the local matte (rembg + ffmpeg). Record the matte
 as an asset in the manifest and check it at the QA gate (no holes, no baked-
 caption artifacts, stable alpha). If the background is the message, keep it.
 
-## STEP 1 — INTAKE (ask, don't assume)
-Ask the user for everything you need, as **ONE numbered list**, and wait. Cover at
-least:
+## STEP 1 — INTAKE (derive first, then ask the gaps)
+Run this **only after the source has arrived**. **Derive everything the source
+already tells you** — the message, the tone, the length, often the platform — and
+ask **only the genuine gaps**, as **ONE short numbered list**. Never re-ask what
+the source answers. Cover the gaps among:
 1. **Goal** — what the video is for, and how we will know it worked.
 2. **Audience** — who, what they care about, the viewing context (phone?
    sound-off? one tab away?).
