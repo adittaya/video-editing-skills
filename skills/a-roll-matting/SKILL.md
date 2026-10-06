@@ -26,13 +26,21 @@ build skill's concept — on every A-roll piece.
 1. **Shoot on green** — best. If you can still shoot, key the character on a flat,
    evenly-lit green (`#00B140`) or blue screen. A real key beats AI matting on
    edges and hair every time. This is why "add green screen first" is right.
-2. **Temporal AI video matting** — best for **existing** footage. Models that see
+2. **Editable-asset extraction via the MANDATORY generative environment** —
+   **SAM 2.1 Large** for segmentation + **BiRefNet** for refinement. The strongest
+   path for **existing** footage and for **maximally editable transparent
+   assets** (cut-outs, subject layers, alpha). Load
+   [`local-generative-colab-skill`](https://github.com/adittaya/local-generative-colab-skill)
+   and run it on the remote GPU. Prefer this over the local `rembg` fallback
+   whenever the environment is available.
+3. **Temporal AI video matting** — best for **existing** footage when the
+   environment is not available. Models that see
    time (RVM / Robust Video Matting, MODNet, `backgroundremover`) are far more
    stable than per-frame matting: no flicker, better hair, fewer holes.
-3. **Per-frame AI matting** — `rembg` (u2net / u2netp / isnet). Fast and local;
+4. **Per-frame AI matting** — `rembg` (u2net / u2netp / isnet). Fast and local;
    good for quick work and stills, but **soft/jagged edges, holes on low-contrast
    shots, and it treats baked-in captions/graphics as subject.**
-4. **Roto** — mask the hard frames by hand. Always the fallback for the shots the
+5. **Roto** — mask the hard frames by hand. Always the fallback for the shots the
    model fails.
 
 **When NOT to matte:** if the **background is the message** (a real room, an

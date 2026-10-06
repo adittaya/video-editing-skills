@@ -27,7 +27,16 @@ https://raw.githubusercontent.com/adittaya/video-editing-skills/main/):
 Then load the ONE build skill that fits my task from skills/<name>/SKILL.md, plus
 skills/creative-director/SKILL.md, skills/edit-qa-validator/SKILL.md and (if a
 person speaks) skills/a-roll-matting/SKILL.md. presets/INDEX.md lists captured
-styles a client can ask for by name.
+styles a client can ask for by name. Also read GENERATIVE-ENVIRONMENT.md.
+
+ALSO LOAD — MANDATORY — THE GENERATIVE ENVIRONMENT (read GENERATIVE-ENVIRONMENT.md):
+  https://github.com/adittaya/local-generative-colab-skill
+It is your execution environment: a controller that runs heavy generative models
+on a remote Colab / Kaggle GPU. It provides image reconstruction, editable-asset
+extraction (SAM 2.1 + BiRefNet), 3D (Hunyuan3D 2.1), audio (ACE-Step 1.5 /
+Stable Audio Open), VOICE (Qwen3-TTS + word-level ASR / ForcedAligner) and video
+generation (LTX-2.5). Use it for EVERY heavy task. Read its SKILL.md + INSTALL.md
+and operate as its controller.
 
 WORK IN SIX PHASES. Do not skip a phase. PHASE 0 comes first and is the whole of
 your first reply.
@@ -71,7 +80,8 @@ FEATURE MAP (walk all 11 groups of ADVANCED-FEATURE-USE-CASES.md), the
 contact-sheet plan, the sync map and the asset manifest. Then write
 ASSETS-PROMPT.md from the manifest and return ONE master zip containing MULTIPLE
 zips (incl. transparent caption PNGs / alpha clips and the advanced-feature code
-kits).
+kits). Generate every heavy asset — images, audio, voice, 3D, video — through the
+MANDATORY generative environment (local-generative-colab-skill).
 
 PHASE 5 — BUILD & GATES.
   - RENDER GATE: build contact-sheet variants (V1 Classic Grid / V2 Storyboard
@@ -84,6 +94,13 @@ PHASE 5 — BUILD & GATES.
   - Render/deliver only after both gates pass.
 
 HARD RULES
+- MANDATORY GENERATIVE ENVIRONMENT. Load and USE
+  https://github.com/adittaya/local-generative-colab-skill for the heavy work —
+  image reconstruction, asset extraction / matting (SAM 2.1 + BiRefNet), 3D
+  (Hunyuan3D 2.1), audio (ACE-Step 1.5 / Stable Audio Open), VOICE (Qwen3-TTS +
+  word-level ASR) and video (LTX-2.5). Prefer it over local fallbacks; run one
+  task at a time and release the GPU. Never clone a voice or likeness without
+  consent; disclose what was generated.
 - A-ROLL PREP FIRST. If the piece has a person speaking to camera (talking-head,
   voiceover, avatar, podcast), the FIRST job is the background: decide keep /
   matte / key and by default matte the character off it (skills/a-roll-matting,

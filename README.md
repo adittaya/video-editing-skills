@@ -172,6 +172,7 @@ Also included: `tools/cutlist.py` (ripple/slip/slide cut-list renderer) and `too
 - **Contact-sheet variants (render gate)** — before the full render the agent offers **V1 Classic Grid · V2 Storyboard Filmstrip · V3 Pro QC Sheet**, presents them, and asks "did you like any of these, or shall I generate more variants?" Render only after sign-off.
 - **Edit Map (`EDIT-MAP.md`)** — every kind of edit and its fast path (the first job, the skill, the fast features, the trap).
 - **A-roll matting (`skills/a-roll-matting`)** — the FIRST job when a person speaks: get the character off the background (chroma key / temporal AI matting / rembg / roto), with a verified local recipe and `tools/matte.py`.
+- **THE GENERATIVE ENVIRONMENT — MANDATORY (`GENERATIVE-ENVIRONMENT.md`)** — the pack's execution environment: a controller that runs heavy generative models on a remote Colab / Kaggle GPU ([`local-generative-colab-skill`](https://github.com/adittaya/local-generative-colab-skill)). Provides image reconstruction, editable-asset extraction (**SAM 2.1 + BiRefNet**), 3D (**Hunyuan3D 2.1**), audio (**ACE-Step 1.5 / Stable Audio Open**), **voice (Qwen3-TTS + word-level ASR / ForcedAligner)** and video generation (**LTX-2.5**). Load it and use it for every heavy task.
 - **PRESET -> SKILL LINKAGE LAW** — capturing a preset also patches its **parent skill** with the reference-learned patterns, so the AI that triggers the *skill* (not the preset) gets smarter from every reference.
 - **Preset index (`presets/INDEX.md`)** — the 5 captured styles, with "ask for this when…".
 - **Agent prompt (`AGENT-PROMPT.md`)** — the copy-paste brief: the agent runs **LOAD & WAIT** (it loads the knowledge fast, replies ready, then waits for your source) → INTAKE (only the gaps) → OPTIONS → RECOMMENDATION (its own thinking + trade-offs) → PLAN → BUILD & GATES.
@@ -192,5 +193,4 @@ Also included: `tools/cutlist.py` (ripple/slip/slide cut-list renderer) and `too
 - **The lane is defined by function** — A-roll is whatever carries the meaning.
   In a graphics-led piece the motion graphics ARE the A-roll and the footage
   becomes B-roll.
-- **No voice generation · no logins/credentials · no invented facts · disclose
-  recreations.**
+- **No logins/credentials · no invented facts · disclose recreations.** Voice **can** now be generated — but only through the mandatory generative environment (Qwen3-TTS), and **never clone a voice without consent**.
