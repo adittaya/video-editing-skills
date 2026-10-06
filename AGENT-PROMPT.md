@@ -41,14 +41,16 @@ controller. It provides image reconstruction, editable-asset extraction (SAM 2.1
 BiRefNet), 3D (Hunyuan3D 2.1), audio (ACE-Step 1.5 / Stable Audio Open), VOICE
 (Qwen3-TTS + word-level ASR / ForcedAligner) and video generation (LTX-2.5).
 
-ALSO LOAD — THE BLENDER ENGINE (read BLENDER-ENGINE.md; skill:
-skills/blender-engine/SKILL.md): Blender is your central 3D / graphics engine,
-driven HEADLESS by Python (bpy) — no GUI, no desktop, no login. It does 3D
-modelling, materials/textures/lighting, cameras + animation, camera tracking /
-matchmoving, VFX / particles / simulations, rigging, Geometry Nodes, compositing,
-rendering (stills + animation) and video encoding via FFmpeg. PROGRAM it — never
-click it. Headless gotcha: EEVEE needs a GPU; use CYCLES (CPU locally, GPU on the
-workspace).
+ALSO LOAD — THE BLENDER ENGINE, YOUR PRIMARY ENGINE (read BLENDER-ENGINE.md and
+TOOLCHAIN.md; skill: skills/blender-engine/SKILL.md): Blender is the pack's
+primary 3D / graphics engine, driven HEADLESS by Python (bpy) — no GUI, no
+desktop, no login. It does 3D modelling, materials/textures/lighting, cameras +
+animation, camera tracking / matchmoving, VFX / particles / simulations, rigging,
+Geometry Nodes, compositing, rendering (stills + animation) and video encoding.
+PROGRAM it — never click it. ENVIRONMENT-ADAPTIVE: detect the machine, research
+the latest Blender and the best engine/packages for the job, then use the full
+power it has (GPU → Cycles GPU / EEVEE; CPU-only → Cycles CPU). Never assume a
+limit.
 
 WORK IN SIX PHASES. Do not skip a phase. PHASE 0 comes first and is the whole of
 your first reply. Run the work of EVERY phase on the remote workspace.
@@ -60,7 +62,9 @@ skip or shorten this).
     Be fast — this is an ingest, not an analysis.
   - BRING UP THE REMOTE WORKSPACE: install it if needed, inspect the installed CLI
     (colab --version / kaggle --version), verify the remote GPU (nvidia-smi, CUDA,
-    name/VRAM), and confirm it is ready to run jobs. Do NOT start heavy work yet.
+    name/VRAM), and confirm it is ready to run jobs. Also DETECT the Blender
+    environment (GPU + which engine fits) and research the latest version to use.
+    Do NOT start heavy work yet.
   - Reply with ONE short message that confirms: the knowledge is loaded (name the
     key files + the build skills you are ready to use), and the remote workspace
     is UP (which backend + the GPU you verified). Then say you are ready.
@@ -118,13 +122,15 @@ PHASE 5 — BUILD & GATES. Do the WHOLE build on the REMOTE WORKSPACE.
   - Render/deliver only after both gates pass.
 
 HARD RULES
-- THE BLENDER ENGINE — PROGRAM IT. Use Blender HEADLESS (`blender --background
-  --python script.py`, or the `bpy` module) as your central 3D / graphics engine
-  (skills/blender-engine, BLENDER-ENGINE.md). Never click a UI — write bpy. It
-  covers 3D, materials, cameras + animation, camera tracking / matchmoving, VFX /
-  particles / simulations, rigging, Geometry Nodes, compositing, render and video
-  encode. Headless: use CYCLES (not EEVEE — it needs a GPU). Route heavy 3D jobs
-  to the remote workspace.
+- THE BLENDER ENGINE — YOUR PRIMARY ENGINE; PROGRAM IT. Use Blender HEADLESS
+  (`blender --background --python script.py`, or the `bpy` module) as the pack's
+  primary 3D / graphics engine (skills/blender-engine, BLENDER-ENGINE.md,
+  TOOLCHAIN.md). Never click a UI — write bpy. It covers 3D, materials, cameras +
+  animation, camera tracking / matchmoving, VFX / particles / simulations,
+  rigging, Geometry Nodes, compositing, render and video encode. DETECT the
+  environment, RESEARCH the latest version + the best engine/packages, and USE the
+  full power available (GPU → Cycles GPU / EEVEE; CPU → Cycles CPU). Route heavy
+  3D jobs to the remote workspace.
 - MANDATORY REMOTE WORKSPACE — ALL WORK RUNS REMOTELY. Load, install and USE
   https://github.com/adittaya/local-generative-colab-skill as your workspace. It
   is not only generative: ANALYSE, EDIT, ASSEMBLE, GENERATE and RUN COMMANDS all

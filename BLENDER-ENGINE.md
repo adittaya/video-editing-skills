@@ -2,16 +2,32 @@
 
 > **Your AI does not need to *see* Blender. Your AI *programs* Blender.**
 >
-> Blender is the pack's **central 3D and graphics engine**. It runs **headless**
-> — no desktop, no GUI, no account/login — and is driven entirely by **Python**
-> through the `bpy` API. This is where the pack's 3D work lives: 3D text and
-> objects, camera tracking / matchmoving, geometry nodes, simulations, particles,
-> rigging, compositing, and rendering to images, animation and video.
->
-> Verified in-sandbox: **Blender 5.0.1 headless, Cycles CPU, rendered a frame**
-> (cube + 3D extruded text + 35 mm camera + sun) → see `blender-headless-proof.png`.
+> Blender is the pack's **primary engine** — the most powerful single tool an AI
+> can drive for editing and motion graphics. It runs **headless** (no desktop, no
+> GUI, no account/login) and is commanded entirely by **Python** through `bpy`.
+> This is where the pack's 3D work lives: 3D text and objects, motion graphics,
+> camera tracking / matchmoving, geometry nodes, simulations, particles, rigging,
+> compositing, and rendering to images, animation and video.
 
 ---
+
+## 0 · THE ENVIRONMENT-ADAPTIVE LAW (read this first)
+
+**Do not assume limits. Detect the machine, research the latest, then choose.**
+The engine, the version and the supporting packages are **selected per
+environment** — never hard-coded.
+
+1. **Detect the environment** — CPU cores, RAM, GPU (and which: CUDA / OptiX /
+   HIP / Metal / none), the OS, and the Python version.
+2. **Research the latest** — the current stable Blender, the current best render
+   engine for the hardware, and the current best supporting package for each job.
+   Never default to an old build or a single all-rounder.
+3. **Choose** the version + engine + packages that fit **this** machine — then use
+   the full power it has. On a strong GPU box, render on the GPU; on a plain CPU
+   box, render on CPU. Both are Blender; only the settings differ.
+
+> A weak or headless box is **not** a limit of the skill — it is one environment
+> the skill adapts to. A powerful GPU environment gets the full pipeline.
 
 ## The idea
 
@@ -50,66 +66,65 @@ blender -b --python-expr "import bpy; print(bpy.app.version_string)"
 blender -b --render-output /out/ --render-frame 1   # render a frame
 ```
 
-Or, as a Python module, `import bpy` inside a normal Python process (same
-behaviour as `--background`, with a few caveats — no command-line args, default
-startup scene).
+Or as a Python module — `import bpy` inside a normal Python process (same
+behaviour as `--background`).
 
-## Installing it (verified recipes)
+## Getting it (research the latest; pick the route that fits)
 
-Blender is **free, no account/login**. Two routes:
+Blender is **free, no account/login**. Choose the install route per environment:
 
-**Route A — the portable build (most robust).** Download the official Linux
-tarball (it **bundles its own Python**, so the system Python never matters),
-extract, and run `./blender`. This works on any Linux box and on the remote
-Colab/Kaggle workspace. *(If the host blocks blender.org, use Route B.)*
+| Route | When | Note |
+|---|---|---|
+| **Portable build** | any Linux/Windows/macOS box, or the remote workspace | bundles its own Python — most robust, version-independent |
+| **`bpy` Python module** | Python pipelines | `pip install bpy` — **pinned to one Python**: Blender 4.x → **3.11**, 5.1+ → **3.13**; match your Python (e.g. `uv python install 3.11`) |
+| **Distro / container package** | a machine that ships it | fastest to install |
+| **Archived wheels** | old versions | `download.blender.org/pypi/bpy/` |
 
-**Route B — the `bpy` Python module (verified in-sandbox).** `pip install bpy`,
-but **each wheel is pinned to one exact Python version**:
+**Always prefer the latest stable** unless the environment requires otherwise.
 
-| Blender / bpy | Python |
+## Choosing the render engine (per environment)
+
+Detect the GPU, then pick — this is an adaptation, not a limitation:
+
+| Environment | Engine |
 |---|---|
-| 4.x (LTS) | **3.11** |
-| 5.1 + | **3.13** |
-| *(none)* | 3.12 |
+| GPU (NVIDIA / AMD / Apple) | **Cycles GPU** (OptiX / CUDA / HIP / Metal) — or **EEVEE Next** for speed |
+| No GPU / headless server | **Cycles CPU** (EEVEE needs a GPU/GL context, so it is not available there) |
 
-So if your Python does not match, get one that does — e.g. with `uv`:
-
-```bash
-pip install uv
-uv python install 3.11
-uv venv --python 3.11 bpyenv
-uv pip install --python bpyenv/bin/python bpy
-bpyenv/bin/python my_blender_script.py
-```
-
-(Archived bpy wheels live at `download.blender.org/pypi/bpy/`.)
-
-## Headless gotchas (learned the hard way — obey these)
-
-1. **EEVEE needs a GPU / EGL context and FAILS headless** on a box with no
-   display or GPU (`EGL_NOT_INITIALIZED`). **Use Cycles.**
-2. **Cycles on CPU renders headless with no GPU** — set `cycles.device='CPU'`.
-3. **The denoiser (OpenImageDenoise) can OOM** on a constrained box — set
-   `cycles.use_denoising = False`.
-4. **Where to run it:** on the **remote workspace** (Colab / Kaggle GPU) for heavy
-   work — there you get Cycles **GPU** and EEVEE. Locally, use Cycles CPU for
-   light scripts. Route every heavy Blender job to the workspace
-   (`REMOTE-WORKSPACE.md`).
-
-Minimal headless recipe that works:
+Detect first — query the available devices and print them before you commit:
 
 ```python
 import bpy
-bpy.ops.wm.read_factory_settings(use_empty=True)
-sc = bpy.context.scene
-sc.render.engine = 'CYCLES'
-sc.cycles.device = 'CPU'
-sc.cycles.samples = 16
-sc.cycles.use_denoising = False          # avoids the OOM above
-sc.render.resolution_x, sc.render.resolution_y = 1920, 1080
-sc.render.filepath = "/out/frame.png"
-bpy.ops.render.render(write_still=True)
+prefs = bpy.context.preferences.addons['cycles'].preferences
+prefs.get_devices()
+for d in prefs.devices:
+    print(d.type, d.name, "usable:", d.use)
 ```
+
+## Performance & robustness (tune to the box, don't assume)
+
+- **Use the power you have** — on a strong GPU box, enable GPU + high samples +
+  denoising. On a modest box, lower samples and disable the denoiser.
+- **Tune samples / tiles / resolution** to RAM and VRAM.
+- **Watch memory** — the OpenImageDenoise pass can be heavy; if it OOMs, lower
+  samples or disable denoising, then re-enable on a bigger box.
+- **Render one test frame and view it** before rendering a sequence.
+
+## The toolchain by use case (Blender first)
+
+| Job | Primary | Supporting |
+|---|---|---|
+| **3D · motion graphics · VFX · tracking · geometry nodes · compositing · render** | **Blender** | GPU drivers (OptiX/CUDA/HIP/Metal) |
+| Edit · assemble · encode · mux | — | **FFmpeg** (Blender bundles one) |
+| Colour management | **Blender** (OpenColorIO built in) | — |
+| Images / stills / plates | **Blender** render, or the workspace's image models | — |
+| Matting / segmentation | the workspace (SAM 2.1 + BiRefNet) | `rembg` |
+| Audio · music · SFX | the workspace's audio models | FFmpeg |
+| Voice | the workspace (Qwen3-TTS) | — |
+| Video generation | the workspace (LTX-2.5) | — |
+| Python data / vision | — | numpy, Pillow, OpenCV |
+
+Full detail: `TOOLCHAIN.md`. Rule for every row: **research the latest, pick per need.**
 
 ## Where Blender fits in the pack
 
@@ -119,5 +134,5 @@ bpy.ops.render.render(write_still=True)
 - **VFX / compositing** — simulations, particles, render passes.
 - **Render + encode** — Blender renders; FFmpeg (bundled or the workspace's) encodes.
 
-It is the pack's **graphics engine**; the remote workspace is its **execution
-environment**; `bpy` is how the AI commands both.
+**Blender is the engine. The remote workspace (`REMOTE-WORKSPACE.md`) is the
+execution environment. `bpy` is how the AI commands both.**
