@@ -62,6 +62,63 @@ brand-systemised motion, and short-form as the default.
 
 The catalogues run long (67 / 68 / 50+ / 41 styles). Grouped into families:
 
+### B0 · The full visual-style vocabulary (the complete menu)
+
+**This is the wide menu — pick from all of it, not only the families below.**
+
+| Style | Core visual characteristics |
+|---|---|
+| **Glassmorphism** | frosted glass, blur, transparency, subtle borders |
+| **Neumorphism** | soft extruded surfaces, light/dark shadows |
+| **Skeuomorphism** | real-world materials and physical metaphors |
+| **Flat Design** | minimal, 2D, no depth, simple shapes |
+| **Material Design** | cards, elevation, motion, structured components |
+| **Fluent Design** | light, depth, acrylic/translucency, motion |
+| **Claymorphism** | puffy, rounded, soft 3D shapes |
+| **Aurora UI** | colourful blurred gradients, atmospheric backgrounds |
+| **Bento UI** | modular rectangular cards arranged like a bento box |
+| **Brutalism** | raw, bold, unconventional, intentionally rough |
+| **Neo-Brutalism** | brutalist layouts + bright colours + thick borders/shadows |
+| **Minimalism** | whitespace, restraint, simple typography |
+| **Maximalism** | dense, expressive, highly decorative interfaces |
+| **Y2K** | futuristic nostalgia, chrome, gradients, bubbly forms |
+| **Cyberpunk** | neon, dark backgrounds, futuristic/dystopian aesthetic |
+| **Retro UI** | visual language inspired by older software/hardware |
+| **Pixel Art UI** | pixel graphics, bitmap fonts, game-like interfaces |
+| **Vaporwave** | neon gradients, retro imagery, surreal aesthetics |
+| **Synthwave** | neon, grids, sunsets, 1980s-inspired futurism |
+| **Memphis Design** | geometric shapes, playful patterns, bright colours |
+| **Organic UI** | natural shapes, curves, earthy/soft visual language |
+| **Editorial UI** | magazine-like layouts, typography-led composition |
+| **Swiss / International** | grid systems, typography, strong alignment |
+| **Bauhaus** | geometric forms, functionalism, primary colours |
+| **Art Deco UI** | symmetry, luxury, geometric ornamentation |
+| **Hand-drawn UI** | sketches, imperfect lines, illustrated elements |
+| **Doodle UI** | casual drawings, playful annotations |
+| **Collage UI** | layered imagery, cut-outs, mixed media |
+| **Illustrative UI** | custom illustrations as a major visual element |
+| **3D UI** | 3D objects, depth, dimensional interactions |
+| **Isometric UI** | isometric illustrations and 3D-like perspective |
+| **Hyperreal UI** | photorealistic imagery / materials |
+| **Holographic UI** | iridescence, spectral gradients, futuristic effects |
+| **Metallic UI** | chrome, steel, reflective surfaces |
+| **Liquid UI** | fluid shapes, blobs, flowing gradients |
+| **Morphing UI** | shapes/components visually transform between states |
+| **Glow UI** | glowing edges, neon highlights, luminous elements |
+| **Dark UI** | dark surfaces with controlled contrast |
+| **Light UI** | bright surfaces, clean and airy appearance |
+| **Monochromatic UI** | primarily one colour/hue |
+| **Duotone UI** | two dominant colours |
+| **Gradient UI** | strong use of smooth colour transitions |
+| **Pastel UI** | soft, low-saturation colours |
+| **High-Contrast UI** | strong contrast between surfaces, text and controls |
+| **Glass + Gradient** | glassmorphism combined with colourful gradients |
+| **Soft UI** | gentle shadows, rounded surfaces, low visual aggression |
+| **Tactile UI** | interfaces designed to visually suggest physical interaction |
+| **Immersive UI** | full-screen visuals, animation and minimal chrome |
+| **Spatial UI** | interfaces designed around depth / 3D / spatial environments |
+| **AI-native UI** | conversational, adaptive, generative and contextual interfaces |
+
 ### B1 · Depth & surface (illusion)
 Glassmorphism · dark glassmorphism · glassmorphism-lite · frosted acrylic
 (Windows 11) · **liquid glass** (Apple) · glass + grain · glassmorphism v3
@@ -121,6 +178,32 @@ ethical / transparent design · responsible glassmorphism · bento grids.
 
 ---
 
+## PART C2 · Interaction / UX patterns (behaviour, not visual style)
+
+These are **how the interface behaves** — pair them with a visual style. Not
+visual styles themselves, but they change the whole feel:
+
+Microinteractions · Motion UI · Scroll-driven UI · Parallax UI · Progressive
+Disclosure · Command Palette · Conversational UI · Voice UI · Gesture-based UI ·
+Card-based UI · Dashboard UI · Timeline UI · Data-dense UI · Wizard / Stepper UI ·
+Bottom Navigation · Floating Action Button · Drag-and-drop UI · Infinite Scroll ·
+Contextual UI · Adaptive UI · Responsive UI · Personalized UI · Spatial / 3D UI.
+
+---
+
+## PART E · Proven combinations (start from these)
+
+Modern work rarely uses one style alone. Proven pairings to start from — pick one
+primary, add at most one garnish:
+
+Glassmorphism + Aurora gradients · Neo-brutalism + Minimalism · Bento UI +
+Glassmorphism · Claymorphism + 3D · Dark UI + Glow/Neon · Minimalism + Editorial ·
+Bento + AI-native UI · Spatial UI + Glass · Liquid UI + Gradient · Y2K +
+Chrome/Metallic · Brutalism + Editorial typography · Soft UI + Pastel · Cyberpunk +
+Holographic · Material + Motion UI.
+
+---
+
 ## PART D · The Style Pass (run it while writing CONCEPT.md)
 
 **No style is mandatory.** There is no house look you must use. Pick the style
@@ -133,7 +216,9 @@ Before building, pick deliberately and record it in CONCEPT.md:
 | Slot | Choose | Why |
 |---|---|---|
 | **Motion style** | one from Part A2 | sets the whole motion language |
-| **UI style** | one from Part B (if a UI appears) | sets surfaces, depth, type |
+| **UI style** | one from Part B / B0 (if a UI appears) | sets surfaces, depth, type |
+| **Interaction pattern** | one or more from Part C2 | sets how it behaves |
+| **Combination** | optionally one from Part E | a proven pairing to start from |
 | **Caption style** | one from `CAPTION-STYLES.md` | sets the text voice |
 | **Colour / grade** | the look | sets tone |
 | **Motion system** | easing curves, transition library, scene templates | keeps every video on-brand |
