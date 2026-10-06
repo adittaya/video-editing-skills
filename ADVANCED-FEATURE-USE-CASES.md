@@ -10,6 +10,14 @@ The camera features (zoom in / zoom out, character/face zoom, focus pulls …) a
 as mandatory as the exotic ones. A build that omits the fundamentals reads as
 amateur even if it nails the flashy parts.
 
+> **THE ENGINE — BLENDER.** Every **3D, motion-graphics, VFX, tracking,
+> simulation and render** feature in this catalogue is executed by the **Blender
+> engine** (`BLENDER-ENGINE.md`, `skills/blender-engine`), driven **headless via
+> `bpy`**: 3D text/objects, cameras + animation, camera tracking / matchmoving,
+> Geometry Nodes, particles/simulations, rigging, compositing and render. 2D and
+> graphics features run alongside it (web code-kits, FFmpeg, the workspace's
+> models). See `TOOLCHAIN.md`.
+
 ---
 
 ## 1 · Camera & framing
@@ -34,6 +42,8 @@ The grammar of the lens. Every move needs a reason (see the Camera Law).
 - **Drone / aerial, top-down, worm's-eye, over-the-shoulder, POV.**
 - **Slow reveal / pull-back reveal** — start tight, reveal the context.
 - **Reframe / auto-reframe** — recompose for 9:16 / 1:1 / 4:5.
+- **3D camera / matchmove** — solve a camera from footage and place 3D in the
+  shot; the 3D-camera-tracking feature (**Blender**).
 
 ## 2 · Motion & animation
 - **Keyframing** — animate position, scale, opacity, rotation, blur; nothing
@@ -47,6 +57,8 @@ The grammar of the lens. Every move needs a reason (see the Camera Law).
 - **Expressions / wiggle / auto-animate** — procedural motion.
 - **Text animators / range selectors** — per-word and per-character animation.
 - **Spring / follow** — damped follow for organic motion.
+- **3D animation · rig · Geometry Nodes** — armatures, constraints, procedural
+  geometry, 3D camera moves (**Blender**).
 
 ## 3 · Speed & time
 - **Speed ramp** — slow→fast or fast→slow across a beat.
@@ -88,6 +100,9 @@ The grammar of the lens. Every move needs a reason (see the Camera Law).
 - **Vignette · grain · halation · bloom.**
 
 ## 7 · Compositing & VFX
+**Engine:** the 3D/VFX items below run in **Blender** (`skills/blender-engine`) —
+camera tracking, simulations, particles, render passes, camera projection; 2D
+comps run alongside.
 - **Chroma key** — flat green (#00B140) / blue; despill, choke, light wrap,
   garbage matte.
 - **Rotoscoping · tracking · planar track · 3D camera tracking (matchmove).**
@@ -121,6 +136,8 @@ The grammar of the lens. Every move needs a reason (see the Camera Law).
 - **Face / object detection · smart tracking.**
 
 ## 10 · Stills & design craft (every generated asset)
+**Engine:** 3D/design **renders** here run in **Blender**; vector, layer and
+retouch craft runs alongside.
 - Layer-based editing · layer masks · blending modes.
 - Frequency separation (skin retouch) · dodge & burn.
 - Content-aware fill / object removal · perspective correction.

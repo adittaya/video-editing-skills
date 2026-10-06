@@ -34,6 +34,9 @@ transitions → count-ups → chroma-key the presenter → 3D camera tracking.
 **Skills:** `vox-explainer`, `geo-explainer-maps`, `saas-demo-explainer`, `preset-003-saaswave-tactile-purple`.
 **Fast path:** narration-driven graphics → **12fps stutter** → animated maps →
 highlighter → word-by-word kinetic type → **audio-driven keyframing** → cut-on-beat.
+**Engine:** 3D / motion-graphics elements here run in **Blender**
+(`skills/blender-engine`, `BLENDER-ENGINE.md`) — 3D text, procedural geometry,
+camera moves; see `TOOLCHAIN.md`.
 **Trap:** motion that decorates instead of explains; too many highlights.
 
 ## D · Documentary edits — observational, interview-led, archival, essay, true crime, investigative
@@ -85,6 +88,8 @@ glitch/VFX → colour grade → multi-track audio.
 **Skills:** `agency-showreel`, `essay-film`, `animated-documentary`, `immersive-360-vr`.
 **Fast path:** the full toolset at strength — compositing, 3D camera tracking,
 generative/coded motion, morphs, heavy grade.
+**Engine:** the 3D / VFX / simulation work runs in **Blender**
+(`skills/blender-engine`) — camera tracking, Geometry Nodes, particles, render.
 **Trap:** style without a reason.
 
 ---
@@ -98,6 +103,9 @@ generative/coded motion, morphs, heavy grade.
 - **Pick the skill** from `video-editing-styles-master-list.md` (vertical) and
   `DOCUMENTARY-STYLE-GUIDE.md` (documentary).
 - **Pick the look** from `MOTION-UI-STYLE-LIBRARY.md` (Style Pass).
+- **Pick the engine** — **Blender** (`skills/blender-engine`, `BLENDER-ENGINE.md`)
+  for all 3D / motion-graphics / VFX / tracking / render; the stack by use case is
+  in `TOOLCHAIN.md`.
 - **Prep the A-roll** with `a-roll-matting` when a person speaks.
 - **Plan** with `THINKING-SYSTEM.md`; **build** per the skill; **validate** with
   `edit-qa-validator` / `tools/qa_check.py`.

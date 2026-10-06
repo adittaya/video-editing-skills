@@ -23,6 +23,11 @@ estate × 9:16 Reels.
 > **Before the plan: read `THINKING-SYSTEM.md`** (how to think) and
 > **`MOTION-UI-STYLE-LIBRARY.md`** (the Style Pass).
 >
+> **The engine: `BLENDER-ENGINE.md` + `skills/blender-engine`** — the pack's
+> primary 3D / graphics engine (headless `bpy`): 3D, motion graphics, VFX, camera
+> tracking, Geometry Nodes, compositing, render. Stack by use case: `TOOLCHAIN.md`.
+> **The workspace: `REMOTE-WORKSPACE.md`** — run everything on the remote GPU.
+>
 > **Every build ends at the QA gate.** Run `edit-qa-validator` before the
 > render and before delivery (audit -> AI re-think -> revalidate).
 >
