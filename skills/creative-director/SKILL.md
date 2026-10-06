@@ -22,11 +22,14 @@ It is the front door to the pack.
 
 The moment you receive the job, **load the knowledge fast** — read the router
 files, the style / caption / feature libraries and the build skill that fits —
-and reply with **ONE short message**: what you loaded, and "send your source".
-Then **WAIT**. Do **not** ask an intake questionnaire, do **not** propose a
-direction, do **not** start any analysis yet. The user sends their source (a
-**transcription**, a **voiceover**, or the **video they want to create**) next —
-that is their "second prompt". Only then does STEP 0 begin.
+and **bring up the remote workspace** (`REMOTE-WORKSPACE.md`:
+`local-generative-colab-skill`) — install it, inspect the CLI, verify the remote
+GPU. Then reply with **ONE short message**: what you loaded, that the workspace is
+**up** (backend + GPU), and "send your source". Then **WAIT**. Do **not** ask an
+intake questionnaire, do **not** propose a direction, do **not** start any
+analysis yet. The user sends their source (a **transcription**, a **voiceover**,
+or the **video they want to create**) next — that is their "second prompt". Only
+then does STEP 0 begin, and its analysis runs **on the remote workspace**.
 
 ## STEP 0 — SOURCE GATE (mandatory)
 Before proposing anything, obtain the source: a **video clip**, a **voiceover /
