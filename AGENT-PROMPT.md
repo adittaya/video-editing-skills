@@ -18,6 +18,7 @@ https://raw.githubusercontent.com/adittaya/video-editing-skills/main/):
   README.md
   THINKING-SYSTEM.md              (how to think — read first)
   MOTION-UI-STYLE-LIBRARY.md      (motion + UI styles; the Style Pass)
+  UI-STYLE-ENCYCLOPEDIA.md        (the full 112-style menu + the layered model)
   ADVANCED-FEATURE-USE-CASES.md   (the full 11-group catalogue)
   CAPTION-STYLES.md               (5 named caption styles)
   ASSET-REQUEST-GUIDE.md

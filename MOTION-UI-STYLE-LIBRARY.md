@@ -65,6 +65,8 @@ The catalogues run long (67 / 68 / 50+ / 41 styles). Grouped into families:
 ### B0 · The full visual-style vocabulary (the complete menu)
 
 **This is the wide menu — pick from all of it, not only the families below.**
+For the **full 112-style encyclopedia** (ten families, with the layered
+design-system model and 20 combinations), see **`UI-STYLE-ENCYCLOPEDIA.md`**.
 
 | Style | Core visual characteristics |
 |---|---|
@@ -224,6 +226,9 @@ Before building, pick deliberately and record it in CONCEPT.md:
 | **Motion system** | easing curves, transition library, scene templates | keeps every video on-brand |
 
 Rules:
+- **Set the layers** (`UI-STYLE-ENCYCLOPEDIA.md`): Visual Style -> Layout ->
+  Components -> Interaction -> Motion -> Typography -> Colour. A style is **one
+  layer**, not the whole direction.
 - **One primary + one garnish.** Pick a dominant style and at most one accent.
 - **Name the failure mode.** Every style has one (neumorphism fails contrast;
   glassmorphism fails text; brutalism fails hierarchy if careless).
