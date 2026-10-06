@@ -61,6 +61,15 @@ them; the matching preset locks the exact look (see `presets/INDEX.md`).
   whip** transitions **on the beat**; **3D milestone numerals**; a **chat-bubble
   UI**; a **smoke-bomb** transition; a **gold trophy** close.
 
+## THE ENGINE - BLENDER (mandatory for the 3D in this build)
+
+The 3D in this skill runs in **Blender**, driven **headless via `bpy`** - 3D
+text/objects, cameras + animation, **camera tracking / matchmoving**, Geometry
+Nodes, particles/simulations, compositing and render. **Program it, never click
+it.** Detect the environment, research the latest version + the best engine for
+the hardware, and use the full power available (GPU -> Cycles GPU / EEVEE; CPU ->
+Cycles CPU). See `BLENDER-ENGINE.md`, `skills/blender-engine`, `TOOLCHAIN.md`.
+
 ## STEP 0.5 — A-ROLL PREP (matting first — mandatory when a person speaks)
 
 If this piece has a **person speaking to camera** (talking-head, voiceover,
