@@ -26,6 +26,9 @@ estate × 9:16 Reels.
 > **The engine: `BLENDER-ENGINE.md` + `skills/blender-engine`** — the pack's
 > primary 3D / graphics engine (headless `bpy`): 3D, motion graphics, VFX, camera
 > tracking, Geometry Nodes, compositing, render. Stack by use case: `TOOLCHAIN.md`.
+> **The studio: `skills/headless-documentary-motion-studio`** — the headless studio
+> (Blender + **Remotion** + FFmpeg + Python + vision) that builds documentary /
+> motion-graphics work deterministically from shot specs.
 > **The workspace: `REMOTE-WORKSPACE.md`** — run everything on the remote GPU.
 >
 > **Every build ends at the QA gate.** Run `edit-qa-validator` before the

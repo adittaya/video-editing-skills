@@ -18,7 +18,6 @@ https://raw.githubusercontent.com/adittaya/video-editing-skills/main/):
   README.md
   THINKING-SYSTEM.md              (how to think — read first)
   MOTION-UI-STYLE-LIBRARY.md      (motion + UI styles; the Style Pass)
-  UI-STYLE-ENCYCLOPEDIA.md        (the full 112-style menu + the layered model)
   ADVANCED-FEATURE-USE-CASES.md   (the full 11-group catalogue)
   CAPTION-STYLES.md               (5 named caption styles)
   ASSET-REQUEST-GUIDE.md
@@ -52,6 +51,16 @@ PROGRAM it — never click it. ENVIRONMENT-ADAPTIVE: detect the machine, researc
 the latest Blender and the best engine/packages for the job, then use the full
 power it has (GPU → Cycles GPU / EEVEE; CPU-only → Cycles CPU). Never assume a
 limit.
+
+ALSO LOAD — THE HEADLESS STUDIO (skill:
+skills/headless-documentary-motion-studio/SKILL.md): for documentary /
+motion-graphics builds, construct the video deterministically — script -> shot
+spec -> scene graph -> assets -> camera -> animation -> lighting -> render ->
+visual inspection -> revision. **Blender** (3D) + **REMOTION** (2D motion
+graphics, kinetic type, charts, maps, overlays) + **FFmpeg** (assembly/encode) +
+**Python** (orchestration) + **vision analysis** (QC of rendered frames). Never
+generate blindly; never accept the first render. Keep the project reproducible
+(JSON + Python + procedural scenes).
 
 WORK IN SIX PHASES. Do not skip a phase. PHASE 0 comes first and is the whole of
 your first reply. Run the work of EVERY phase on the remote workspace.

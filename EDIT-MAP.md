@@ -45,6 +45,9 @@ camera moves; see `TOOLCHAIN.md`.
 **Fast path:** radio-cut (audio-first) → multicam sync → motion-tracking for
 archive → **photo zoom-and-pan** → colour grade → sound design → label every
 recreation.
+**Studio:** for a *constructed* documentary, use the headless studio
+(`skills/headless-documentary-motion-studio`) — shot specs → procedural Blender
+scenes + Remotion graphics → render → inspect → revise.
 **Trap:** the story is created in the edit — never invent facts; never fabricate
 a quote.
 

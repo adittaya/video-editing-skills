@@ -1,8 +1,9 @@
 # THE TOOLCHAIN — Blender first, everything else by use case
 
-> **Main focus: BLENDER.** Blender is the pack's primary engine — 3D, motion
-> graphics, VFX, camera tracking, Geometry Nodes, compositing, render and encode.
-> Everything below **supports** it. For each row: **research the latest version,
+> **Main focus: BLENDER (+ Remotion).** Blender is the pack's primary engine —
+> 3D, motion graphics, VFX, camera tracking, Geometry Nodes, compositing, render
+> and encode. **Remotion** is the 2D motion-graphics engine (React/CLI).
+> Everything below **supports** them. For each row: **research the latest version,
 > pick per need** (the `model-discovery` habit, applied to software).
 
 ---
@@ -15,17 +16,29 @@ fallback. Use the full power the environment has.
 
 ## The stack
 
-### Core engine — **Blender**
-The primary tool. Headless, scripted via `bpy`. 3D modelling, materials/textures/
-lighting, cameras + animation, camera tracking / matchmoving, VFX / particles /
-simulations, rigging, Geometry Nodes, compositing, render, and video encode.
-→ `BLENDER-ENGINE.md`, `skills/blender-engine`.
+### Core engines
+
+**Blender** — the **3D engine**. Headless, scripted via `bpy`. 3D modelling,
+materials/textures/lighting, cameras + animation, camera tracking / matchmoving,
+VFX / particles / simulations, rigging, Geometry Nodes, compositing, render, and
+video encode. → `BLENDER-ENGINE.md`, `skills/blender-engine`.
+
+**Remotion** — the **2D motion-graphics engine**. React/CLI, headless. Kinetic
+typography, captions, lower thirds, charts, maps, diagrams, UI animation, data
+visualization, 2D motion graphics, titles, labels, transitions, overlays,
+procedural graphics. → `skills/headless-documentary-motion-studio`.
+
+Together they drive the **headless studio** — `skills/headless-documentary-motion-studio`
+(a deterministic, shot-specified, render → inspect → revise loop).
 
 ### By use case
 
 | Use case | Primary | Supporting packages | Notes |
 |---|---|---|---|
 | **3D / motion graphics / VFX / tracking / Geometry Nodes / compositing / render** | **Blender** | GPU drivers — OptiX / CUDA (NVIDIA), HIP (AMD), Metal (Apple) | the pack's main engine |
+| **2D motion graphics · kinetic type · captions · charts · maps · overlays** | **Remotion** | Node + React | the 2D engine; headless CLI render |
+| **Orchestration · shot generation · validation · render orchestration** | **Python** | — | the glue of the headless studio |
+| **QC of rendered frames** | **vision analysis** | — | inspect before you accept |
 | **Edit · assemble · trim · encode · mux** | — | **FFmpeg** | Blender bundles one; the workspace has one |
 | **Colour management / grading** | **Blender** (OpenColorIO built in) | — | ACES / LUTs |
 | **Stills, plates, backgrounds** | **Blender** render | or the workspace's image models | reference-conditioned |
