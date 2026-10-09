@@ -10,7 +10,7 @@ This is a routing layer, not a requirement to execute every technique in the ful
 ## Load policy
 - Load this short entry when the skill is selected.
 - Read `HARNESS.md` for the quality-first workflow.
-- Open [the detailed guide](references/legacy-full-guide.md) only for the relevant shot, technique, or implementation detail. Do not ingest it all by default.
+- Open [the detailed guide](FULL-GUIDE.md) only for the relevant shot, technique, or implementation detail. Do not ingest it all by default.
 - Load no other skill unless the task has a concrete need for it.
 
 ## Execution rules
